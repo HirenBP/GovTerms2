@@ -2,3 +2,7 @@ GovTerms2.code-workspace
 .env
 Transparency_API_fields.json
 data/output/
+data\input\df_cleaned_tabs.csv
+data\input\df_cleaned_tabs.csv
+data\glossary_output.json
+data\individual_results.json
