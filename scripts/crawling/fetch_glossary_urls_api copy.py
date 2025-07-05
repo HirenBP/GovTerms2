@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import os
 from dotenv import load_dotenv
+from collections import defaultdict
 
 # -------------------------------------------------------------------
 # The following API is used by transparency.gov.au to power its search.
@@ -67,28 +68,14 @@ all_agencies_df = pd.read_csv('data/output/annual_reports_2023-24.csv')
 all_agencies = set(all_agencies_df['Entity'].str.strip())
 
 BASE_URL = "https://www.transparency.gov.au/publications"
-keywords = ["glossary", "acronym", "abbreviation"]
+keywords = ["glossary", "acronym", "abbreviation", "shortened terms", "shorterned"]
 matching_entries = []
-
-# Track which agencies have glossary, acronym/abbreviation, both, or none
-agency_glossary_types = {agency: set() for agency in all_agencies}
 
 # Filter + construct URLs
 for r in all_results:
     if r.get("ReportingYear") == "2023-24":
-        slug = r.get("UrlSlug", "").lower()
-        title = r.get("Title", "").lower()
-        entity = (r.get("Entity") or "").strip()
-        section_title = r.get("SectionTitle")
-        article_title = r.get("Title")
-        found_types = set()
-        if any(k in slug for k in ["glossary"] ) or any(k in title for k in ["glossary"] ):
-            found_types.add("glossary")
-        if any(k in slug for k in ["acronym", "abbreviation"]) or any(k in title for k in ["acronym", "abbreviation"]):
-            found_types.add("acronym_or_abbreviation")
-        # Include if (SectionTitle is not None) OR (SectionTitle is None AND Title is not None)
-        if found_types and entity in agency_glossary_types and (section_title or (section_title is None and article_title)):
-            agency_glossary_types[entity].update(found_types)
+        section_title = (r.get("SectionTitle") or "").lower()
+        if any(k in section_title for k in keywords):
             portfolio = r.get("PortfolioUrlSlug")
             entity_slug = r.get("EntityUrlSlug")
             tail = r.get("UrlSlug")
@@ -99,58 +86,47 @@ for r in all_results:
 df = pd.DataFrame(matching_entries, columns=["Portfolio","Entity","BodyType","Url"])
 print(f'{len(matching_entries)} number of glossary urls extracted and saved')
 
-# --- Summary Section ---
-only_glossary = [agency for agency, types in agency_glossary_types.items() if types == {"glossary"}]
-only_acronym = [agency for agency, types in agency_glossary_types.items() if types == {"acronym_or_abbreviation"}]
-both = [agency for agency, types in agency_glossary_types.items() if types == {"glossary", "acronym_or_abbreviation"}]
-no_details = [agency for agency, types in agency_glossary_types.items() if not types]
+# Aggregate URLs per Entity
+entity_url_map = defaultdict(list)
+entity_portfolio = {}
+entity_bodytype = {}
+for entry in matching_entries:
+    portfolio, entity, bodytype, url = entry
+    key = entity.strip() if entity else ''
+    if key:
+        entity_url_map[key].append(url)
+        entity_portfolio[key] = portfolio
+        entity_bodytype[key] = bodytype
+
+# Prepare rows for CSV: one row per Entity, with url1, url2, ...
+max_urls = max((len(urls) for urls in entity_url_map.values()), default=1)
+columns = ["Portfolio", "Entity", "BodyType"] + [f"url{i+1}" for i in range(max_urls)]
+rows = []
+for entity, urls in entity_url_map.items():
+    row = [entity_portfolio[entity], entity, entity_bodytype[entity]] + urls
+    # Pad with empty strings if fewer than max_urls
+    row += [''] * (max_urls - len(urls))
+    rows.append(row)
+
+agg_df = pd.DataFrame(rows, columns=columns)
+output_path = 'data/output/glossary_sectiontitle_keyword_urls_agg.csv'
+agg_df.to_csv(output_path, index=False)
+print(f'Aggregated glossary/acronym URLs written to {output_path}')
+
+# --- Updated Summary Section ---
+# Agencies with at least one SectionTitle keyword match
+agencies_with_keyword = set([entry[1].strip() for entry in matching_entries if entry[1]])
+agencies_without_keyword = all_agencies - agencies_with_keyword
 
 print(f"\nSummary out of {len(all_agencies)} agencies:")
-print(f"- {len(only_glossary)} have only glossary details")
-print(f"- {len(only_acronym)} have only acronym/abbreviation details")
-print(f"- {len(both)} have both glossary and acronym/abbreviation details")
-print(f"- {len(no_details)} have no glossary or acronym/abbreviation details")
+print(f"- {len(agencies_with_keyword)} have at least one SectionTitle keyword match (glossary/acronym/abbreviation)")
+print(f"- {len(agencies_without_keyword)} have no SectionTitle keyword match")
 
-# Optionally, save the lists to CSV for further analysis
-summary_df = pd.DataFrame({
-    'Agency': list(all_agencies),
-    'GlossaryType': [', '.join(sorted(agency_glossary_types[agency])) if agency_glossary_types[agency] else 'none' for agency in all_agencies]
-})
-summary_df.to_csv('data/output/glossary_coverage_summary.csv', index=False)
+# Optionally, print lists for inspection
+#print(f"Agencies with keyword match: {sorted(agencies_with_keyword)}")
+#print(f"Agencies without keyword match: {sorted(agencies_without_keyword)}")
 
-def get_glossary_type_and_urls(entity, matching_entries):
-    # Find all glossary URLs for this entity
-    urls = [(row[3], row[2]) for row in matching_entries if (row[1] or '').strip() == entity]
-    # row[3] = url, row[2] = BodyType
-    if not urls:
-        return 'none', '', ''
-    if len(urls) == 1:
-        return 'one', urls[0][0], ''
-    # If there are two or more, try to distinguish types
-    # If both glossary and acronym/abbreviation exist, return both
-    glossary_urls = [u for u, bodytype in urls if any(k in u for k in ['glossary'])]
-    acronym_urls = [u for u, bodytype in urls if any(k in u for k in ['acronym', 'abbreviation'])]
-    if glossary_urls and acronym_urls:
-        return 'both', glossary_urls[0], acronym_urls[0]
-    # If all are of one type, just return the first two
-    return 'one', urls[0][0], urls[1][0] if len(urls) > 1 else ''
-
-# Read the annual report details file
-annual_df = pd.read_csv('data/output/annual_reports_details2.csv')
-
-# Add columns for glossary type and URLs
-annual_df['glossary_type'] = ''
-annual_df['glossary_url1'] = ''
-annual_df['glossary_url2'] = ''
-
-for idx, row in annual_df.iterrows():
-    entity = (row['Entity'] or '').strip()
-    gtype, url1, url2 = get_glossary_type_and_urls(entity, matching_entries)
-    annual_df.at[idx, 'glossary_type'] = gtype
-    annual_df.at[idx, 'glossary_url1'] = url1
-    annual_df.at[idx, 'glossary_url2'] = url2
-
-
-annual_df.to_csv('data/output/all_data.csv', index=False)
-print('Combined file with glossary types and URLs written to data/output/all_data3.csv')
-print(annual_df.head(10))
+# Save the filtered results
+output_path = 'data/output/glossary_sectiontitle_keyword_urls2.csv'
+df.to_csv(output_path, index=False)
+print(f'Filtered glossary/acronym URLs written to {output_path}')
