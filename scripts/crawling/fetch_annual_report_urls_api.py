@@ -14,6 +14,10 @@ from dotenv import load_dotenv
 # This is an Azure Cognitive Search endpoint used to fetch structured
 # report metadata like titles, years, and slugs (used to build URLs).
 # -------------------------------------------------------------------
+
+# Set up the env varibales. 
+load_dotenv()
+
 API_URL = os.getenv("API_URL")
 API_KEY = os.getenv("API_KEY")
 NUMBER_OF_URLS = 0 # Counter to keep track of the URLs constructed.
@@ -58,6 +62,7 @@ for skip in range(batch_size, total_count, batch_size):
     print(f"🔄 Fetched {len(all_results)} records so far...")  # Log the progress
 
 URLs = [] # List to store the final URLs
+URLs_with_details = []
 print(all_results[0])
 for r in all_results:
     if "glossary" in r:
@@ -66,21 +71,25 @@ for r in all_results:
         portfolio = r.get("PortfolioUrlSlug") # Extract the portfolio slug
         entity = r.get("EntityUrlSlug") # Extract the entity slug
         slug = r.get("UrlSlug")  # Extract the URL slug (identifer)
+        
 
         # Construct the full URL for the annual report
         url = f"https://www.transparency.gov.au/publications/{portfolio}/{entity}/{slug}"
         print(f'{r.get("Entity")} \n {url}')
 
         # Append the report details and URL to the list
+        URLs_with_details.append([r.get("Portfolio"),r.get("Entity"), r.get("Title"), r.get("BodyType"), url])
         URLs.append([r.get("Title"), r.get("Portfolio"), r.get("Entity"), url])
         NUMBER_OF_URLS += 1 # Increment the URL counter
 
-# # Ensure the directory exists
-# output_dir = "data/output"
-# os.makedirs(output_dir, exist_ok=True)  # Create the directory if it doesn't exist
+
 
 #Create a DataFrame from the URLs list and save it as a CSV file.
 df = pd.DataFrame(URLs, columns=["Title", "Portfolio", "Entity", "URL"]) # Create a DataFrame with specified columns.
-df.to_csv("data/output/annual_reports_2023-242.csv", index=False) # Save the DataFrame to a CSV file.
+df2 = pd.DataFrame(URLs_with_details, columns=["Portfolio", "Entity", "Title","BodyType", "URL"])
+# df.to_csv("data/output/annual_reports_2023-242.csv", index=False) # Save the DataFrame to a CSV file.
+df2.to_csv("data/output/annual_reports_details2.csv", index=False) # Save the DataFrame to a CSV file. 
+
+print(df2.head(10))
 
 print(f'✅ Total URLs fetched: {NUMBER_OF_URLS}') # Log the total number of URLS fetched.

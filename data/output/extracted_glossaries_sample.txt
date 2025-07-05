@@ -1,0 +1,383 @@
+Agency: Sydney Harbour Federation Trust | Portfolio: Agriculture, Water and the Environment
+  [table] Term: Definition
+  [table] AASB: Australian Accounting Standards Board
+  [table] ACT: Australian Capital Territory
+  [table] AEP: Anderson Environment & Planning
+  [table] ANAO: Australian National Audit Office
+  [table] AO: Order of Australia
+  [table] APS: Australian Public Service
+  [table] AS: Australian Standards
+  [table] ISO: International Organization for Standardization
+  [table] CAC: Community Advisory Committee
+  [table] CBD: central business district
+  [table] CRIS: cost recovery implementation statement
+  [table] DCCEEW: Department of Climate Change, Energy, the Environment and Water
+  [table] EPBC Act: Environment Protection and Biodiversity Conservation Act 1999
+  [table] ERP: enterprise resource planning
+  [table] ESD: ecologically sustainable development
+  [table] FBT: fringe benefits tax
+  [table] FOI Act: Freedom of Information Act 1982
+  [table] Fraud Policy: Commonwealth Fraud Control Policy
+  [table] GPO: government policy order
+  [table] GST: goods and services tax
+  [table] ha: hectare
+  [table] Hon: Honourable
+  [table] ICT: information and communication technology
+  [table] IPS: Information Publication Scheme
+  [table] km: kilometre
+  [table] KMP: key management personnel
+  [table] MOU: memorandum of understanding
+  [table] MP: Member of Parliament
+  [table] No: number
+  [table] n/a: not applicable
+  [table] NHSF: North Head Sanctuary Foundation
+  [table] NSW: New South Wales
+  [table] p.: page
+  [table] PBS: Portfolio Budget Statement
+  [table] PCG: Project Control Group
+  [table] PGPA Act: Public Governance, Performance and Accountability Act 2013
+  [table] PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+  [table] PID Act: Public Interest Disclosure Act 2013
+  [table] PSS: Public Sector Superannuation Scheme
+  [table] PSSap: PSS Accumulation Plan
+  [table] RAAHC: Royal Australian Artillery Historical Company
+  [table] RFP: request for proposal
+  [table] ROU: right-of-use
+  [table] RPG 128: Regulator Performance Guide
+  [table] SAMP: Strategic Asset Management Plan
+  [table] SCIVMN: Sydney Cultural Institutions Volunteer Managers Network
+  [table] SIMS: Sydney Institute of Marine Science
+  [table] SPPI: solely payments of principal and interest
+  [table] subsp.: subspecies
+  [table] t CO2-e: tonnes of carbon dioxide equivalent
+  [table] WHS: work health and safety
+
+Agency: Department of Social Services | Portfolio: Social Services
+  [paragraph] Abbreviations and conventions: 
+  [paragraph] AAO: Administrative Arrangement Orders
+  [paragraph] AASB: Australian Accounting Standards Board
+  [paragraph] ABS: Australian Bureau of Statistics
+  [paragraph] AIC: Assistance for Isolated Children
+  [paragraph] AIFS: Australian Institute of Family Studies
+  [paragraph] AGRC: Australian Gambling Research Centre
+  [paragraph] AIHW: Australian Institute of Health and Welfare
+  [paragraph] ANAO: Australian National Audit Office
+  [paragraph] ANROWS: Australia’s National Research Organisation for Women’s Safety
+  [paragraph] ANZSOG: Australia and New Zealand School of Government
+  [paragraph] AO: Order of Australia
+  [paragraph] AP: Age Pension
+  [paragraph] APS: Australian Public Service
+  [paragraph] APSC: Australian Public Service Commission
+  [paragraph] AS/NZS: Australian/New Zealand International Standard
+  [paragraph] ATSICPP: Aboriginal and Torres Strait Islander Child Placement Principle
+  [paragraph] BCAP: Building Capacity in Australian Parents
+  [paragraph] CaLD: Culturally and Linguistically Diverse
+  [paragraph] CFCA: Child Family Community Australia
+  [paragraph] CO2-e: Carbon Dioxide Equivalent
+  [paragraph] COAG: Council of Australian Governments
+  [paragraph] COVID-19: Coronavirus disease/ Coronavirus pandemic
+  [paragraph] CA: Carer Allowance
+  [paragraph] CP: Carer Payment
+  [paragraph] CPA: Certified Practising Accountant
+  [paragraph] CRPD: Convention on the Rights of Persons with Disabilities
+  [paragraph] CSC: Conspicuous Service Cross
+  [paragraph] CSS: Child Support Scheme
+  [paragraph] DES: Disability Employment Services
+  [paragraph] DEX: DSS Data Exchange
+  [paragraph] DOP: Double Orphan Pension
+  [paragraph] DPR: Direct Personal Response
+  [paragraph] DSP: Disability Support Pension
+  [paragraph] DSS: Department of Social Services
+  [paragraph] EAP: Employee Assistance Program
+  [paragraph] EL: Executive Level
+  [paragraph] ES: Energy Supplement for Commonwealth Seniors Health Card Holders
+  [paragraph] EV: Electric vehicle
+  [paragraph] FaC: Families and Children
+  [paragraph] FCSI: Families and Communities Service Improvement
+  [paragraph] FOLR: funder of last resort
+  [paragraph] FTB: Family Tax Benefit
+  [paragraph] FVOCI: Financial Assets at Fair Value Through Other Comprehensive Income
+  [paragraph] FVTPL: Financial Assets at Fair Value Through Profit or Loss
+  [paragraph] GST: Goods and Services Tax
+  [paragraph] ICSS: Integrated Carer Support Service
+  [paragraph] IMR: Improving Multidisciplinary Responses
+  [paragraph] IPS: Information Publication Scheme
+  [paragraph] ISO: International Standards Organisation
+  [paragraph] IT: Information Technology
+  [paragraph] JSP: JobSeeker Payment
+  [paragraph] LGBTIQA+: Lesbian, gay, bisexual, transgender, intersex, queer or asexual
+  [paragraph] MES: Monitoring and Evaluation Strategy
+  [paragraph] MoU: Memorandum of Understanding
+  [paragraph] MP: Member of Parliament
+  [paragraph] NAIDOC: National Aboriginal and Islanders Day Observance Committee
+  [paragraph] NCAR: National Community Awareness Raising
+  [paragraph] NCAS: National Community Attitudes towards Violence against Women Survey
+  [paragraph] NDDA: National Disability Data Asset
+  [paragraph] NDIA: National Disability Insurance Agency
+  [paragraph] NDIS: National Disability Insurance Scheme
+  [paragraph] NDIS Commission: NDIS Quality and Safeguards Commission
+  [paragraph] NDRP: National Disability Research Partnership
+  [paragraph] NHHA: National Housing and Homelessness Agreement
+  [paragraph] NOCS: National Office of Child Safety
+  [paragraph] NRAS: National Rental Affordability Scheme
+  [paragraph] OIAC: Office of the Australian Information Commissioner
+  [paragraph] PAES: Portfolio Additional Estimates Statements
+  [paragraph] PBS: Portfolio Budget Statements
+  [paragraph] PP: Parenting Payment
+  [paragraph] PPM: Post Placement Monitoring
+  [paragraph] PUSC: Payments under Special Circumstances
+  [paragraph] RA: Rent Assistance
+  [paragraph] RAP: Reconciliation Action Plan
+  [paragraph] RSS: Random Sample Survey
+  [paragraph] RTO: Refundable Tax Offsets
+  [paragraph] SB: Special Benefit
+  [paragraph] SBP: Stillborn Baby Payment
+  [paragraph] SCOREs: Standard Client/Community Outcomes Reporting
+  [paragraph] SDF: Sector Development Fund
+  [paragraph] SEPT: Supporting Expecting and Parenting Teens initiative
+  [paragraph] SES: Senior Executive Service
+  [paragraph] SIH: Survey of Income and Housing
+  [paragraph] SMEs: Small and Medium Enterprises
+  [paragraph] TIA: Towards independent Adulthood
+  [paragraph] TILA: Transition to Independent Living Allowance
+  [paragraph] TTY: Teletypewriter
+  [paragraph] UA: Utilities Allowance
+  [paragraph] XP: Cross Program
+  [paragraph] XPRA: Cross Program Rent Assistance
+  [paragraph] YA: Youth Allowance
+  [paragraph] YAG: Youth Advisory Group
+
+Agency: National Offshore Petroleum Safety and Environmental Management Authority (NOPSEMA) | Portfolio: Industry, Innovation and Science
+  [table] AELERT: Australian Environmental Law Enforcement and Regulators Network
+  [table] AEP: Australian Energy Producers (previously APPEA)
+  [table] AGCC: Australian Government Crisis Committee
+  [table] (the) Agency: NOPSEMA
+  [table] AGM: Annual general meeting
+  [table] AGNPC: Australian Government National Plan Committee
+  [table] AMP: Australian Marine Park
+  [table] AMSA: Australian Maritime Safety Authority
+  [table] ANAO: Australian National Audit Office
+  [table] APPEA: Australian Petroleum Production and Exploration Association APSC
+  [table] APSC: Australian Public Service Commission
+  [table] (the) Authority: NOPSEMA
+  [table] CAiGO: Climate Action in Government Operations
+  [table] CCC: Crisis Coordination Centre
+  [table] CCS: Carbon Capture and Storage
+  [table] CDPP: Commonwealth Director of Public Prosecutions
+  [table] CEO: Chief Executive Officer
+  [table] CERG: Community Environment Reference Group
+  [table] COVID-19: Coronavirus disease 2019
+  [table] DAWE: Department of Agriculture, Water and the Environment
+  [table] DCCEEW: Department of Climate Change, Energy, the Environment and Water
+  [table] DISER: Department of Industry, Science, Energy and Resources
+  [table] DISR: Department of Industry, Science and Resources
+  [table] DNP: Director of national parks
+  [table] DSMS: Diving safety management system
+  [table] EAD: Environmental approvals division
+  [table] EM: Environmental management
+  [table] EMM: Enforcement management model
+  [table] ENGO: Environment non-government organisation
+  [table] EP: Environment plan
+  [table] EPBC Act: Environment Protection and Biodiversity Conservation Act 1999
+  [table] FA: Financial assurance
+  [table] FLNG: Floating liquefied natural gas
+  [table] FOI: Freedom of information
+  [table] FPSO: Floating production, storage and offloading
+  [table] FTE: Full time equivalent
+  [table] GBRMPA: Great Barrier Reef Marine Park Authority
+  [table] GBRMP Act: Great Barrier Reef Marine Park Act 1975
+  [table] GGFR: Global Gas Flaring Reduction partnership
+  [table] GL / GN: Guideline / Guidance note
+  [table] GOWRF: Global Offshore Wind Regulators Forum
+  [table] HSR: Health and safety representative
+  [table] IEA: International Energy Agency
+  [table] IFAP: Industrial Foundation for Accident Prevention
+  [table] IOGP: International Association of Oil & Gas Producers
+  [table] IOPER: International Offshore Petroleum Environmental Regulators
+  [table] IPIECA: International Petroleum Industry Environmental Conservation Association
+  [table] IPCC: Intergovernmental Panel on Climate Change
+  [table] IRF: International Regulators’ Forum
+  [table] IUCN zones: International Union for Conservation of Nature zones
+  [table] IUF: International Upstream Forum
+  [table] JA: Joint Authority
+  [table] KPI: Key performance indicator
+  [table] Levies Act: Offshore Petroleum and Greenhouse Gas Storage (Regulatory Levies) Act 2003
+  [table] Levies Regs: Offshore Petroleum and Greenhouse Gas Storage (Regulatory Levies) Regulations 2004
+  [table] MNES: Matters of national environmental significance
+  [table] MONMER: Management of Ocean Noise by Multinational Energy Regulators
+  [table] MPPR: Marine Pollution Preparedness and Response Technical Groups
+  [table] NGER Act: National Greenhouse Energy and Reporting Act 2007
+  [table] NOPSEMA: National Offshore Petroleum Safety and Environmental Management Authority
+  [table] NOPTA: National Offshore Petroleum Titles Administrator
+  [table] NPMEM: National Plan for Maritime Environmental Emergencies
+  [table] NPSC: National Plan Strategic Coordination Committee
+  [table] NRCoP: National Regulator’s Community of Practice
+  [table] OEI Act: Offshore Electricity Infrastructure Act 2021
+  [table] OEI Levies Act: Offshore Electricity Infrastructure (Regulatory Levies) Act 2021
+  [table] OHS: Occupational health and safety
+  [table] OIR (Regulator): Offshore Infrastructure Regulator
+  [table] OIR (Registrar): Offshore Infrastructure Registrar
+  [table] OPC: Office of Parliamentary Counsel
+  [table] OPP: Offshore project proposal
+  [table] OR: Offshore renewables
+  [table] OPGGS Act: Offshore Petroleum and Greenhouse Gas Storage Act 2006
+  [table] OPGGS(E): Offshore Petroleum and Greenhouse Gas Storage (Environment) Regulations
+  [table] OPGGS (Levies): Offshore Petroleum Greenhouse Gas Storage (Regulatory Levies) Regulations 2009
+  [table] OPGGS (RMA): Offshore Petroleum and Greenhouse Gas Storage (Resource Management and Administration) Regulations
+  [table] PBS: Portfolio Budget Statements
+  [table] PGPA Act: Public Governance, Performance and Accountability Act 2013
+  [table] PL: Policy
+  [table] PSZ: Petroleum safety zone
+  [table] QMS: Quality management system
+  [table] RPG: Regulator Performance Guide
+  [table] SC: Safety case
+  [table] SoE: (Minister’s) Statement of Expectations
+  [table] SoI: (NOPSEMA’s) Statement of Intent
+  [table] SOP: Standard operating procedure
+  [table] SPE: Society of Petroleum Engineers
+  [table] Spillcon: International Oil Spill Conference
+  [table] SWA: Stop Work Authority process
+  [table] UCH Act: Underwater Cultural Heritage Act 2018
+  [table] UPR: Upstream petroleum resources
+  [table] WHS: Work health and safety
+  [table] WOMP: Well operations management plan
+
+Agency: Australian Institute of Aboriginal and Torres Strait Islander Studies | Portfolio: Prime Minister and Cabinet
+  [table] AAPA: Australian Aboriginal Progressive Association
+  [table] AASB: Australian Accounting Standards Board
+  [table] ACAL: AIATSIS Centre for Australian Languages
+  [table] ACARA: Australian Curriculum Assessment and Reporting Authority
+  [table] ACT: Australian Capital Territory
+  [table] AIAS: Australian Institute of Aboriginal Studies (now AIATSIS)
+  [table] AIATSIS: Aboriginal and Torres Strait Islander Studies
+  [table] AITSL: Australian Institute for Teaching and School Lea dership
+  [table] AGM: Annual General Meeting
+  [table] AO: Officer of the Order of Australia
+  [table] AM: Member of the Order of Australia
+  [table] ANAO: Australian National Audit Office
+  [table] ANU: Australian National University
+  [table] APS: Australian Public Service
+  [table] ASP: Aboriginal Studies Press
+  [table] CAFH: Collections, Access and Family History Group, AIATSIS
+  [table] CEO: Chief Executive Officer
+  [table] CIT: Canberra Institute of Technology
+  [table] CNC: Computer numerical control
+  [table] Core: Core Cultural Learning Program/Core Cultural Competency Program
+  [table] COVID-19: Coronavirus
+  [table] CSS: Commonwealth Superannuation Scheme
+  [table] Cth: Commonwealth
+  [table] GAICD: Graduate of the Australian Institute of Company Directors
+  [table] GLAM: Galleries, libraries, archives and museums
+  [table] GST: Goods and services tax
+  [table] HMB: His Majesty’s Bark
+  [table] HR: Human Resources
+  [table] IAM: Indigenous Art Market
+  [table] ICG: Indigenous Country and Governance Group, AIATSIS
+  [table] IDEIPI: Institute for Inter-Ethnic and Indigenous Peoples’ Studies
+  [table] INPI: Instituto Nacional de Pueblos Indigenas (National Institute of Indigenous People Mexico)
+  [table] IRX: Indigenous Research Exchange
+  [table] KALACC: Kimberley Aboriginal Law and Culture Centre
+  [table] MAICD: Member of the Australian Institute of Company Directors
+  [table] MoC: Memorandum of cooperation
+  [table] MoU: Memorandum of understanding
+  [table] MP: Member of Parliament
+  [table] N/A: Not applicable
+  [table] Ngurra: Ngurra: The National Aboriginal and Torres Strait Islander Cultural Precinct
+  [table] NAIDOC: National Aboriginal and Islanders Day Observance Committee
+  [table] NIAA: National Indigenous Australians Agency
+  [table] NILS: National Indigenous Languages Survey
+  [table] NITV: National Indigenous Television
+  [table] NRL: National Rugby League
+  [table] NSW: New South Wales
+  [table] NT: Northern Territory
+  [table] NTO: Native Title Organisation
+  [table] OAM: Medal of the Order of Australia
+  [table] PBC: Prescribed Bodies Corporate
+  [table] PGPA Act: Public Governance, Performance and Accountability Act 2013 (Cth)
+  [table] PhD: Doctor of Philosophy
+  [table] PSS: Public Sector Superannuation Scheme
+  [table] PSSap: Public Sector Superannuation Scheme accumulation plan
+  [table] Pty Ltd: Proprietary Limited
+  [table] QLD: Queensland
+  [table] RoCH: Return of Cultural Heritage Group, AIATSIS
+  [table] SA: South Australia
+  [table] SBS: Special Broadcasting Service
+  [table] TAS: Tasmania
+  [table] UN: United Nations
+  [table] UNESCO: United Nations Educational, Scientific and Cultural Organisation
+  [table] VIC: Victoria
+  [table] WA: Western Australia
+
+Agency: Australian Transport Safety Bureau (ATSB) | Portfolio: Infrastructure, Transport, Cities and Regional Development
+  [table] Term: Description
+  [table] AAD: Australian Antarctic Division
+  [table] AAO: Administrative Arrangements Order
+  [table] Accident: An investigable matter involving a transport vehicle occurs when: » a person dies, or suffers serious injury, as a result of an occurrence associated with the operation of the vehicle » the vehicle is destroyed, or seriously damaged, as a result of an occurrence associated with the operation of the vehicle » any property is destroyed, or seriously damaged, as a result of an occurrence associated with the operation of the vehicle.
+  [table] ADS- B: Automatic Dependent Surveillance Broadcast
+  [table] ADT: Autonomous distress tracking system.
+  [table] Aerial work: Aircraft operations – including ambulance and emergency medical services, agriculture, mustering, search and rescue, fire control, surveying and photography.
+  [table] Agricultural operations: Operations involving the carriage and/or spreading of chemicals, seed, fertiliser or other substances for agricultural purposes – including the purposes of pest and disease control.
+  [table] AIC: Accident Investigation Commission. The Papua New Guinea Government institution responsible for the investigation of safety deficiencies in aviation transport.
+  [table] AIGP: ICAO Accident Investigation Panel
+  [table] AIG: Accident Investigation Group
+  [table] AIMS: ATSB Investigation Management System
+  [table] Air Transport Operation: A passenger transport operation, a cargo transport operation or a medical transport operation that is conducted for hire or reward.
+  [table] AMC: Australian Maritime College
+  [table] AMSA: Australian Maritime Safety Authority
+  [table] ANAO: Australian National Audit Office
+  [table] APAC: ICAO Asia Pacific
+  [table] APS: Australian Public Service
+  [table] APSC: Australian Public Service Commission
+  [table] ARA: Australian Railways Association
+  [table] ARTC: Australian Rail Track Corporation
+  [table] ASL: Average Staffing Level
+  [table] ATSB: Australian Transport Safety Bureau
+  [table] ATSB safety action: Formal activities conducted by the ATSB to initiate safety action by relevant organisations to address a safety issue. Includes safety recommendations and safety advisory notices.
+  [table] BV: Bureau Veritas
+  [table] CASA: Civil Aviation Safety Authority
+  [table] CASR: Civil Aviation Safety Regulations
+  [table] Charter: A non-scheduled air transport operation.
+  [table] CITS: Chief Investigator Transport Safety (Victoria)
+  [table] Collective: The collective pitch control, or collective lever, in a helicopter changes the pitch angle of all the main rotor blades at the same time, independent of their position. Therefore, if a collective input is made, all the blades change equally. The result is that the helicopter increases or decreases its total lift derived from the rotor.
+  [table] Complex investigations: Investigations rated at level 1, level 2 or level 3 in accordance with the ATSB’s rating system.
+  [table] : PNG
+  [table] Portfolio Budget Statements (PBS): These statements explain the provisions of the appropriation bills (budget bills); that is, where the appropriate funds are going to be spent.
+  [table] Private/business: Private flying is conducted for recreational or personal transport without revenue. Business flying refers to the use of aircraft as a means of transport to support a business or profession.
+  [table] PS Act: Public Service Act 1999
+  [table] Recreational aviation: Aircraft being used for recreational flying that are registered by a recreational aviation administration organisation.
+  [table] Regular public transport (RPT): A scheduled air transport operation, which the ATSB further categorises as: » low-capacity RPT – an RPT aircraft that provides a maximum of 38 passenger seats, or a maximum payload no greater than 4,200 kilograms » high-capacity RPT – an RPT aircraft that provides more than 38 passenger seats, or a maximum payload greater than 4,200 kilograms.
+  [table] ReOC: A remotely piloted aircraft operator’s certificate.
+  [table] REPCON: The aviation confidential reporting scheme.
+  [table] Reportable safety concern: Any matter that endangers or could endanger a transport vehicle.
+  [table] RFS: Rural Fire Service
+  [table] RISSB: Rail Industry Safety and Standards Board
+  [table] RMIT: Royal Melbourne Institute of Technology
+  [table] RPAS: Remotely piloted aircraft systems.
+  [table] Safety action: The things that organisations and individuals do in response to the identification of safety issues, in order to prevent accidents and incidents. There are 2 main types: ATSB safety action non-ATSB safety action.
+  [table] Safety advisory notice (SAN): Formal advice by the ATSB to an organisation, or relevant parts of the aviation industry, that it should consider the safety issue and take action where it believes it is appropriate. A safety advisory notice is a ‘softer’ output than a safety recommendation and is used for less significant safety issues – when the available evidence is more limited or when the target audience is not a specific organisation.
+  [table] Safety factor: An event or condition that increases safety risk – something that increases the likelihood of an occurrence and/or the severity of the adverse consequences associated with an occurrence.
+  [table] Safety issues: A safety factor which can reasonably be regarded as having the potential to adversely affect the safety of future operations and: » is a characteristic of an organisation or a system, rather than a characteristic of a specific individual, or » is characteristic of an operational environment at a specific point in time.
+  [table] Safety recommendation: ATSB safety recommendations are formal recommendations from the ATSB to an organisation for it to address a specific safety issue. They focus on stating the problem (i.e. the description of the safety issue). They do not identify specific solutions for reducing risk.
+  [table] Serious incident: An incident involving circumstances indicating an accident nearly occurred.
+  [table] Serious injury: An injury which is sustained by a person in an accident and involves one or more of the following: » requires hospitalisation for more than 48 hours, commencing within 7 days from the date the injury was received » results in a fracture of any bone (except simple fractures of fingers, toes or nose) » involves lacerations which cause severe haemorrhage, nerve, muscle or tendon damage » involves injury to any internal organ » involves second- or third-degree burns, or any burns affecting more than 5% of the body surface » involves verified exposure to infectious substances or injurious radiation.
+  [table] SES: Senior Executive Service
+  [table] Short investigation: Short, factual, office-based investigations of less complex safety occurrences rated at level 5 under the ATSB rating scheme.
+  [table] SLT: Senior Leadership Team
+  [table] SME: Small and medium enterprises.
+  [table] SMS: Safety management system
+  [table] SOLAS: Safety of Life at Sea Convention
+  [table] SPAD: Signal passed at danger.
+  [table] Sports aviation: Aircraft excluded from the RPT, GA or military aircraft categories – including ultralights, gliders, hang gliders, rotorcraft and balloon aviation. Most, if not all sport aviation craft are registered with various sporting bodies rather than with the CASA, although exceptions to this rule occur. Sports aviation also includes parachute operations and acrobatics. Sports aviation in this report does not include Australian non-VH registered aircraft.
+  [table] Statutory agency: A body or group of persons declared by an Act to be a statutory agency for the purposes of the Public Service Act 1999 .
+  [table] Systemic failure: A breakdown in the system as a whole.
+  [table] TCAD: Tonga Civil Aviation Division
+  [table] Transport safety matter: As defined by the Transport Safety Investigation Act 2003 , these matters consist of occurrences in which: » the transport vehicle is destroyed » the transport vehicle is damaged » the transport vehicle is abandoned, disabled, stranded or missing in operation » a person dies as a result of an occurrence associated with the operation of the transport vehicle » a person is injured or incapacitated as a result of an occurrence associated with the operation of the transport vehicle » any property is damaged as a result of an occurrence associated with the operation of the transport vehicle » the transport vehicle is involved in a near accident » the transport vehicle is involved in an occurrence that affected, or could have affected, the safety of the operation of the transport vehicle » something occurred that affected, is affecting, or might affect transport safety.
+  [table] TSI Act: Transport Safety Investigation Act 2003
+  [table] TSI Regulations: Transport Safety Investigation Regulations 2021
+  [table] VDR: Voyage Data Recorder
+  [table] VFR: Visual Flight Rules
+  [table] VMC: Visual meteorological conditions.
+  [table] WebRAMS: System used by the ARTC to publish train notices and speed restrictions for the Western Australian, South Australian and Victorian sections of the network track.
+  [table] WHS: Work Health and Safety
+  [table] WHS Act: Work Health and Safety Act 2011
+

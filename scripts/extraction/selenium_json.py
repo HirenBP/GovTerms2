@@ -10,7 +10,10 @@ import time
 import pandas as pd
 import traceback
 import re
+import random
 
+
+# Set of words to skip when parsing glossary entries
 SKIP_WORDS = {
     "acronym",
     "meaning",
@@ -20,9 +23,14 @@ SKIP_WORDS = {
     "glossary"
 }
 
-def format_glossary_line(line):
+# Utility function to format a glossary line
+def format_glossary_line(line: str) -> str:
     """
     Formats a glossary line by replacing multiple spaces or non-breaking spaces with a colon.
+    Args:
+        line (str): The input glossary line.
+    Returns:
+        str: The formatted line with a colon separating term and definition.
     """
     line = line.replace('\xa0', ' ')
     new_line = re.sub(r'\s{2,}', ': ', line, count=1)
@@ -32,7 +40,15 @@ def format_glossary_line(line):
             new_line = f"{parts[0]}: {parts[1]}"
     return new_line
 
-def glossary_in_list(list_tag):
+# Parse glossary terms from a <ul> or <ol> HTML list
+def glossary_in_list(list_tag) -> dict:
+    """
+    Extracts glossary terms and definitions from a list tag (ul/ol).
+    Args:
+        list_tag: BeautifulSoup tag for the list.
+    Returns:
+        dict: Mapping of term to definition.
+    """
     glossary_dict = {}
     for li in list_tag.find_all("li"):
         text = li.get_text(" ", strip=True)
@@ -53,7 +69,15 @@ def glossary_in_list(list_tag):
             glossary_dict[term] = definition
     return glossary_dict
 
-def glossary_in_table(table):
+# Parse glossary terms from a <table> HTML element
+def glossary_in_table(table) -> dict:
+    """
+    Extracts glossary terms and definitions from a table tag.
+    Args:
+        table: BeautifulSoup tag for the table.
+    Returns:
+        dict: Mapping of term to definition.
+    """
     glossary_dict = {}
     for row in table.find_all("tr"):
         cells = row.find_all(["td", "th"])
@@ -76,10 +100,18 @@ def glossary_in_table(table):
                 glossary_dict[term] = definition
     return glossary_dict
 
-def glossary_in_paragraph(paragraphs):
+# Parse glossary terms from <p> HTML elements (paragraphs)
+def glossary_in_paragraph(paragraphs) -> dict:
+    """
+    Extracts glossary terms and definitions from a list of paragraph tags.
+    Args:
+        paragraphs: List of BeautifulSoup paragraph tags.
+    Returns:
+        dict: Mapping of term to definition.
+    """
     glossary_dict = {}
     for p in paragraphs:
-        # Handle <strong> tags
+        # Handle <strong> tags for terms
         strong = p.find("strong")
         text = p.get_text(" ", strip=True).replace('\xa0', ' ')
         if len(text) == 1 or text.lower() in SKIP_WORDS:
@@ -111,8 +143,15 @@ def glossary_in_paragraph(paragraphs):
                     glossary_dict[term] = definition
     return glossary_dict
 
-
-def prepare_urls(csv_path):
+# Reads a CSV file and prepares a dictionary of URLs and metadata
+def prepare_urls(csv_path: str) -> dict:
+    """
+    Reads a CSV file and prepares a dictionary of URLs and associated metadata.
+    Args:
+        csv_path (str): Path to the CSV file.
+    Returns:
+        dict: Mapping of (portfolio, entity) to metadata including URLs.
+    """
     df = pd.read_csv(csv_path)
     filtered_df = df[df['Type of Glossary'].notnull()]
     urls = {}
@@ -130,18 +169,34 @@ def prepare_urls(csv_path):
     return urls
 
 class GlossaryExtractor:
+    """
+    Class to extract glossary terms and definitions from a given URL using Selenium and BeautifulSoup.
+    """
     def __init__(self):
         pass
 
-    def setup_driver(self):
+    def setup_driver(self) -> webdriver.Chrome:
+        """
+        Sets up a headless Chrome WebDriver instance.
+        Returns:
+            webdriver.Chrome: Configured Chrome WebDriver.
+        """
         options = webdriver.ChromeOptions()
         options.add_argument("--headless")
         return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-    def extract_from_url(self, url):
+    def extract_from_url(self, url: str) -> dict:
+        """
+        Loads the given URL, waits for glossary content, and extracts glossary lines.
+        Args:
+            url (str): The URL to extract glossary from.
+        Returns:
+            dict: Extracted glossary data.
+        """
         driver = self.setup_driver()
         try:
             driver.get(url)
+            # Wait for the glossary content to load (table, paragraph, or strong tag)
             WebDriverWait(driver, 30).until(
                 EC.presence_of_element_located((
                     By.CSS_SELECTOR, 
@@ -159,7 +214,14 @@ class GlossaryExtractor:
         finally:
             driver.quit()
 
-    def extract_glossary_lines(self, glossary_div):
+    def extract_glossary_lines(self, glossary_div) -> dict:
+        """
+        Extracts glossary lines from the provided glossary div.
+        Args:
+            glossary_div: BeautifulSoup tag for the glossary content div.
+        Returns:
+            dict: Extracted glossary data.
+        """
         if not glossary_div:
             return {}
         table = glossary_div.find("table")
@@ -172,9 +234,12 @@ class GlossaryExtractor:
         if list_tag:
             return {"glossary": glossary_in_list(list_tag)}
         return {}
-import random
+
 
 def main():
+    """
+    Main function to extract glossary terms from URLs and save them as a JSON file.
+    """
     output_json = r'C:\Users\hiren\PycharmProjects\GovTerms2\data\individual_results.json'
     urls = prepare_urls(r'C:\Users\hiren\PycharmProjects\GovTerms2\data\output\combined_for_scrapping.csv')
     extractor = GlossaryExtractor()
@@ -182,7 +247,12 @@ def main():
 
     used_ids = set()
 
-    def generate_id():
+    def generate_id() -> str:
+        """
+        Generates a unique random 5-digit ID for each term.
+        Returns:
+            str: Unique term ID.
+        """
         while True:
             term_id = str(random.randint(10000, 99999))
             if term_id not in used_ids:
@@ -201,8 +271,10 @@ def main():
                 "entity": entity,
                 "source_url": meta["Glossary Url"]
             })
+        # Sleep to avoid overloading the server or being blocked
         time.sleep(2)
 
+    # Write the extracted glossary data to a JSON file
     with open(output_json, "w", encoding="utf-8") as f:
         json.dump(output_data, f, ensure_ascii=False, indent=2)
 

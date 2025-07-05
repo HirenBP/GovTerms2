@@ -79,12 +79,15 @@ for r in all_results:
         slug = r.get("UrlSlug", "").lower()
         title = r.get("Title", "").lower()
         entity = (r.get("Entity") or "").strip()
+        section_title = r.get("SectionTitle")
+        article_title = r.get("Title")
         found_types = set()
         if any(k in slug for k in ["glossary"] ) or any(k in title for k in ["glossary"] ):
             found_types.add("glossary")
         if any(k in slug for k in ["acronym", "abbreviation"]) or any(k in title for k in ["acronym", "abbreviation"]):
             found_types.add("acronym_or_abbreviation")
-        if found_types and entity in agency_glossary_types:
+        # Include if (SectionTitle is not None) OR (SectionTitle is None AND Title is not None)
+        if found_types and entity in agency_glossary_types and (section_title or (section_title is None and article_title)):
             agency_glossary_types[entity].update(found_types)
             portfolio = r.get("PortfolioUrlSlug")
             entity_slug = r.get("EntityUrlSlug")
@@ -149,5 +152,5 @@ for idx, row in annual_df.iterrows():
 
 
 annual_df.to_csv('data/output/all_data.csv', index=False)
-print('Combined file with glossary types and URLs written to data/output/all_data2.csv')
+print('Combined file with glossary types and URLs written to data/output/all_data3.csv')
 print(annual_df.head(10))
