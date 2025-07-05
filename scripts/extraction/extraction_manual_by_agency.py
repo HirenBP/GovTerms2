@@ -11,6 +11,7 @@ import pandas as pd
 import re
 import os
 import pandas.errors
+from pathlib import Path
 
 # Expanded SKIP_WORDS and header patterns
 SKIP_WORDS = {
@@ -215,8 +216,12 @@ class SmartGlossaryExtractor:
                 glossary_data.update(extracted)
         return {"glossary": glossary_data, "sources": extraction_sources}
 
+from pathlib import Path
+
+
 def main():
-    df = pd.read_csv(r'C:\Users\hiren\PycharmProjects\GovTerms2\data\output\all_data_copy.csv')
+    root = Path(__file__).resolve().parents[2]
+    df = pd.read_csv(root / 'data' / 'output' / 'all_data_copy.csv')
     agency_name = input("Enter the agency name (case-insensitive, partial match allowed): ").strip().lower()
     matches = df[df['Entity'].str.lower().str.contains(agency_name)]
     if matches.empty:

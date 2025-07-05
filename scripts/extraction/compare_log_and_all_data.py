@@ -1,14 +1,16 @@
 import pandas as pd
 import os
+from pathlib import Path
 
 def normalize_urls(urls):
     # Split by |, strip whitespace, ignore empty
     return set(u.strip() for u in str(urls).split('|') if u.strip())
 
 def main():
-    log_path = r"C:\Users\hiren\PycharmProjects\GovTerms2\Users\hiren\PycharmProjects\GovTerms2\data\output\extraction_log.csv"
-    all_data_path = r"C:\Users\hiren\PycharmProjects\GovTerms2\data\output\all_data.csv"
-    output_path = r"C:\Users\hiren\PycharmProjects\GovTerms2\data\output\url_comparison_log.csv"
+    root = Path(__file__).resolve().parents[2]
+    log_path = root / 'data' / 'output' / 'extraction_log.csv'
+    all_data_path = root / 'data' / 'output' / 'all_data.csv'
+    output_path = root / 'data' / 'output' / 'url_comparison_log.csv'
 
     log_df = pd.read_csv(log_path)
     all_data_df = pd.read_csv(all_data_path)

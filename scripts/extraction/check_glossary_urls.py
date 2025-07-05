@@ -8,6 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import WebDriverException, TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from pathlib import Path
 
 def check_url(driver, url):
     try:
@@ -33,8 +34,9 @@ def check_url(driver, url):
         return f"Error: {str(e).splitlines()[0]}"
 
 def main():
-    all_data_path = r"C:\Users\hiren\PycharmProjects\GovTerms2\data\output\all_data.csv"
-    log_path = r"C:\Users\hiren\PycharmProjects\GovTerms2\data\output\glossary_url_check_log.csv"
+    root = Path(__file__).resolve().parents[2]
+    all_data_path = root / 'data' / 'output' / 'all_data.csv'
+    log_path = root / 'data' / 'output' / 'glossary_url_check_log.csv'
     df = pd.read_csv(all_data_path)
     results = []
     # Setup Selenium driver

@@ -1,34 +1,24 @@
-import json
-import time
 import pandas as pd
-import random
-import re
+import time
 from pathlib import Path
 
 from scripts.extraction.base_extractor import SmartGlossaryExtractor
 
 
 def main():
-    filename = input("What do you want to name the output file ? ").strip()
-    filename = re.sub(r'[\\/:*?"<>|]', '', filename)
-
     root = Path(__file__).resolve().parents[2]
     output_dir = root / 'data' / 'output'
     output_dir.mkdir(parents=True, exist_ok=True)
-    file_path = output_dir / f"{filename}.txt"
     visited_csv = output_dir / 'visited_agencies.csv'
 
     if visited_csv.exists():
-        visited_agencies = set(pd.read_csv(visited_csv, header=None)[0].tolist())
+        visited_agencies = set(pd.read_csv(visited_csv, header=None)[0].dropna().astype(str).tolist())
     else:
         visited_agencies = set()
 
     df = pd.read_csv(root / 'data' / 'output' / 'all_data.csv')
     df = df[df['glossary_type'].isin(['one', 'both'])].reset_index(drop=True)
     df = df[~df['Entity'].isin(visited_agencies)].reset_index(drop=True)
-
-    if len(df) > 5:
-        df = df.sample(5, random_state=42).reset_index(drop=True)
 
     extractor = SmartGlossaryExtractor()
     output_lines = []
@@ -51,10 +41,8 @@ def main():
         all_sources = {}
         for url in urls:
             details = extractor.extract_with_fallback(url)
-            glossary = details.get('glossary', {})
-            sources = details.get('sources', {})
-            all_terms.update(glossary)
-            all_sources.update(sources)
+            all_terms.update(details.get('glossary', {}))
+            all_sources.update(details.get('sources', {}))
             time.sleep(2)
 
         if all_terms:
@@ -67,9 +55,28 @@ def main():
             output_lines.append(f"Agency: {entity} | Portfolio: {portfolio}\n  No terms extracted.\n\n")
         tested_agencies.add(entity)
 
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.writelines(output_lines)
-    print(f"[LOG] Extracted terms written to {file_path}")
+    part = 1
+    batch_lines = []
+    entities_per_file = 5
+    for line in output_lines:
+        batch_lines.append(line)
+        if line.startswith('Agency') and len(batch_lines) > 1:
+            if len(batch_lines) > entities_per_file:
+                part_file = output_dir / f"glossaries_part{part}.txt"
+                with open(part_file, 'w', encoding='utf-8') as f:
+                    f.writelines(batch_lines[:-1])
+                print(f"[LOG] Written {len(batch_lines)-1} lines to {part_file}")
+                batch_lines = [batch_lines[-1]]
+                part += 1
+    if batch_lines:
+        part_file = output_dir / f"glossaries_part{part}.txt"
+        with open(part_file, 'w', encoding='utf-8') as f:
+            f.writelines(batch_lines)
+        print(f"[LOG] Written {len(batch_lines)} lines to {part_file}")
+
+    log_csv_path = output_dir / 'extraction_log.csv'
+    pd.Series(tested_agencies).to_csv(log_csv_path, index=False, header=False)
+    print(f"[LOG] Comprehensive extraction log written to {log_csv_path}")
 
     if tested_agencies:
         all_visited = visited_agencies.union(tested_agencies)
@@ -77,5 +84,5 @@ def main():
         print(f"[LOG] Updated visited agencies CSV: {visited_csv}")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
