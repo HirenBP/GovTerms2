@@ -6,3 +6,5 @@ data\input\df_cleaned_tabs.csv
 data\input\df_cleaned_tabs.csv
 data\glossary_output.json
 data\individual_results.json
+.idea/
+.vscode/
