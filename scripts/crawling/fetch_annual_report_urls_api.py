@@ -61,34 +61,27 @@ for skip in range(batch_size, total_count, batch_size):
         print(f"⚠️ Failed to fetch batch at skip={skip}")  # Log an error if the request fails
     print(f"🔄 Fetched {len(all_results)} records so far...")  # Log the progress
 
-URLs = [] # List to store the final URLs
-URLs_with_details = []
-print(all_results[0])
+
+URLs_with_details = [] # List to store all the details and urls. 
 for r in all_results:
-    if "glossary" in r:
-        print("The raw data contains the word glossary")
     if r.get("ReportingYear") == "2023-24" and r.get("ContentType") == "annual_report": # Filter for 2023-24 annual reports
         portfolio = r.get("PortfolioUrlSlug") # Extract the portfolio slug
         entity = r.get("EntityUrlSlug") # Extract the entity slug
         slug = r.get("UrlSlug")  # Extract the URL slug (identifer)
         
-
         # Construct the full URL for the annual report
         url = f"https://www.transparency.gov.au/publications/{portfolio}/{entity}/{slug}"
         print(f'{r.get("Entity")} \n {url}')
 
         # Append the report details and URL to the list
         URLs_with_details.append([r.get("Portfolio"),r.get("Entity"), r.get("Title"), r.get("BodyType"), url])
-        URLs.append([r.get("Title"), r.get("Portfolio"), r.get("Entity"), url])
         NUMBER_OF_URLS += 1 # Increment the URL counter
 
-
-
 #Create a DataFrame from the URLs list and save it as a CSV file.
-df = pd.DataFrame(URLs, columns=["Title", "Portfolio", "Entity", "URL"]) # Create a DataFrame with specified columns.
 df2 = pd.DataFrame(URLs_with_details, columns=["Portfolio", "Entity", "Title","BodyType", "URL"])
+
 # df.to_csv("data/output/annual_reports_2023-242.csv", index=False) # Save the DataFrame to a CSV file.
-df2.to_csv("data/output/annual_reports_details2.csv", index=False) # Save the DataFrame to a CSV file. 
+df2.to_csv("data/output/ANUAL_REPORTS_FINAL.csv", index=False) # Save the DataFrame to a CSV file. 
 
 print(df2.head(10))
 

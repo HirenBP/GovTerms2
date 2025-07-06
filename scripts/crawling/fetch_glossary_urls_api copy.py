@@ -3,6 +3,10 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 from collections import defaultdict
+import logging
+
+# Setup logging
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 # -------------------------------------------------------------------
 # The following API is used by transparency.gov.au to power its search.
@@ -17,116 +21,107 @@ from collections import defaultdict
 # report metadata like titles, years, and slugs (used to build URLs).
 # -------------------------------------------------------------------
 
-# Set env variables
-load_dotenv()
+def fetch_api_batch(api_url, headers, payload):
+    try:
+        response = requests.post(api_url, headers=headers, json=payload)
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        logging.warning(f"Failed to fetch batch at skip={payload.get('skip', 0)}: {e}")
+        return None
 
-API_URL = os.getenv("API_URL")
-API_KEY = os.getenv("API_KEY")
-NUMBER_OF_URLS = 0 # Counter to keep track of the URLs constructed.
+def main():
+    # Set env variables
+    load_dotenv()
+    API_URL = os.getenv("API_URL")
+    API_KEY = os.getenv("API_KEY")
+    NUMBER_OF_URLS = 0
+    if not API_URL or not API_KEY:
+        raise ValueError("API_URL or API_KEY environment variable is not set or loaded.")
+    HEADERS = {
+        "Content-Type": "application/json",
+        "api-key": API_KEY,
+        "Accept": "application/json"
+    }
+    payload_template = {
+        "search": "*",
+        "highlight": "Content",
+        "searchMode": "all",
+        "orderby": "ReportingYear desc,ContentType,Entity",
+        "top": 1000,
+        "skip": 0,
+        "count": True,
+        "queryType": "simple"
+    }
+    all_results = []
+    batch_size = 1000
+    # Initial API request
+    json_data = fetch_api_batch(API_URL, HEADERS, payload_template)
+    if not json_data:
+        logging.error("Failed to fetch initial batch. Exiting.")
+        return
+    total_count = json_data.get('@odata.count', 0)
+    all_results.extend(json_data.get('value', []))
+    # Pagination
+    for skip in range(batch_size, total_count, batch_size):
+        payload_template["skip"] = skip
+        batch_data = fetch_api_batch(API_URL, HEADERS, payload_template)
+        if batch_data:
+            all_results.extend(batch_data.get('value', []))
+        logging.info(f"Fetched {len(all_results)} records so far...")
+    # Read the list of all agencies from the annual reports CSV
+    all_agencies_df = pd.read_csv(r'data\output\ANUAL_REPORTS_FINAL.csv', dtype=str)
+    all_agencies = set(all_agencies_df['Entity'].str.strip())
+    BASE_URL = "https://www.transparency.gov.au/publications"
+    keywords = ["glossary", "acronym", "abbreviation", "shortened terms", "shorterned"]
+    matching_entries = []
+    def safe_url_join(*parts):
+        url = "/".join(part.strip("/") for part in parts if part)
+        url = url.replace("https:/", "https://")
+        return url
+    for r in all_results:
+        if r.get("ReportingYear") == "2023-24":
+            section_title = (r.get("SectionTitle") or "").lower()
+            if any(k in section_title for k in keywords):
+                portfolio = r.get("PortfolioUrlSlug")
+                entity_slug = r.get("EntityUrlSlug")
+                tail = r.get("UrlSlug")
+                if portfolio and entity_slug and tail:
+                    url = safe_url_join(BASE_URL, portfolio, entity_slug, tail)
+                    matching_entries.append([r.get("Portfolio"), r.get("Entity"), r.get("BodyType"), url])
+    df = pd.DataFrame(matching_entries, columns=["Portfolio","Entity","BodyType","Url"])
+    logging.info(f'{len(matching_entries)} number of glossary urls extracted and saved')
+    # Aggregate URLs per Entity
+    entity_url_map = defaultdict(list)
+    entity_portfolio = {}
+    entity_bodytype = {}
+    for entry in matching_entries:
+        portfolio, entity, bodytype, url = entry
+        key = entity.strip() if entity else ''
+        if key:
+            entity_url_map[key].append(url)
+            entity_portfolio[key] = portfolio
+            entity_bodytype[key] = bodytype
+    max_urls = max((len(urls) for urls in entity_url_map.values()), default=1)
+    columns = ["Portfolio", "Entity", "BodyType"] + [f"url{i+1}" for i in range(max_urls)]
+    rows = []
+    for entity, urls in entity_url_map.items():
+        row = [entity_portfolio[entity], entity, entity_bodytype[entity]] + urls
+        row += [''] * (max_urls - len(urls))
+        rows.append(row)
+    os.makedirs(os.path.dirname(r'data/output/GLOSSARY_FINAL.csv'), exist_ok=True)
+    agg_df = pd.DataFrame(rows, columns=columns)
+    output_path = r'data/output/GLOSSARY_FINAL.csv'
+    agg_df.to_csv(output_path, index=False)
+    logging.info(f'Aggregated glossary/acronym URLs written to {output_path}')
+    agencies_with_keyword = set([entry[1].strip() for entry in matching_entries if entry[1]])
+    agencies_without_keyword = all_agencies - agencies_with_keyword
+    logging.info(f"\nSummary out of {len(all_agencies)} agencies:")
+    logging.info(f"- {len(agencies_with_keyword)} have at least one SectionTitle keyword match (glossary/acronym/abbreviation)")
+    logging.info(f"- {len(agencies_without_keyword)} have no SectionTitle keyword match")
+    output_path = r'data/output/GLOSSARY_FINAL2.csv'
+    df.to_csv(output_path, index=False)
+    logging.info(f'Filtered glossary/acronym URLs written to {output_path}')
 
-# HTTP header required for the API request.
-HEADERS = {
-    "Content-Type": "application/json",
-    "api-key": API_KEY,
-    "Accept": "application/json"
-}
-
-# Template for the API request payload
-payload_template = {
-    "search": "*",  # Search query (wildcard to fetch all results)
-    "highlight": "Content",  # Field to highlight in the search results
-    "searchMode": "all",  # Search mode (all terms must match)
-    "orderby": "ReportingYear desc,ContentType,Entity",  # Sorting order
-    "top": 10000,  # Number of results to fetch per batch
-    "skip": 0,  # Number of results to skip (used for pagination)
-    "count": True,  # Include the total count of results
-    "queryType": "simple"  # Query type (simple query syntax)
-}
-
-all_results = [] # List to store all fetched results.
-batch_size = 1000 # Number of records to fetch per batch.
-
-# Initial API request to fetch the first batch of results.
-response = requests.post(API_URL, headers=HEADERS, json=payload_template) # Send POST request to the API.
-json_data = response.json() # Parse JSON response
-total_count = json_data.get('@odata.count', 0) # Get the total number of results.
-all_results.extend(json_data.get('value', [])) # Add the fetched results to the list.
-if not API_URL or not API_KEY:
-    raise ValueError("API_URL or API_KEY environment variable is not set or loaded.")
-# Pagination: Fetch additional batches of results if total_count exceeds batch_size
-for skip in range(batch_size, total_count, batch_size):
-    payload_template["skip"] = skip  # Update the `skip` parameter for pagination
-    response = requests.post(API_URL, headers=HEADERS, json=payload_template)  # Send POST request for the next batch
-    if response.status_code == 200:  # Check if the request was successful
-        all_results.extend(response.json().get('value', []))  # Add the fetched results to the list
-    else:
-        print(f"⚠️ Failed to fetch batch at skip={skip}")  # Log an error if the request fails
-    print(f"🔄 Fetched {len(all_results)} records so far...")  # Log the progress
-
-# Read the list of all agencies from the annual reports CSV
-all_agencies_df = pd.read_csv('data/output/annual_reports_2023-24.csv')
-all_agencies = set(all_agencies_df['Entity'].str.strip())
-
-BASE_URL = "https://www.transparency.gov.au/publications"
-keywords = ["glossary", "acronym", "abbreviation", "shortened terms", "shorterned"]
-matching_entries = []
-
-# Filter + construct URLs
-for r in all_results:
-    if r.get("ReportingYear") == "2023-24":
-        section_title = (r.get("SectionTitle") or "").lower()
-        if any(k in section_title for k in keywords):
-            portfolio = r.get("PortfolioUrlSlug")
-            entity_slug = r.get("EntityUrlSlug")
-            tail = r.get("UrlSlug")
-            if portfolio and entity_slug and tail:
-                url = f"{BASE_URL}/{portfolio}/{entity_slug}/{tail}".replace("//", "/")
-                url = url.replace("https:/", "https://")
-                matching_entries.append([r.get("Portfolio"), r.get("Entity"), r.get("BodyType"), url])
-df = pd.DataFrame(matching_entries, columns=["Portfolio","Entity","BodyType","Url"])
-print(f'{len(matching_entries)} number of glossary urls extracted and saved')
-
-# Aggregate URLs per Entity
-entity_url_map = defaultdict(list)
-entity_portfolio = {}
-entity_bodytype = {}
-for entry in matching_entries:
-    portfolio, entity, bodytype, url = entry
-    key = entity.strip() if entity else ''
-    if key:
-        entity_url_map[key].append(url)
-        entity_portfolio[key] = portfolio
-        entity_bodytype[key] = bodytype
-
-# Prepare rows for CSV: one row per Entity, with url1, url2, ...
-max_urls = max((len(urls) for urls in entity_url_map.values()), default=1)
-columns = ["Portfolio", "Entity", "BodyType"] + [f"url{i+1}" for i in range(max_urls)]
-rows = []
-for entity, urls in entity_url_map.items():
-    row = [entity_portfolio[entity], entity, entity_bodytype[entity]] + urls
-    # Pad with empty strings if fewer than max_urls
-    row += [''] * (max_urls - len(urls))
-    rows.append(row)
-
-agg_df = pd.DataFrame(rows, columns=columns)
-output_path = 'data/output/glossary_sectiontitle_keyword_urls_agg.csv'
-agg_df.to_csv(output_path, index=False)
-print(f'Aggregated glossary/acronym URLs written to {output_path}')
-
-# --- Updated Summary Section ---
-# Agencies with at least one SectionTitle keyword match
-agencies_with_keyword = set([entry[1].strip() for entry in matching_entries if entry[1]])
-agencies_without_keyword = all_agencies - agencies_with_keyword
-
-print(f"\nSummary out of {len(all_agencies)} agencies:")
-print(f"- {len(agencies_with_keyword)} have at least one SectionTitle keyword match (glossary/acronym/abbreviation)")
-print(f"- {len(agencies_without_keyword)} have no SectionTitle keyword match")
-
-# Optionally, print lists for inspection
-#print(f"Agencies with keyword match: {sorted(agencies_with_keyword)}")
-#print(f"Agencies without keyword match: {sorted(agencies_without_keyword)}")
-
-# Save the filtered results
-output_path = 'data/output/glossary_sectiontitle_keyword_urls2.csv'
-df.to_csv(output_path, index=False)
-print(f'Filtered glossary/acronym URLs written to {output_path}')
+if __name__ == "__main__":
+    main()

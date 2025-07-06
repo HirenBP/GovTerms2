@@ -32,49 +32,48 @@ if not API_URL or not API_KEY:
 all_results = []
 batch_size = 1000
 
-# Initial request
-response = requests.post(API_URL, headers=HEADERS, json=payload)
-if response.status_code != 200:
-    print(f"API request failed with status code {response.status_code}")
-    print(response.text)
-    exit(1)
-
-data = response.json()
-total_count = data.get('@odata.count', 0)
-all_results.extend(data.get('value', []))
-
-# Pagination
-for skip in range(batch_size, total_count, batch_size):
-    payload["skip"] = skip
+def main():
+    # Initial request
     response = requests.post(API_URL, headers=HEADERS, json=payload)
-    if response.status_code == 200:
-        all_results.extend(response.json().get('value', []))
-        print(f"Fetched {len(all_results)} records so far...")
-    else:
-        print(f"Failed to fetch batch at skip={skip}")
+    if response.status_code != 200:
+        print(f"API request failed with status code {response.status_code}")
         print(response.text)
-        break
+        exit(1)
+    data = response.json()
+    total_count = data.get('@odata.count', 0)
+    all_results.extend(data.get('value', []))
 
-# Filter for 2023-24 records (do not restrict to annual_report)
-filtered = [r for r in all_results if r.get("ReportingYear") == "2023-24"]
+    # Pagination
+    for skip in range(batch_size, total_count, batch_size):
+        payload["skip"] = skip
+        response = requests.post(API_URL, headers=HEADERS, json=payload)
+        if response.status_code == 200:
+            all_results.extend(response.json().get('value', []))
+            print(f"Fetched {len(all_results)} records so far...")
+        else:
+            print(f"Failed to fetch batch at skip={skip}")
+            print(response.text)
+            break
+
+    # Filter for 2023-24 records (do not restrict to annual_report)
+    keywords = ["glossary", "acronym", "abbreviation", "shortened terms", "shorterned", "Aids to access", "abbreviations"]
+
+    filtered = [
+        r for r in all_results
+        if r.get("ReportingYear") == "2023-24"
+        and r.get("SectionTitle") is not None
+        and any(kw.lower() in r.get("SectionTitle").lower() for kw in keywords)
+    ]
+
+    
+    selected_keys = ["Entity", "SectionTitle"]
+
+    with open(r"C:\Users\hiren\PycharmProjects\GovTerms2\data\output\MYRAWDATA2.txt", "w") as file:
+        for r in filtered:
+            trimmed = {key: r.get(key) for key in selected_keys if key in r}
+            file.write(json.dumps(trimmed) + "\n")
 
 
-print("\nFiltered records with SectionTitle containing glossary/acronym/abbreviation/shortened term:")
-keywords = ["glossary", "acronym", "abbreviation", "shortened term"]
-for record in filtered:
-    section = (record.get('SectionTitle') or '').lower()
-    if any(k in section for k in keywords):
-        print(json.dumps(record, ensure_ascii=False, indent=2))
 
-# Save all records where ReportingYear is 2023-24 and SectionTitle contains a keyword
-output_records = []
-keywords = ["glossary", "acronym", "abbreviation", "shortened term"]
-for record in all_results:
-    if record.get("ReportingYear") == "2023-24":
-        section = (record.get('SectionTitle') or '').lower()
-        if any(k in section for k in keywords):
-            output_records.append(record)
-
-with open(r"C:\Users\hiren\PycharmProjects\GovTerms2\data\output\sectiontitle_keyword_records.txt", "w", encoding="utf-8") as file:
-    for record in output_records:
-        file.write(json.dumps(record, ensure_ascii=False) + "\n")
+if __name__ == "__main__":
+    main()

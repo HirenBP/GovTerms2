@@ -77,6 +77,7 @@ def format_glossary_line(line: str) -> str:
 
 def glossary_in_list(list_tag) -> dict:
     glossary_dict = {}
+    fallback_items = []
     for li in list_tag.find_all("li"):
         text = li.get_text(" ", strip=True)
         text = text.replace('\xa0', ' ')
@@ -90,11 +91,28 @@ def glossary_in_list(list_tag) -> dict:
         else:
             # Split on 3 or more whitespace (including tabs, spaces, etc.)
             parts = re.split(r'[ \t\u00A0]{3,}', text, maxsplit=1)
+            if len(parts) != 2:
+                # Fallback: split on 8+ spaces (for long-spaced glossaries)
+                parts = re.split(r'\s{8,}', text, maxsplit=1)
         if len(parts) == 2:
             term, definition = parts[0].strip(), parts[1].strip()
             if is_header_row(term, definition):
                 continue
             glossary_dict[term] = definition
+        else:
+            fallback_items.append(text)
+    # Fallback: if nothing extracted, try to pair short+long li's as term/definition
+    if not glossary_dict and len(fallback_items) > 1:
+        i = 0
+        while i < len(fallback_items) - 1:
+            term = fallback_items[i].strip()
+            definition = fallback_items[i+1].strip()
+            # Heuristic: term is short, definition is long
+            if len(term) < 40 and len(definition) > 40 and not is_header_row(term, definition):
+                glossary_dict[term] = definition
+                i += 2
+            else:
+                i += 1
     return glossary_dict
 
 def glossary_in_table(table) -> dict:
@@ -205,6 +223,22 @@ def glossary_in_paragraph(paragraphs) -> dict:
         i += 1
     return glossary_dict
 
+def glossary_in_h2_p(soup) -> dict:
+    # Fallback: extract <h2>Term</h2><p>Definition</p> pairs
+    glossary_dict = {}
+    h2s = soup.find_all('h2')
+    for h2 in h2s:
+        term = h2.get_text(" ", strip=True)
+        # Find next sibling <p>
+        next_tag = h2.find_next_sibling()
+        while next_tag and next_tag.name != 'p':
+            next_tag = next_tag.find_next_sibling()
+        if next_tag and next_tag.name == 'p':
+            definition = next_tag.get_text(" ", strip=True)
+            if term and definition and not is_header_row(term, definition):
+                glossary_dict[term] = definition
+    return glossary_dict
+
 class SmartGlossaryExtractor:
     def __init__(self):
         pass
@@ -228,7 +262,8 @@ class SmartGlossaryExtractor:
                     return (
                         div.find_elements(By.TAG_NAME, "table") or
                         div.find_elements(By.TAG_NAME, "p") or
-                        div.find_elements(By.TAG_NAME, "strong")
+                        div.find_elements(By.TAG_NAME, "strong") or
+                        div.find_elements(By.TAG_NAME, "h2")
                     )
                 except Exception:
                     return False
@@ -258,7 +293,8 @@ class SmartGlossaryExtractor:
                     for k in extracted:
                         extraction_sources[k] = 'table'
                     glossary_data.update(extracted)
-            return {"glossary": glossary_data, "sources": extraction_sources}
+            if glossary_data:
+                return {"glossary": glossary_data, "sources": extraction_sources}
         lists = soup.find_all(["ul", "ol"])
         if lists:
             for ul in lists:
@@ -267,7 +303,8 @@ class SmartGlossaryExtractor:
                     for k in extracted:
                         extraction_sources[k] = 'list'
                     glossary_data.update(extracted)
-            return {"glossary": glossary_data, "sources": extraction_sources}
+            if glossary_data:
+                return {"glossary": glossary_data, "sources": extraction_sources}
         paragraphs = soup.find_all("p")
         if paragraphs:
             extracted = glossary_in_paragraph(paragraphs)
@@ -275,6 +312,14 @@ class SmartGlossaryExtractor:
                 for k in extracted:
                     extraction_sources[k] = 'paragraph'
                 glossary_data.update(extracted)
+            if glossary_data:
+                return {"glossary": glossary_data, "sources": extraction_sources}
+        # Fallback: <h2>Term</h2><p>Definition</p> pairs
+        extracted = glossary_in_h2_p(soup)
+        if extracted:
+            for k in extracted:
+                extraction_sources[k] = 'h2+p'
+            glossary_data.update(extracted)
         return {"glossary": glossary_data, "sources": extraction_sources}
 
 def main():
@@ -295,9 +340,13 @@ def main():
     }
     output_dir = os.path.join('C:', 'Users', 'hiren', 'PycharmProjects', 'GovTerms2', 'data', 'output')
     os.makedirs(output_dir, exist_ok=True)
+    all_output_path = os.path.join(output_dir, "all_glossaries_retry.txt")
+    log_output_path = os.path.join(output_dir, "extraction_log_retry.txt")
     df = pd.read_csv(r'C:\Users\hiren\PycharmProjects\GovTerms2\data\output\glossary_sectiontitle_keyword_urls_agg.csv')
     url_columns = [col for col in df.columns if col.startswith('url')]
     extractor = SmartGlossaryExtractor()
+    output_lines = []
+    log_lines = []
     for idx, row in df.iterrows():
         entity = row['Entity']
         if entity not in retry_entities:
@@ -317,16 +366,26 @@ def main():
             if url_used_for_log is None:
                 url_used_for_log = url
             time.sleep(2)
-        print(f"Entity: {entity} | Portfolio: {portfolio}")
+        output_lines.append(f"Entity: {entity} | Portfolio: {portfolio}\n")
         if all_terms:
             for term, definition in all_terms.items():
                 method = all_sources.get(term, 'unknown')
-                print(f"  [{method}] {term}: {definition}")
-            print()
+                output_lines.append(f"  [{method}] {term}: {definition}\n")
+            output_lines.append("\n")
         else:
-            print("  No terms extracted.\n")
+            output_lines.append(f"  No terms extracted.\n\n")
         num_terms = len(all_terms)
+        if num_terms < 5:
+            log_lines.append(f"{entity}\t{num_terms}\t{url_used_for_log if url_used_for_log else ''}\n")
+        else:
+            log_lines.append(f"{entity}\t{num_terms}\n")
         print(f"[RESULT] {entity}: {num_terms} terms extracted\n")
+    with open(all_output_path, 'w', encoding='utf-8') as f:
+        f.writelines(output_lines)
+    print(f"[LOG] All glossary extractions written to {all_output_path}")
+    with open(log_output_path, 'w', encoding='utf-8') as f:
+        f.writelines(log_lines)
+    print(f"[LOG] Extraction log written to {log_output_path}")
 
 if __name__ == "__main__":
     main()
