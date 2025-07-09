@@ -73,7 +73,6 @@ def main():
     urls = [
         r'https://www.pmc.gov.au/resources/abbreviations-and-acronyms-groups-or-topics',
         r'https://www.rba.gov.au/glossary/',
-        r''
         # Add more URLs as needed
     ]
     all_results = {}

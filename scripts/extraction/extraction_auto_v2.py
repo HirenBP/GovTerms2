@@ -298,7 +298,7 @@ def main():
         else:
             log_lines.append(f"{entity}\t{num_terms}\n")
     # Write all output to one text file
-    all_output_path = os.path.join(output_dir, "all_glossaries.txt")
+    all_output_path = os.path.join(output_dir, "Glossaries_From_AR.txt")
     with open(all_output_path, 'w', encoding='utf-8') as f:
         f.writelines(output_lines)
     print(f"[LOG] All glossary extractions written to {all_output_path}")
