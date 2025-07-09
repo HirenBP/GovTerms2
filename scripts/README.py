@@ -9,7 +9,8 @@ Directory Structure:
 
 scripts/
 ├── extraction/
-│   └── selenium_json.py          # Main web scraping and extraction logic
+│   ├── extractor.py              # Glossary extraction utilities
+│   └── run_extractor.py          # Example driver script
 ├── crawling/
 │   ├── fetch_annual_report_urls_api.py   # Fetch annual report URLs
 │   └── fetch_glossary_urls_api.py        # Fetch glossary URLs

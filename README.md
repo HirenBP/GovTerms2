@@ -65,7 +65,8 @@ GovTerms2/
 - `fetch_glossary_urls_api.py` - Finds glossary pages within reports
 
 ### Extraction Scripts (`scripts/extraction/`)
-- `selenium_json.py` - Extracts glossary content using Selenium WebDriver
+- `extractor.py` - Glossary extraction utilities
+- `run_extractor.py` - Example script that pulls glossary terms
 
 ---
 
@@ -107,7 +108,7 @@ python scripts/crawling/fetch_annual_report_urls_api.py
 python scripts/crawling/fetch_glossary_urls_api.py
 
 # Extract glossary content
-python scripts/extraction/selenium_json.py
+python scripts/extraction/run_extractor.py
 ```
 
 ### 5. Run analysis scripts (optional)
