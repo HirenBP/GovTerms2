@@ -8,3 +8,5 @@ data\glossary_output.json
 data\individual_results.json
 .idea/
 .vscode/
+Users/
+scripts/crawling/__pycache__/
