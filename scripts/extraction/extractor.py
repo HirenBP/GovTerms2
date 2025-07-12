@@ -78,28 +78,7 @@ def get_silent_chrome_driver():
         print(f"Error initializing WebDriver: {e}")
         # Potentially log the error to a file if you want to debug without terminal output
         return None
-def get_silent_chrome_driver():
-    logging.getLogger('selenium').setLevel(logging.WARNING) # Or logging.ERROR, logging.CRITICAL
 
-    options = Options() # Use Options from selenium.webdriver.chrome.options import Options
-    options.add_argument("--headless")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--log-level=3")
-    options.add_experimental_option("excludeSwitches", ["enable-logging"])
-
-    # This handles ChromeDriver's direct output, but not the browser's early output
-    service = Service(log_path=os.devnull)
-
-    try:
-        driver = webdriver.Chrome(service=service, options=options)
-        return driver
-    except Exception as e:
-        # If you redirect all output, you won't see this error in the terminal
-        # You'd need to log it to a file instead.
-        # print(f"Error initializing WebDriver: {e}") # This print won't show
-        return None
 
 def is_header_row(term: str, definition: str, SKIP_WORDS: set, HEADER_PATTERNS: list) -> bool:
     t = term.strip().lower()
