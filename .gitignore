@@ -2,4 +2,6 @@
 .idea
 .venv
 Govterms2.code-workspace
-data\archive
+data/archive
+scripts/crawling/__pycache__
+scripts/extraction/__pycache__
