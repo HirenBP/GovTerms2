@@ -47,7 +47,6 @@ final_entries = []
 for entity, entries in entity_to_urls.items():
     # Count number of "/" in each url
     entries_with_slash_count = [(entry, entry[3].count("/")) for entry in entries]
-    # Sort by slash count descending
     entries_sorted = sorted(entries_with_slash_count, key=lambda x: x[1], reverse=True)
     if len(entries_sorted) == 1:
         # Only one URL, keep it
@@ -60,9 +59,11 @@ for entity, entries in entity_to_urls.items():
         else:
             final_entries.append(entries_sorted[0][0])
     else:
-        # More than two URLs, keep top two with most slashes
-        final_entries.append(entries_sorted[0][0])
-        final_entries.append(entries_sorted[1][0])
+        # More than two URLs, keep all with the maximum number of slashes
+        max_slash = entries_sorted[0][1]
+        for entry, count in entries_sorted:
+            if count == max_slash:
+                final_entries.append(entry)
 
 output_path = r"data/output/FINAL_GLOSSARY_URLS.csv"
 output_path2 = r"data/output/GLOSSARY_ENTITIES.txt"
@@ -77,7 +78,8 @@ with open(output_path, "w", encoding="utf-8", newline="") as f:
 
 with open(output_path2, "w", encoding="utf-8") as f:
     for entry in sorted(unique_entities):
-        f.write(entry + "\n")
+        url_count = len(entity_to_urls[entry])
+        f.write(f"{entry} ({url_count} urls)\n")
 
 print(f"Results written to {output_path}")
 print(f"Number of urls extracted: {len(final_entries)}")
