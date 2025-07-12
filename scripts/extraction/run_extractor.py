@@ -38,7 +38,7 @@ def main():
     print("[DEBUG] About to read CSV", flush=True)
     df = pd.read_csv(r"data/output/FINAL_GLOSSARY_URLS.csv")
     print(f"[DEBUG] Read {len(df)} rows from CSV", flush=True)
-    rows = df.head(5).to_dict(orient="records")
+    rows = df.to_dict(orient="records")
     log_lines.append(f"[INFO] Extraction started. Processing {len(rows)} URLs.")
 
     results = []
@@ -50,7 +50,7 @@ def main():
         else:
             log_lines.append(f"[SUCCESS] {res['entity']} | {res['url']} | {res['num_terms']} terms")
 
-    with open(r"data/output/test_glossary.txt", "w", encoding="utf-8") as file:
+    with open(r"data/output/test_glossary_single.txt", "w", encoding="utf-8") as file:
         for res in results:
             file.write(f"Entity: {res['entity']} |")
             file.write(f"Extraction Source: {res['extraction_source']} |")
@@ -65,7 +65,7 @@ def main():
     elapsed = end_time - start_time
     log_lines.append(f"[INFO] Extraction finished. Elapsed time: {elapsed:.2f} seconds ({elapsed/60:.2f} minutes)")
 
-    with open(r"data/output/extraction_log.txt", "w", encoding="utf-8") as logfile:
+    with open(r"data/output/extraction_log_single.txt", "w", encoding="utf-8") as logfile:
         for line in log_lines:
             logfile.write(line + "\n")
     print(f"Extraction complete. Elapsed time: {elapsed:.2f} seconds. See data/output/extraction_log.txt for details.")
