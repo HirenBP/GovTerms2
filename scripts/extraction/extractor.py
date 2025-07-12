@@ -1,15 +1,22 @@
 """Utility module for extracting glossary terms from transparency.gov.au."""
 
+
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
+from bs4.element import Tag
 import re
+from typing import Dict, List, Set, Pattern, Optional, Tuple
+import os
+import logging
+import sys
 
-SKIP_WORDS = {
+DEFAULT_SKIP_WORDS = {
     "acronym", "meaning", "term, acronym or abbreviation", "description or complete term", "copy link", "glossary",
     "Term", "Description", "term", "description", "definition", "abbreviation", "explanation", "expansion/meaning",
     "specialist term", "acronym/specialist term", "expansion", "explanation/meaning", "term acronym",
@@ -17,7 +24,7 @@ SKIP_WORDS = {
     "term acronym: description / definition",
 }
 
-HEADER_PATTERNS = [
+DEFAULT_HEADER_PATTERNS = [
     re.compile(r"^term.*acronym.*description.*definition$", re.I),
     re.compile(r"^abbreviation.*explanation$", re.I),
     re.compile(r"^acronym/specialist term.*expansion/meaning$", re.I),
@@ -29,7 +36,74 @@ HEADER_PATTERNS = [
     re.compile(r"^description / definition$", re.I),
 ]
 
-def is_header_row(term, definition):
+# --- Start of redirection ---
+# Save the original stdout and stderr
+original_stdout = sys.stdout
+original_stderr = sys.stderr
+
+# Open /dev/null (or equivalent on Windows) for writing
+# 'w' mode is important for creating the file if it doesn't exist (though /dev/null always exists)
+devnull = open(os.devnull, 'w')
+
+# Redirect stdout and stderr
+sys.stdout = devnull
+sys.stderr = devnull
+# --- End of redirection ---
+
+def get_silent_chrome_driver():
+    # 1. Suppress Selenium Python Client Logs
+    # This sets the logging level for the selenium library itself
+    logging.getLogger('selenium').setLevel(logging.WARNING) # Or logging.ERROR, logging.CRITICAL
+
+    # 2. Configure Chrome Options for Browser-level logs
+    options = Options()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")  # Recommended for headless on some systems
+    options.add_argument("--no-sandbox")   # Required for running as root in some environments (e.g., Docker)
+    options.add_argument("--disable-dev-shm-usage") # Overcomes limited resource problems
+    options.add_argument("--log-level=3")  # Suppress Chrome's internal logging (INFO, WARNING, ERROR messages)
+    options.add_experimental_option("excludeSwitches", ["enable-logging"]) # Disable default logging to console
+
+    # 3. Configure ChromeDriver Service for ChromeDriver logs
+    # Redirect ChromeDriver's stdout and stderr to os.devnull
+    service = Service(log_path=os.devnull)
+
+    # You can also try setting an environment variable for ChromeDriver
+    # os.environ['WDM_LOG_LEVEL'] = '0' # For webdriver-manager logs, if you're using it
+
+    try:
+        driver = webdriver.Chrome(service=service, options=options)
+        return driver
+    except Exception as e:
+        print(f"Error initializing WebDriver: {e}")
+        # Potentially log the error to a file if you want to debug without terminal output
+        return None
+def get_silent_chrome_driver():
+    logging.getLogger('selenium').setLevel(logging.WARNING) # Or logging.ERROR, logging.CRITICAL
+
+    options = Options() # Use Options from selenium.webdriver.chrome.options import Options
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--log-level=3")
+    options.add_experimental_option("excludeSwitches", ["enable-logging"])
+
+    # This handles ChromeDriver's direct output, but not the browser's early output
+    service = Service(log_path=os.devnull)
+
+    try:
+        driver = webdriver.Chrome(service=service, options=options)
+        return driver
+    except Exception as e:
+        # If you redirect all output, you won't see this error in the terminal
+        # You'd need to log it to a file instead.
+        # print(f"Error initializing WebDriver: {e}") # This print won't show
+        return None
+
+def is_header_row(term: str, definition: str, SKIP_WORDS: set, HEADER_PATTERNS: list) -> bool:
+    t = term.strip().lower()
+    d = definition.strip().lower()
     t = term.strip().lower()
     d = definition.strip().lower()
     if t in SKIP_WORDS or d in SKIP_WORDS:
@@ -50,7 +124,7 @@ def format_glossary_line(line: str) -> str:
             new_line = f"{parts[0]}: {parts[1]}"
     return new_line
 
-def glossary_in_list(list_tag) -> dict:
+def glossary_in_list(list_tag: Tag, SKIP_WORDS: Set[str], HEADER_PATTERNS: List[Pattern]) -> Dict[str, str]:
     glossary_dict = {}
     for li in list_tag.find_all("li"):
         text = li.get_text(" ", strip=True)
@@ -65,19 +139,19 @@ def glossary_in_list(list_tag) -> dict:
             parts = re.split(r'[ \t\u00A0]{3,}', text, maxsplit=1)
         if len(parts) == 2:
             term, definition = parts[0].strip(), parts[1].strip()
-            if is_header_row(term, definition):
+            if is_header_row(term, definition, SKIP_WORDS, HEADER_PATTERNS):
                 continue
             glossary_dict[term] = definition
     return glossary_dict
 
-def glossary_in_table(table) -> dict:
+def glossary_in_table(table: Tag, SKIP_WORDS: Set[str], HEADER_PATTERNS: List[Pattern]) -> Dict[str, str]:
     glossary_dict = {}
     for row in table.find_all("tr"):
         cells = row.find_all(["td", "th"])
         cell_texts = [cell.get_text(" ", strip=True).replace('\xa0', ' ') for cell in cells]
         if len(cell_texts) >= 2:
             term, definition = cell_texts[0], cell_texts[1]
-            if len(term) == 1 or is_header_row(term, definition):
+            if len(term) == 1 or is_header_row(term, definition, SKIP_WORDS, HEADER_PATTERNS):
                 continue
             glossary_dict[term] = definition
         elif len(cell_texts) == 1:
@@ -85,12 +159,66 @@ def glossary_in_table(table) -> dict:
             parts = line.split(':', 1)
             if len(parts) == 2:
                 term, definition = parts[0].strip(), parts[1].strip()
-                if len(term) == 1 or is_header_row(term, definition):
+                if len(term) == 1 or is_header_row(term, definition, SKIP_WORDS, HEADER_PATTERNS):
                     continue
                 glossary_dict[term] = definition
     return glossary_dict
 
-def glossary_in_paragraph(paragraphs) -> dict:
+def extract_term_definition_from_strong_paragraph(paragraphs, i, SKIP_WORDS):
+    """
+    Helper to extract a (term, definition) pair from a <p> with <strong> or <b> tag, possibly using the next <p> as the definition.
+    Returns (term, definition, new_index) or (None, None, i+1) if not found.
+    """
+    p = paragraphs[i]
+    strong = p.find("strong") or p.find("b")
+    text = p.get_text(" ", strip=True).replace('\xa0', ' ')
+    abbr = strong.get_text(" ", strip=True)
+    rest = text.replace(abbr, "", 1).strip()
+    # If this <p> is just the term, and next <p> is definition
+    if not rest and (i + 1) < len(paragraphs):
+        next_p = paragraphs[i + 1]
+        next_text = next_p.get_text(" ", strip=True).replace('\xa0', ' ')
+        next_strong = next_p.find("strong") or next_p.find("b")
+        if next_text and not next_strong and next_text.lower() not in SKIP_WORDS:
+            definition = re.sub(r'^\s*:+\s*', '', next_text)
+            definition = re.sub(r'^:+', ':', definition)
+            return abbr, definition, i + 2
+    # Otherwise, handle <p><strong>Term</strong> definition</p>
+    if abbr.lower() not in SKIP_WORDS and len(abbr) > 1 and rest:
+        rest = re.sub(r'^\s*:+\s*', '', rest)
+        rest = re.sub(r'^:+', ':', rest)
+        return abbr, rest, i + 1
+    return None, None, i + 1
+
+def extract_term_definition_from_plain_paragraph(text, SKIP_WORDS):
+    """
+    Helper to extract a (term, definition) pair from a plain <p> tag using various splitting strategies.
+    Returns (term, definition) or (None, None) if not found.
+    """
+    # Try splitting by 3+ spaces first
+    parts = re.split(r'\s{3,}', text, maxsplit=1)
+    if len(parts) == 2:
+        return parts[0].strip(), parts[1].strip()
+    # Try splitting by colon
+    parts = text.split(':', 1)
+    if len(parts) == 2:
+        return parts[0].strip(), parts[1].strip()
+    # Try splitting by en dash (–) only if surrounded by spaces
+    parts = re.split(r'\s+–\s+', text, maxsplit=1)
+    if len(parts) == 2:
+        return parts[0].strip(), parts[1].strip()
+    return None, None
+
+def glossary_in_paragraph(
+    paragraphs: List[Tag], SKIP_WORDS: Set[str], HEADER_PATTERNS: List[Pattern]
+) -> Dict[str, str]:
+    """
+    Extract glossary terms and definitions from a list of <p> tags.
+    Handles paragraphs with <strong>/<b> tags as terms, and various splitting strategies for plain paragraphs.
+    Returns a dictionary of term: definition pairs.
+    """
+    glossary_dict = {}
+    i = 0
     glossary_dict = {}
     i = 0
     while i < len(paragraphs):
@@ -101,66 +229,53 @@ def glossary_in_paragraph(paragraphs) -> dict:
             i += 1
             continue
         if strong:
-            abbr = strong.get_text(" ", strip=True)
-            rest = text.replace(abbr, "", 1).strip()
-            if not rest and (i + 1) < len(paragraphs):
-                next_p = paragraphs[i + 1]
-                next_text = next_p.get_text(" ", strip=True).replace('\xa0', ' ')
-                next_strong = next_p.find("strong") or next_p.find("b")
-                if next_text and not next_strong and next_text.lower() not in SKIP_WORDS:
-                    definition = re.sub(r'^\s*:+\s*', '', next_text)
-                    definition = re.sub(r'^:+', ':', definition)
-                    if abbr.lower() not in SKIP_WORDS and len(abbr) > 1 and not is_header_row(abbr, definition):
-                        glossary_dict[abbr] = definition
-                    i += 2
-                    continue
-            if abbr.lower() not in SKIP_WORDS and len(abbr) > 1 and not is_header_row(abbr, rest):
-                rest = re.sub(r'^\s*:+\s*', '', rest)
-                rest = re.sub(r'^:+', ':', rest)
-                glossary_dict[abbr] = rest
+            # Try to extract from <strong>/<b> paragraph
+            term, definition, new_i = extract_term_definition_from_strong_paragraph(paragraphs, i, SKIP_WORDS)
+            if term and definition and not is_header_row(term, definition, SKIP_WORDS, HEADER_PATTERNS):
+                glossary_dict[term] = definition
+            i = new_i
+            continue
         else:
-            parts = re.split(r'\s{3,}', text, maxsplit=1)
-            if len(parts) == 2:
-                term, definition = parts[0].strip(), parts[1].strip()
-                if is_header_row(term, definition) or len(term) == 1:
-                    i += 1
-                    continue
+            # Try to extract from plain paragraph
+            term, definition = extract_term_definition_from_plain_paragraph(text, SKIP_WORDS)
+            if term and definition and not is_header_row(term, definition, SKIP_WORDS, HEADER_PATTERNS) and len(term) > 1:
                 definition = re.sub(r'^\s*:+\s*', '', definition)
                 definition = re.sub(r'^:+', ':', definition)
                 glossary_dict[term] = definition
-            else:
-                parts = text.split(':', 1)
-                if len(parts) == 2:
-                    term, definition = parts[0].strip(), parts[1].strip()
-                    if is_header_row(term, definition) or len(term) == 1:
-                        i += 1
-                        continue
-                    definition = re.sub(r'^\s*:+\s*', '', definition)
-                    definition = re.sub(r'^:+', ':', definition)
-                    glossary_dict[term] = definition
-                else:
-                    parts = re.split(r'\s+–\s+', text, maxsplit=1)
-                    if len(parts) == 2:
-                        term, definition = parts[0].strip(), parts[1].strip()
-                        if is_header_row(term, definition) or len(term) == 1:
-                            i += 1
-                            continue
-                        definition = re.sub(r'^\s*:+\s*', '', definition)
-                        definition = re.sub(r'^:+', ':', definition)
-                        glossary_dict[term] = definition
         i += 1
     return glossary_dict
 
 class GlossaryExtractor:
-    def __init__(self):
-        pass
+    """
+    Extracts glossary terms and definitions from transparency.gov.au annual report pages.
+    Uses Selenium to load the page and BeautifulSoup to parse the content.
+    Provides methods to extract from tables, lists, and paragraphs.
+    """
+    def __init__(
+        self,
+        skip_words: Optional[Set[str]] = None,
+        header_patterns: Optional[List[Pattern]] = None
+    ):
+        """
+        Initializes the GlossaryExtractor.
+        Args:
+            skip_words (Optional[Set[str]]): Custom set of words to skip. If None, uses default.
+            header_patterns (Optional[List[Pattern]]): Custom header patterns. If None, uses default.
+        """
+        self.SKIP_WORDS = skip_words if skip_words is not None else DEFAULT_SKIP_WORDS
+        self.HEADER_PATTERNS = header_patterns if header_patterns is not None else DEFAULT_HEADER_PATTERNS
 
     def setup_driver(self) -> webdriver.Chrome:
-        options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
-        return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-
+        driver = get_silent_chrome_driver()
+        return driver
     def extract_from_url(self, url: str) -> dict:
+        """
+        Loads the given URL, waits for the main content div, and extracts glossary data.
+        Args:
+            url (str): The URL to extract from.
+        Returns:
+            dict: A dictionary with 'glossary' and 'sources' keys.
+        """
         driver = self.setup_driver()
         try:
             driver.get(url)
@@ -194,13 +309,20 @@ class GlossaryExtractor:
         finally:
             driver.quit()
 
-    def smart_extract_glossary(self, soup) -> dict:
-        glossary_data = {}
-        extraction_sources = {}
+    def smart_extract_glossary(self, soup: BeautifulSoup) -> dict:
+        """
+        Attempts to extract glossary data from the parsed HTML using tables, lists, then paragraphs.
+        Args:
+            soup (BeautifulSoup): Parsed HTML soup.
+        Returns:
+            dict: A dictionary with 'glossary' and 'sources' keys.
+        """
+        glossary_data: Dict[str, str] = {}
+        extraction_sources: Dict[str, str] = {}
         tables = soup.find_all("table")
         if tables:
             for table in tables:
-                extracted = glossary_in_table(table)
+                extracted = glossary_in_table(table, self.SKIP_WORDS, self.HEADER_PATTERNS)
                 if extracted:
                     for k in extracted:
                         extraction_sources[k] = 'table'
@@ -209,7 +331,7 @@ class GlossaryExtractor:
         lists = soup.find_all(["ul", "ol"])
         if lists:
             for ul in lists:
-                extracted = glossary_in_list(ul)
+                extracted = glossary_in_list(ul, self.SKIP_WORDS, self.HEADER_PATTERNS)
                 if extracted:
                     for k in extracted:
                         extraction_sources[k] = 'list'
@@ -217,7 +339,7 @@ class GlossaryExtractor:
             return {"glossary": glossary_data, "sources": extraction_sources}
         paragraphs = soup.find_all("p")
         if paragraphs:
-            extracted = glossary_in_paragraph(paragraphs)
+            extracted = glossary_in_paragraph(paragraphs, self.SKIP_WORDS, self.HEADER_PATTERNS)
             if extracted:
                 for k in extracted:
                     extraction_sources[k] = 'paragraph'
