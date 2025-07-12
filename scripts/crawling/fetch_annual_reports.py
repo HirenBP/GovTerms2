@@ -18,6 +18,6 @@ for r in results:
 df2 = pd.DataFrame(URLS_with_details, columns=["Portfolio", "Entity", "Title","BodyType", "URL"])
 
 # df.to_csv("data/output/annual_reports_2023-242.csv", index=False) # Save the DataFrame to a CSV file.
-df2.to_csv("data/output/ANNUAL_REPORTS.csv", index=False) # Save the DataFrame to a CSV file. 
+df2.to_csv("data/output/FINAL_ANNUAL_REPORTS.csv", index=False) # Save the DataFrame to a CSV file. 
 
 print(f'✅ Total URLs fetched: {len(URLS_with_details)}') # Log the total number of URLS fetched.      
