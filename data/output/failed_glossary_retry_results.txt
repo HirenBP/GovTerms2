@@ -1,0 +1,1366 @@
+Entity: Australian Broadcasting Corporation | Number of Terms: 14
+Url: https://www.transparency.gov.au/publications/communications-and-the-arts/australian-broadcasting-corporation/australian-broadcasting-corporation-annual-report-2023-24/abbreviations-list
+ABC ID: ABC International Development
+ABC IBDS: International Broadcast and Digital Services
+ACMA: Australian Communications and Media Authority
+AI: artificial intelligence
+BVOD: broadcaster video-on-demand
+CALD: culturally and linguistically diverse
+DAB+: digital audio broadcasting plus
+GST: Goods and Services Tax
+NBC: National Broadcasting Corporation
+PGPA Act: Public Governance, Performance and Accountability Act 2013 (Cth)
+PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+PBS: Portfolio Budget Statements
+PSM: public-service media
+SSA: Sustainable Screens Australia
+
+Entity: Australian National Audit Office | Number of Terms: 37
+Url: https://www.transparency.gov.au/publications/prime-minister-and-cabinet/australian-national-audit-office/australian-national-audit-office-annual-report-2023-24/abbreviations-and-acronyms
+ACAG: Australasian Council of Auditors-General
+AGD: Attorney-General’s Department
+ANAO: Australian National Audit Office
+APES: accounting professional and ethical standard
+APS: Australian Public Service
+ASIC: Australian Securities and Investments Commission
+ASOSAI: Asian Organization of Supreme Audit Institutions
+ASQM: Australian standard on quality management
+BPK: Badan Pemeriksa Keuangan [Republik Indonesia] (Audit Board of the Republic of Indonesia)
+CA ANZ: Chartered Accountants Australia and New Zealand
+CFO: chief financial officer
+CPA: certified practising accountant
+DAFF: Department of Agriculture, Fisheries and Forestry
+DISR: Department of Industry, Science and Resources
+DITRDCA: Department of Infrastructure, Transport, Regional Development, Communications and the Arts
+DSS: Department of Social Services
+DVA: Department of Veterans’ Affairs
+EPBC: Act Environment Protection and Biodiversity Conservation Act 1999
+FIPP: Forum for INTOSAI Professional Pronouncements
+FOI: Act Freedom of Information Act 1982
+FSASG: Financial Statements Audit Services Group
+GST: goods and services tax
+ICT: information and communications technology
+INTOSAI: International Organization of Supreme Audit Institutions
+ISO: International Organization for Standardization
+JCPAA: Joint Committee of Public Accounts and Audit
+NABERS: National Australian Built Environment Rating System
+PASAI: Pacific Association of Supreme Audit Institutions
+PASG: Performance Audit Services Group
+PGPA: Act Public Governance, Performance and Accountability Act 2013
+PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+PNG AGO: Papua New Guinea Auditor-General’s Office
+Prospera: Australia–Indonesia Partnership for Economic Development
+SAI: supreme audit institution
+SES: Senior Executive Service
+SME: small and medium-sized enterprise
+WHS: work health and safety
+
+Entity: Attorney-General's Department | Number of Terms: 32
+Url: https://www.transparency.gov.au/publications/attorney-general-s/attorney-generals-department/attorney-general-s-department-annual-report-2023-24/glossary-of-abbreviations-and-acronyms
+AAO: Administrative Arrangements Order
+AASB: Australian Accounting Standards Board
+AGLS: Australian Government Legal Service
+AGS: Australian Government Solicitor
+ALEX: AGD Learning Experience
+ANAO: Australian National Audit Office
+ARMC: Audit and Risk Management Committee
+CALD: Culturally and Linguistically Diverse
+CDDA: Caused by Defective Administration
+CRF: Revenue Fund
+CSS: Commonwealth Superannuation Scheme
+DCB: Departmental Capital Budgets
+FCA: Fellow of Chartered Accounts Australia and New Zealand
+FVTPL: Fair value through profit or loss
+ICC: International Criminal Court
+ICT: Information and Communications Technology
+IDAHOBIT: International Day of Elimination of Violence against Women, International Transgender Day of Visibility and International Day Against Homophobia, Biphobia, Intersexism and Transphobia
+LGBTQIA+SB: Lesbian, gay, bisexual, transgender, queer, intersex, asexual, sistergirl and brotherboy
+MAEP: Multicultural Access and Equity Policy
+NLAP: National Legal Assistance Partnership 2020–25
+OPA: Official Public Account
+PBS: Portfolio Budget Statements
+PFAS: Per- and polyfluoroalkyl substances
+PJCHR: Parliamentary Joint Committee on Human Rights
+PSS: Public Sector Superannuation Scheme
+PSSC: Performance Statement Sub-Committee
+PGPA: Public Governance, Performance and Accountability Act 2013
+PTC: Pre-Trial Chamber
+RCDVS: Royal Commission into Defence and Veteran Suicide
+RDR: Reduced disclosure requirements
+ROU: Right-of-use
+SPPI: Solely payments of principal and interest
+
+Entity: Commonwealth Superannuation Corporation (CSC) | Number of Terms: 47
+Url: https://www.transparency.gov.au/publications/finance/commonwealth-superannuation-corporation-csc/commonwealth-superannuation-corporation-annual-report-2023-24/10.-glossary
+ABN: Australian Business Number
+ACTU: Australian Council of Trade Unions
+ADF: Australian Defence Force
+ADF Cover: Australian Defence Force Cover
+ADF Cover Act: Australian Defence Force Cover Act 2015
+ADF Super: Australian Defence Force Superannuation
+ADF Super Act: Australian Defence Force Superannuation Act 2015
+AFS licence: Australian Financial Services licence
+APRA: Australian Prudential Regulation Authority
+APS: Australian Public Sector
+ARIA: Australian Reward Investment Alliance
+ASFA: Association of Superannuation Funds of Australia
+AUM: Assets under management, sometimes called funds under management (FUM), measures the total market value of all financial assets which a financial institution, such as a mutual fund, venture capital firm, or brokerage house, manages on behalf of its client and themselves
+CEO: Chief Executive Officer
+CIO: Chief Investment Officer
+CPI: Consumer Price Index
+CPSU: Community and Public Sector Union
+CSC: Commonwealth Superannuation Corporation
+CSCri: Commonwealth Superannuation Corporation retirement income
+CSS: Commonwealth Superannuation Scheme
+CSS Act: Superannuation Act 1976
+DFRB: Defence Forces Retirement Benefits Scheme
+DFRB Act: Defence Forces Retirement Benefits Act 1948
+DFRDB: Defence Force Retirement and Death Benefits Scheme
+DFRDB Act: Defence Force Retirement and Death Benefits Act 1973
+DFSPB: Defence Force (Superannuation) (Productivity Benefit) Determination 1988
+ESG: Environmental, social and governance
+GAGSS Act: Governance of Australian Government Superannuation Scheme Act 2011
+IFS: Industry Fund Services
+IP: Income protection
+JTA: Joint Transition Authority
+MilitarySuper: Military Superannuation and Benefits Scheme, Military Superannuation and Benefits Scheme Act 1991
+NPS: Net Promoter Score
+PDS: Product Disclosure Statement
+PGPA Act: Public Governance, Performance and Accountability Act 2013
+PNG Act: Papua New Guinea (Staffing Assistance) Act 1973
+PNG Scheme: Papua New Guinea Scheme
+PRI: Principles for Responsible Investment
+PSS: Public Sector Superannuation Scheme
+PSS Act: Superannuation Act 1990
+PSSap: Public Sector Superannuation accumulation plan
+PSSap Act: Superannuation Act 2005
+RSE: Registrable Superannuation Entity
+RSEL: Registered Superannuation Entity licence
+SIS Act: Superannuation Industry (Supervision) Act 1993
+TPD: Total and permanent disability
+1922 Act: Superannuation Act 1922
+
+Entity: Department of Foreign Affairs and Trade | Number of Terms: 65
+Url: https://www.transparency.gov.au/publications/foreign-affairs-and-trade/department-of-foreign-affairs-and-trade/department-of-foreign-affairs-and-trade-annual-report-2023-24/abbreviations-and-acronyms
+ADF: Asian Development Fund
+ADI: Australian Development Investments
+ANAO: Australian National Audit Office
+APO: Australian Passport Office
+APS: Australian Public Service
+ARC: Audit and Risk Committee
+ASEAN: Association of Southeast Asian Nations
+ASNO: Australian Safeguards and Non-Proliferation Office
+ASO: Australian Sanctions Office
+AUKUS: Australia – United Kingdom – United States [security partnership]
+AWP: Australian Water Partnership
+CEC: Consular Emergency Centre
+CO 2 -e: carbon dioxide equivalent
+COP: Conference of the Parties
+CSA: Comprehensive Safeguards Agreement
+CWC: Chemical Weapons Convention
+DAFF: Department of Agriculture, Fisheries and Forestry
+DEWR: Department of Employment and Workplace Relations
+DFAT: Department of Foreign Affairs and Trade
+EFA: Export Finance Australia
+ESCAP: Economic and Social Commission for Asia and the Pacific
+FAO: Food and Agriculture Organization
+FIMR: final investment monitoring report
+FOI: Act Freedom of Information Act 1982
+FRSC: Financial Reporting Subcommittee
+FTE: full-time equivalent
+G7: Group of Seven
+GBFF: Global Biodiversity Framework Fund
+GCF: Green Climate Fund
+GEF: Global Environment Facility
+GST: goods and services tax
+HIMR: humanitarian investment monitoring report
+IAEA: International Atomic Energy Agency
+ICJ: International Court of Justice
+ICT: information and communications technology
+IDA: International Development Association
+IMR: investment monitoring report
+IPEF: Indo-Pacific Economic Framework
+KMP: key management personnel
+MDB: multilateral development bank
+MDRI: Multilateral Debt Relief Initiative
+NATO: North Atlantic Treaty Organization
+NCP: New Colombo Plan
+NIAA: National Indigenous Australians Agency
+NPT: Treaty on the Non-Proliferation of Nuclear Weapons (Non-Proliferation Treaty)
+ODA: official development assistance
+OECD: Organisation for Economic Co-operation and Development
+OPO: Overseas Property Office
+PALM: Pacific Australia Labour Mobility
+PBS: portfolio budget statements
+PGPA: Act Public Governance, Performance and Accountability Act 2013
+PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+PNG: Papua New Guinea
+PRF: Pacific Resilience Facility
+PRSC: Performance Reporting Subcommittee
+SEACEF II: Southeast Asia Clean Energy Fund II
+SEAIFF: Southeast Asia Investment Financing Facility
+SES: Senior Executive Service
+SME: small and medium-sized enterprise
+UNESCO: United Nations Educational, Scientific and Cultural Organization
+UNFCCC: United Nations Framework Convention on Climate Change
+UNGA: United Nations General Assembly
+UNPFII: United Nations Permanent Forum on Indigenous Issues
+WHS: Act Work Health and Safety Act 2011
+WTO: World Trade Organization
+
+Entity: Aged Care Quality and Safety Commission | Number of Terms: 35
+Url: https://www.transparency.gov.au/publications/health/aged-care-quality-and-safety-commission/aged-care-quality-and-safety-commission-annual-report-2023-2024/glossary-
+ACCMIS: Aged Care Case Management Information System
+Aged: Care Act Aged Care Act 1997
+Alis: Aged Care Learning Information Solution
+AM: Member of the Order of Australia
+AMS: Antimicrobial stewardship
+ANAO: Australian National Audit Office
+AO: Officer of the Order of Australia
+APS: Australian Public Service
+CALD: Culturally and Linguistically Diverse
+CEO: Chief Executive Officer
+Commission: Rules Aged Care Quality and Safety Commission Rules 2018
+FAICD: Fellow, Australian Institute of Company Directors
+FCA: Fellow, Chartered Accountants Australia and New Zealand
+FCPA Australia: Fellow, Certified Practicing Accountants Australia
+FOI: Act Freedom of Information Act 1988
+Flexible Care: National Aboriginal and Torres Strait Islander Flexible Aged Care Program
+GAICD: Graduate Member, Australian Institute of Company Directors
+GST: Goods and Services Tax
+HSRE: Home Services Regulated Entity
+ICT: Information and communication technology
+IT: Information technology
+MP: Member of Parliament
+NAIDOC: National Aborigines’ and Islanders’ Day Observance Committee
+NCCIMS: National Complaints and Compliance Information Management System
+OAIC: Office of the Australian Information Commissioner
+PBS: Portfolio Budget Statements
+PGPA: Rule Public Governance, Performance and Accountability Rule 2014
+PID: Act Public Interest Disclosure Act 2013
+PM: Performance Measure
+PSM: Public Service Medal
+Public: Service Act Public Service Act 1999
+RBAC: Reform for Better Aged Care program
+RN: Registered nurse
+SES: Senior Executive Service
+SIRS: Serious Incident Response Scheme
+
+Entity: National Emergency Management Agency | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/home-affairs/national-emergency-management-agency/national-emergency-management-agency-annual-report-2023-24/appendix-2%3A-acronyms-and-abbreviations/acronyms-and-abbreviations
+
+Entity: National Indigenous Australians Agency | Number of Terms: 12
+Url: https://www.transparency.gov.au/publications/prime-minister-and-cabinet/national-indigenous-australians-agency/national-indigenous-australians-agency-annual-report-2023-24/section-6---glossary-and-indexes/glossary
+Accountable Authority Instructions: Instructions and guidance provided for accountability requirements under the Public Governance, Performance and Accountability Act 2013 (PGPA Act).
+Agency: A Department of State, Department of Parliament or prescribed agency under the Public Governance, Performance and Accountability Act 2013 (PGPA Act).
+Annual Evaluation Work Plan: A key output of the Indigenous Advancement Strategy evaluation framework and covers evaluation projects, reviews, and evaluation capability development, which are planned to be conducted by the NIAA.
+Central Australia Plan: Announced in early 2023, the Central Australia Plan is a 4-year plan implemented in partnership with the Northern Territory Government, local governments, organisations and communities to invest in programs and services that will improve the lives of First Nations people.
+Closing the Gap: A commitment by all Australian governments to improve the life outcomes of Aboriginal and Torres Strait Islander peoples. A national integrated Closing the Gap strategy has been agreed by the Commonwealth, state and territory governments.
+Coalition of Peaks: A representative body of Aboriginal and Torres Strait Islander community-controlled peak organisations and members who work in partnership with Australian governments on Closing the Gap.
+Commonwealth Implementation Plan: A plan developed by each party of the National Agreement on Closing the Gap (the National Agreement) that set out how policies and programs are aligned to the National Agreement and what actions will be taken to achieve the Priority Reforms and outcomes. Each party report annually on their actions to achieve the outcomes of the National Agreement.
+Enterprise Agreement: An agreement about the terms and conditions of employment, made under the Fair Work Act 2009 .
+Galambany: Ngunnawal language meaning ‘you, me, we – together’. NIAA’s internal transformation program.
+National Agreement: The National Agreement on Closing the Gap was developed in genuine partnership between Australian Governments and Aboriginal and Torres Strait Islander peak organisations (represented by the Coalition of Peaks). The National Agreement sets out Priority Reforms and ambitious targets to improve life outcomes experienced by Indigenous Australians.
+Portfolio Budget Statements (PBS): Statements that explain where appropriated funds are to be spent for the portfolio.
+Secretaries Board: The APS’s principal service-wide governance body. It includes each departmental Secretary, the Australian Public Service Commissioner and the Director-General, National intelligence.
+
+Entity: Australian Fisheries Management Authority | Number of Terms: 50
+Url: https://www.transparency.gov.au/publications/agriculture/australian-fisheries-management-authority/australian-fisheries-management-authority-annual-report-2023-24/references/glossary
+Australian Fishing Zone: Under the Fisheries Management Act 1991 , the Australian fishing zone means:
+(a): the waters adjacent to Australia within the outer limits of the exclusive economic zone adjacent to the coast of Australia, and
+(b): the waters adjacent to each external territory within the outer limits of the exclusive economic zone adjacent to the coast of the external Territory
+(c): coastal waters of, or waters within the limits of, a State or internal Territory, or
+(d): waters that are excepted waters.
+Biomass: Total weight of a stock or a component of a stock.
+Biomass limit reference point: The point below which the risk to the stock is regarded as unacceptably high.
+Bycatch: Species taken incidentally in a fishery where other species are the target, and which are always discarded.
+Byproduct: Any part of the catch that is kept or sold by the fisher but is not the target species.
+Demersal: Found on or near the sea floor (c.f. Pelagic).
+Discard: Any part of the catch returned to the sea, whether dead or alive.
+Effort: A measure of the resources used to harvest a fishery’s stocks. The measure of effort appropriate for a fishery depends on the methods used and the management arrangements. Common measures include the number of vessels, the number of hooks set or the number of fishing days.
+Electronic monitoring: Electronic monitoring uses sensors and cameras to monitor and record information on fishing activity in a targeted way. Sensor data and video footage is analysed retrospectively to provide information and verify logbooks according to the needs identified for that fishery.
+Fisheries Management Act 1991: One of the two main pieces of legislation (along with the Fisheries Administration Act 1991 ) that detail AFMA’s responsibilities and powers.
+Fishing concession: A Statutory Fishing Right, or a fishing permit, or a foreign fishing boat licence granted under the provisions of the Fisheries Management Act 1991 .
+Fishing permit: A type of fishing concession granted under Section 32 of the Fisheries Management Act 1991 to a person, authorising the use of a specified Australian boat by that person, or a person acting on that person’s behalf, for fishing in a specified area of the Australian Fishing Zone or a specified fishery for specified species, using specified equipment.
+Fishing season: The period during which a fishery can be accessed by fishers.
+Gillnet: Type of passive fishing gear consisting of panels of net held vertically in the water column, in contact with the seabed, such that fish attempting to swim through the net are entangled. The mesh size of the net determines the size range of fish caught, as smaller fish can swim through the meshes and larger fish are not enmeshed.
+GoFish: GoFish is AFMA’s online business facility for fishers to submit their applications, view their record of fishing concessions as held by us, keep their contact details up to date, view quota and catch information, receive messages from AFMA, and monitor progress of applications lodged with AFMA.
+Harvest strategy: Strategy outlining how the catch in a fishery will be adjusted from year to year depending on the size of stock, the economic or social conditions of the fishery, conditions of other interdependent stocks or species, and uncertainty of biological knowledge. Well-managed fisheries have an unambiguous (explicit and quantitative) harvest strategy that is robust to the unpredictable biological fluctuations to which the stock may be subject.
+Incidental catch: Any part of the catch that is not the target species, including bycatch and by-product.
+Individual transferable quotas: Individual portions of a total allowable catch – units of quota – that allow the holder to catch that portion of the total allowable catch each season. The weight value of the individual transferable quotas changes in proportion to changes in the total allowable catch set for a species each season. Individual transferable quotas are fully tradeable and can be sold or leased to other fishers.
+Key commercial species: A species that is, or has been, specifically targeted and is, or has been, a significant component of a fishery.
+Logbook: Official record of catch-and-effort data completed by fishers. In many fisheries, a licence condition makes the return of logbooks mandatory.
+Longline: Fishing gear in which short lines (branch lines or droppers) carrying hooks are attached to a longer main line at regular intervals. Pelagic longlines are suspended horizontally at a predetermined depth with the help of surface floats. The main lines can be as long as 100 kilometres and have several thousand hooks. Droppers on demersal longlines (set at the seabed with weights) are usually more closely spaced.
+Maximum economic yield: The sustainable catch or effort level for a commercial fishery that allows net economic returns to be maximised. Note that for most practical discount rates and fishing costs maximum economic yield will imply that the equilibrium stock of fish is larger than that associated with maximum sustainable yield. In this sense maximum economic yield is more environmentally conservative than maximum sustainable yield and should in principle help protect the fishery from unfavourable environmental impacts that may diminish the fish population.
+Maximum sustainable yield: The maximum average annual catch that can be removed from a stock over an indefinite period under prevailing environmental conditions.
+Memorandum of Understanding (MOU) box: The area of the Australian Fishing Zone where traditional fishing by Indonesian nationals is permitted.
+Nautical mile: A unit of distance derived from the angular measurement of one minute of arc of latitude but standardised by international agreement as 1852 metres.
+Net economic returns: A fishery net economic returns over a particular period are equal to fishing revenue less fishing costs.
+Non-target species: Species that are unintentionally taken by a fisher or not routinely assessed for fisheries management. See also Bycatch.
+Offshore Constitutional Settlement: An agreement between one or more states and the Australian Government giving individual or joint jurisdiction for a particular fishery that is in both coastal waters and the Australian Fishing Zone. When no Offshore Constitutional Settlement agreement has been reached, the fishery remains under the jurisdiction of the state out to three nautical miles, and of the Australian Government from three nautical miles to 200 nautical miles.
+Output controls: Restrictions imposed on the quantity of fish that can be taken from a fishery within a specified period of time. This can be by either a competitive total allowable catch or a total allowable catch allocated to participants as individual transferable quotas.
+Overfished: A fish stock with a biomass below the biomass limit reference point. ‘Not overfished’ implies that the stock is not below the threshold, and is now used in place of the status classification of ‘fully fished’ or ‘underfished’.
+Overfishing: A fish stock that is subject to fishing mortality that exceeds the fishing mortality reference point.
+Pelagic fish: Inhabiting surface waters rather than the sea floor: usually applied to free swimming species such as tunas and sharks.
+Precautionary principle: A principle asserting that a degree of scientific uncertainty should not be used as a reason for postponing measures to prevent environmental degradation in situations where there are threats of serious or irreversible environmental damage.
+Quota: Amount of catch allocated to a fishery as a whole (total allowable catch) or to an individual fisher or company (individual transferable quota).
+Quota management: A method of management based on output controls that allocates the total allowable catch among eligible operators as shares in the annual total allowable catch.
+Reference point: An indicator of the level of fishing (or stock size), used as a benchmark for interpreting the results of an assessment.
+Statutory Fishing Rights: Rights granted under Section 21 of the Fisheries Management Act 1991 . The nature of Statutory Fishing Rights in a fishery is detailed in the plan of management that creates those rights. A Statutory Fishing Right may be a right to use a boat, a unit of fishing gear or a quantity of catch, or other rights as identified in the management plan.
+Species: Members of a species of fish that can breed with one another and produce fertile (capable of reproducing) offspring. In this way, a species maintains its ‘separateness’ from other species; for example, the Yellowfin Tuna and Bigeye Tuna are two distinct tuna species whereas the general term ‘tuna’ includes all tuna species.
+Stock: A functionally discrete population of a species that is largely distinct from other populations of the same species. Such a population may be regarded as a separate entity for management or assessment purposes. Some species form a single stock (e.g., Southern Bluefin Tuna) while others form several stocks (e.g., Albacore Tuna in the Pacific Ocean are divided up into separate Northern Pacific and Southern Pacific stocks).
+Targeting: Fishing selectively for particular species or sizes of fish.
+Target species: The species being actively sought by fishers.
+Torres Strait Protected Zone Joint Authority: An authority comprising the Parliamentary Secretary to the Minister of Agriculture and Water Resources (Chairperson), the Queensland Minister for Agriculture, Fisheries and Forestry and the Chair of the Torres Strait Regional Authority. The authority is responsible for monitoring the condition of the jointly managed fisheries in the Torres Strait and the formulation of policies and plans for their management.
+Total allowable catch: The amount of fish of a particular species that can be taken from a fishery in a prescribed period. Total allowable catches are set for fish species managed either through individual transferable quotas or through competitive total allowable catches.
+Uncertain: Status of a fish stock for which there is inadequate or inappropriate information to make a reliable assessment.
+Undercatch and overcatch: Undercatch and overcatch provide for ‘carry over’ or ‘carry under’ of an amount of end of season quota between fishing seasons thereby allowing fishers the flexibility to catch a certain amount of fish over or under their quota, and debit or credit this to or from the following season’s quota.
+Vessel monitoring system: Electronic device that transmits the identity and location of a vessel.
+
+Entity: Australian Criminal Intelligence Commission | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/attorney-general-s/australian-criminal-intelligence-commission/australian-criminal-intelligence-commission-annual-report-2023-24/section-5%3A-appendices-and-references/glossary
+
+Entity: Australian Centre for International Agricultural Research (ACIAR) | Number of Terms: 33
+Url: https://www.transparency.gov.au/publications/foreign-affairs-and-trade/australian-centre-for-international-agricultural-research-aciar/australian-centre-for-international-agricultural-research-annual-report-2023-24/part-6-reference-material/abbreviations-and-acronyms
+ACIAR: Act Australian Centre for International Agricultural Research Act 1982
+AM: Member of the Order of Australia
+AICD: Australian Institute of Company Directors
+ANAO: Australian National Audit Office
+APS: Australian Public Service
+APSC: Australian Public Service Commission
+CABI: legally known as CAB International (formerly Commonwealth Agricultural Bureaux)
+CEO: Chief Executive Officer
+CFO: Chief Finance Officer
+CGIAR: The world’s largest global agricultural innovation network
+CO2-e: Carbon Dioxide Equivalent (emissions)
+Commission: Commission for International Agricultural Research Council   Policy Advisory Council
+COVID-19: SARS-CoV-2 virus
+DCCEEW: Department of Climate Change, Energy, the Environment and Water (Australia)
+DFAT: Department of Foreign Affairs and Trade (Australia)
+DOST-PCAARRD: Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development – Department of Science and Technology
+DSS: Department of Social Services (Australia)
+EL: Executive Level (in the Australian Public Service)
+EPBC: Act Environmental Protection and Biodiversity Conservation Act 1999
+FAIAS: Fellow of the Australian Institute of Agricultural Science
+FAICD: Fellow of the Australian Institute of Company Directors
+FOI: Act Freedom of Information Act 1982
+FTE: Full-time equivalent (staff)
+FTSE: Fellow of the Australian Academy of Technology and Engineering
+GAICD: Graduate of the Australian Institute of Company Directors
+GST: Goods and Services Tax
+ICRISAT: International Crops Research Institute for Semi-Arid Tropics
+No.: number
+OAM: Medal of the Order of Australia
+ODA: Official Development Assistance
+PGPA: Act Public Governance, Performance and Accountability Act 2013
+Public: Service Act Public Service Act 1999
+SES: Senior Executive Service (in the Australian Public Service)
+
+Entity: Australian Competition and Consumer Commission (ACCC) | Number of Terms: 102
+Url: https://www.transparency.gov.au/publications/treasury/australian-competition-and-consumer-commission-accc/accc-and-aer-annual-report-2023-24/part-6---appendixes/glossary-and-abbreviations
+ACCC: Australian Competition and Consumer Commission
+ACL: Australian Consumer Law
+ACMA: Australian Communications and Media Authority
+ACT: Australian Capital Territory
+ADI: authorised deposit-taking institution
+AEMC: Australian Energy Market Commission
+AEMO: Australian Energy Market Operator
+AER: Australian Energy Regulator
+ANAO: Australian National Audit Office
+Anor: another
+ANZ: Australia and New Zealand Banking Group Limited
+ANZSIC: Australian and New Zealand Standard Industrial Classification
+APS: Australian Public Service
+ARENA: Australian Renewable Energy Agency
+ASEAN: Association of Southeast Asian Nations
+ASIC: Australian Securities and Investments Commission
+ASX: Australian Securities Exchange
+BNPL: buy now, pay later
+CAANZ: Consumer Affairs Australia New Zealand
+CAF: COAG Legislative and Governance Forum on Consumer Affairs
+CALD: culturally and linguistically diverse
+CAP: Consumer Affairs Program
+CCA: Competition and Consumer Act 2010
+CDPP: Commonwealth Director of Public Prosecutions
+CDR: Consumer Data Right
+CDR Rules: Competition and Consumer (Consumer Data Right) Rules 2020
+CDR Standards: Consumer Data Standards
+CEO: Chief Executive Officer
+CEPA: Cambridge Economic Policy Associates
+CFMEU: Construction, Forestry, Maritime Employees Union
+CFO: Chief Finance Officer
+CLIP: Competition Law Implementation Program
+COAG: Council of Australian Governments
+COO: Chief Operating Officer
+CPA: contingent project application
+Cth: Commonwealth
+CTM: certification trade mark
+CTS: Conformance Test Suite
+DER: distributed energy resources
+DITRDC: Department of Infrastructure, Transport, Regional Development and Communications
+DNSPs: distribution network service providers
+DPB: Digital Platforms Branch
+DSB: Data Standards Body
+DTCS: domestic transmission capacity service
+ENA: Energy Networks Australia
+ESB: Energy Security Board
+EV: electric vehicle
+FIRB: Foreign Investment Review Board
+FOI Act: Freedom of Information Act 1982
+GST: Goods and Services Tax
+IASR: Inputs, Assumptions and Scenarios Report
+ICC: Infrastructure Consultative Committee
+ICN: International Competition Network
+ICPEN: International Consumer Protection and Enforcement Network
+ICT: information and communication technology
+IP: intellectual property
+IPART: Independent Pricing and Regulatory Tribunal of NSW
+ISP: Integrated System Plan
+KPI: key performance indicator
+LEIC Act: Law Enforcement Integrity Commission Act 2006
+LGBTIQ+: Lesbian, Gay, Bisexual, Trans, Intersex, Queer and other sexual and gender identities
+LNG: liquefied natural gas
+Ltd: Limited
+MHz: megahertz
+MLO: Market Liquidity Obligation
+MMAC: Multilateral Mutual Assistance and Cooperation Framework for Competition Authorities
+MP: Member of Parliament
+MTAS: mobile terminating access service
+N/A: not applicable
+NADI: non-azide driver inflator
+NBN: National Broadband Network
+NEM: National Electricity Market
+NSW: New South Wales
+NT: Northern Territory
+OAIC: Office of the Australian Information Commissioner
+OECD: Organisation for Economic Co-operation and Development
+Ors: others
+PBS: Portfolio Budget Statement
+PEMM: Prohibiting Energy Market Misconduct legislation
+PGPA Act: Public Governance, Performance and Accountability Act 2013
+PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+PSS: Public Sector Superannuation Scheme
+PSSap: PSS accumulation plan
+Pty Ltd: Proprietary Limited
+Qld: Queensland
+RAAP: Register and Accreditation Application Platform
+Register: CDR Register of Accredited Persons and associated database of data holders
+SA: South Australia
+SAN: Scams Awareness Network
+SAPS: stand-alone power systems
+SES: Senior Executive Service
+SME: small and medium enterprise
+t/a: trading as
+TFP: total factor productivity
+TNSP: transmission network service providers
+UCT: unfair contract term
+UK: United Kingdom
+URF: Utility Regulators Forum
+US(A): United States of America
+VPN: virtual private network
+WA: Western Australia
+WHS: work health and safety
+
+Entity: Australian Security Intelligence Organisation | Number of Terms: 73
+Url: https://www.transparency.gov.au/publications/home-affairs/australian-security-intelligence-organisation/asio-annual-report-2023-24/preliminaries/abbreviations-and-short-forms
+AASB: Australian Accounting Standards Board
+AAT: Administrative Appeals Tribunal
+AFP: Australian Federal Police
+AGD: Attorney-General’s Department
+AGSVA: Australian Government Security Vetting Agency
+AI: Artificial Intelligence
+AM: Member of the Order of Australia
+AN: Ammonium Nitrate
+ANAO: Australian National Audit Office
+ANZAC: Australian and New Zealand Army Corps
+ANSTO: Australian Nuclear Science and Technology Organisation
+APS: Australian Public Service
+APS Net Zero: Australian Public Service Net Zero 2030 Policy
+ARC: Audit and Risk Committee
+ASA: Adverse Security Assessment
+ASEAN: Association of Southeast Asian Nations
+ASEAN24: ASEAN-Australia Special Summit 2024
+ASIC: Aviation Security Identification Card
+ASIO: Australian Security Intelligence Organisation
+ASIO Act: Australian Security Intelligence Organisation Act 1979
+ASIO Amendment Act: Australian Security Intelligence Organisation Amendment Act 2020
+ASIO Amendment Bill: Australian Security Intelligence Organisation Amendment Bill 2023
+AUKUS: Australia-United Kingdom-United States partnership
+CCSF: Commonwealth Child Safe Framework
+CEO: Chief Executive Officer
+CFITF: Counter Foreign Interference Taskforce
+CIBC: Critical Infrastructure Background Check
+CPR: Commonwealth Procurement Rules
+DCB: Departmental Capital Budget
+DFAT: Department of Foreign Affairs and Trade
+DRC: Depreciated Replacement Cost
+EFI: Espionage and Foreign Interference
+EFI Act: National Security Legislation Amendment (Espionage and Foreign Interference) Act 2018
+FIFA23: Women’s World Cup Australia & New Zealand 2023
+GST: Goods and Services Tax
+HR: Human Resources
+HUMINT: Human intelligence
+IGIS: Inspector-General of Intelligence and Security
+IMVE: Ideologically motivated violent extremism
+Independent Reviewer: Independent Reviewer of Security Clearance Decisions
+INSLM: Independent National Security Legislation Monitor
+ISIL: Islamic State of Iraq and the Levant
+ISKP: Islamic State–Khorasan Province
+JCTT: Joint Counter Terrorism Team
+JNIM: Jama’at Nusrat al Islam Muslimin
+LGBTQIA+: Lesbian, Gay, Bisexual, Transgender, Queer, Intersex, Asexual and other sex, gender and sexually diverse individuals
+MSIC: Maritime Security Identification Card
+NABERS: National Australian Built Environment Rating System
+NACC: National Anti-Corruption Commission
+NAIDOC: National Aboriginal and Islander Day Observance Committee
+NHSC: National Health Security Check
+NIC: National Intelligence Community
+NRVE: Nationalist and racist violent extremism
+NSH: National Security Hotline
+NSLAB3: National Security Legislation Amendment (Comprehensive Review and Other Measures No. 3) Act 2024
+NSSIC: Naval Shipbuilding and Sustainment Identity Card
+NV: Negative Vetting
+OHPS: Other Highly Paid Staff
+ONI: Office of National Intelligence
+PBS: Portfolio Budget Statement
+PGPA Act: Public Governance, Performance and Accountability Act 2013
+PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+PJCIS: Parliamentary Joint Committee on Intelligence and Security
+PV: Positive Vetting PVM – Politically motivated violence
+RMVE: Religiously motivated violent extremism
+SES: Senior Executive Service
+SME: Small and Medium Enterprises
+TA: Threat Assessment
+TS: TOP SECRET
+TS-PA: Top Secret–Privileged Access
+UK: United Kingdom
+US: United States
+WHS: Workplace Health and Safety
+
+Entity: Australian Security Intelligence Organisation | Number of Terms: 1
+Url: https://www.transparency.gov.au/publications/home-affairs/australian-security-intelligence-organisation/asio-annual-report-2023-24/preliminaries/glossary
+are clandestine or deceptive and: are carried on for intelligence purposes; are carried on for the purpose of affecting political or governmental processes; or are otherwise detrimental to the interests of Australia; or
+
+Entity: Australian Research Council | Number of Terms: 24
+Url: https://www.transparency.gov.au/publications/education/australian-research-council/australian-research-council-annual-report-2023-24/part-6%3A-reference-material/glossary
+Administered expenditure: Funding that is managed by agencies on behalf of the government.
+Applied research: Applied research is original investigation undertaken in order to acquire new knowledge. It is, however, directed primarily towards a specific, practical aim or objective.
+Australian Universities Accord: An Australian Government review of the higher education system, aimed at devising recommendations and performance targets to improve the quality, accessibility, affordability and sustainability of higher education for the long-term benefit of the nation.
+Basic research: Basic research is experimental or theoretical work undertaken primarily to acquire new knowledge of the underlying foundations of phenomena and observable facts, without any particular application or use in view.
+Chief Investigator: A researcher who satisfies the eligibility criteria for a Chief Investigator under the Discovery Program or Linkage Program grant guidelines, and takes responsibility for the conduct of an ARC-funded project.
+Discovery Program: Funding for investigator-initiated research projects and research fellowships and awards. The Discovery Program comprises the FL, DECRA, IN, DP and FT schemes.
+Early career researcher: A researcher who has held a PhD or equivalent qualification for a period of less than or equal to 5 years at the time of their application.
+Eligible Organisation: An organisation that satisfies the eligibility criteria for an administering organisation under the Discovery Program or Linkage Program grant guidelines.
+Engagement and Impact assessment: Engagement and Impact assessment
+An: assessment of researchers’ engagement with end-users, and how universities are translating their research into economic, social, environmental, cultural and other impacts.
+Excellence in Research for Australia: Excellence in Research for Australia
+Provides: Australian Government, industry, business and the wider community with assurance of the excellence of research conducted in Australia’s higher education institutions. The evaluation framework identifies universities and disciplines that are internationally competitive and highlights areas where there are opportunities for further development and investment.
+Ex-officio: A person who was appointed as a member of the committee as a result of another position they held.
+Final report: A report to the ARC that researchers must submit within 12 months of completing their research project. The report includes a range of data and information including a description of research outcomes, academic and commercialisation outputs, and details of collaboration.
+Grant Agreement: The agreement entered into by the ARC and an administering organisation when an application from that organisation is approved for funding.
+Grant Guidelines: Documents published on the GrantConnect website for each grant opportunity that provide applicants with information about schemes, eligibility requirements, the application, selection and approval processes, and requirements for the administration of funding.
+Linkage Program: Provides funding for research projects, infrastructure, hubs and centres that foster collaboration among researchers and research teams in Australia and internationally, and with industry and other research end-users. The Linkage Program comprises the ARC CE, ITRH, ITTC, LIEF , LASP, LP , SRI, CS, IE, IM and IL schemes .
+Mid-career researchers: A researcher with between 5 and 15 years of research experience since the award of a PhD or equivalent qualification at the time of their application.
+NCGP: The NCGP incorporates the Discovery Program and the Linkage Program, under which the ARC funds a range of complementary schemes to support the highest-quality basic and applied research, research training, research collaboration or partnerships, and infrastructure across all research disciplines.
+Partner Investigator: A researcher who satisfies the eligibility criteria for a Partner Investigator under the Discovery Program or Linkage Program grant guidelines, and takes significant intellectual responsibility for the research.
+Partner Organisations: National or international organisations that satisfy the eligibility criteria for a partner organisation as defined under Linkage Program grant guidelines, and contribute to the research project in accordance with the requirements of the scheme.
+Peer review: Evaluation of research applications or outputs by experts who assess individual research applications within their field of research or across a broader disciplinary area on the basis of established selection criteria.
+Science and Research Priority areas: A set of priority areas identified by the Australian Government that replaced the Strategic Research Priority areas in 2015. The priorities are designed to focus Australian Government support for science and research on the most important challenges facing Australia. As at 30 June 2024, the Science and Research Priority areas were: food, soil and water, transport, cybersecurity, energy, resources, advanced manufacturing, environmental change and health. Each priority is associated with 3 to 4 Practical Research Challenges, which aim to prioritise the development of Australia’s research and innovation capabilities in areas the Australian Government regards as pivotal to the nation’s future.
+Success rate: The number of awards made in a year or funding round as a percentage of the total number of applications. Withdrawn applications are excluded from calculations.
+
+Entity: Australian Submarine Agency | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/defence/australian-submarine-agency/australian-submarine-agency-annual-report-2023-24/chapter-5%3A-appendices/appendix-f%3A-glossary-of-abbreviations-and-acronyms
+
+Entity: Commonwealth Scientific and Industrial Research Organisation | Number of Terms: 12
+Url: https://www.transparency.gov.au/publications/industry-innovation-and-science/commonwealth-scientific-and-industrial-research-organisation/commonwealth-scientific-and-industrial-research-organisation-annual-report-2023-24/part-6%3A-appendices-and-indexes-/glossary
+Granted patents: Once a patent application has been examined and satisfies various patentability criteria, it becomes a granted patent. It remains a granted patent until the end of the patent period (normally 20 years), provided renewal fees are paid.
+Indigenous: Respectfully includes both Aboriginal Peoples and/or Torres Strait Islander Peoples. The term First Nations is also used throughout this report in reference to the Minister’s Statement of Expectations and refers to Aboriginal and Torres Strait Islander Peoples.
+Journal articles: I: ncludes journal articles and other items published as part of a journal (for example, an editorial or book review).
+Live patent cases: A live patent case is where either a patent application or a granted patent exists. It does not include cases that have lapsed, expired or been withdrawn. Applications may include provisional applications, Patent Cooperation Treaty (PCT) applications and applications pending in Australia or foreign jurisdictions.
+Physical Containment level 4 (PC4) laboratories: Physical Containment level 4 (PC4) laboratories: Laboratories rated at the highest level of containment and the highest designated biosecurity level for working with highly transmissible diseases and viruses for which there is no vaccines or effective treatment.
+PCT applications: International Patent Cooperation Treaty (PCT) applications are a ‘temporary’ phase in any international patenting process and have a life span of 18 months. This type of application is very common in major international corporations and is used by CSIRO when it considers its invention may have wide commercial application. In view of the 18-month time span, it is reasonable to approximate that two-thirds of the reported number were filed in the previous 12-month period.
+Total Recordable Injury Frequency Rate (TRIFR): This is calculated as the sum of Lost Time Injuries per million hours worked plus Medical Treatment Injuries per million hours worked.
+Science excellence: An assessment of the competitiveness of CSIRO’s research capabilities. It recognises CSIRO’s science (for example, total citations) and excellence (for example, citation rates). It tends to be output-oriented and includes lagging metrics relating to research publication performance (bibliometrics), esteem measures, such as awards, and expert-peer reviews.
+Scope 1, 2 and 3 greenhouse gas emissions: Greenhouse gas emissions are organised into scopes to avoid double-counting emissions and indicate those that organisations can control (Scope 1) versus those that they can influence (Scope 3). Scope 1 are emissions from sources that are owned or controlled by the organisation. Scope 2 are emissions from the consumption of purchased electricity, steam, or other sources of energy generated upstream from the organisation. Scope 3 are emissions that are a consequence of the operations of an organisation but are not directly owned or controlled by the organisation.
+Sponsored students: Students are deemed to be sponsored if they receive a full or partial scholarship paid from CSIRO funds to pursue a research project leading to a PhD, master’s or honours degree. This excludes our employees, whose study expenses are considered training and development.
+Supervised students: Students are deemed to be supervised if they have a CSIRO staff member appointed officially by the university as a co-supervisor for their research project. Normally, CSIRO staff are joint supervisors in conjunction with a university academic.
+Technical reports: Includes individually authored chapters as well as whole reports that are subject to peer review and are usually publicly released.
+
+Entity: Coal Mining Industry (Long Service Leave Funding) Corporation | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/attorney-general-s/coal-mining-industry-long-service-leave-funding-corporation/coal-mining-industry-long-service-leave-funding-corporation-annual-report-2023-24/-part-5.-appendices/glossary-and-acronyms
+
+Entity: Department of Social Services | Number of Terms: 91
+Url: https://www.transparency.gov.au/publications/social-services/department-of-social-services/department-of-social-services-2023-24-annual-report/part-6---appendices-and-index/appendix-g-glossary-of-abbreviations-and-acronyms
+Abbreviations and conventions: AAO                              Administrative Arrangement Orders
+AASB: Australian Accounting Standards Board
+ABS: Australian Bureau of Statistics
+AIC: Assistance for Isolated Children
+AIFS: Australian Institute of Family Studies
+AGRC: Australian Gambling Research Centre
+AIHW: Australian Institute of Health and Welfare
+ANAO: Australian National Audit Office
+ANROWS: Australia’s National Research Organisation for Women’s Safety
+ANZSOG: Australia and New Zealand School of Government
+AO: Order of Australia
+AP: Age Pension
+APS: Australian Public Service
+APSC: Australian Public Service Commission
+AS/NZS: Australian/New Zealand International Standard
+ATSICPP: Aboriginal and Torres Strait Islander Child Placement Principle
+BCAP: Building Capacity in Australian Parents
+CaLD: Culturally and Linguistically Diverse
+CFCA: Child Family Community Australia
+CO2-e: Carbon Dioxide Equivalent
+COAG: Council of Australian Governments
+COVID-19: Coronavirus disease/ Coronavirus pandemic
+CP: Carer Payment
+CPA: Certified Practising Accountant
+CRPD: Convention on the Rights of Persons with Disabilities
+CSC: Conspicuous Service Cross
+CSS: Child Support Scheme
+DES: Disability Employment Services
+DEX: DSS Data Exchange
+DOP: Double Orphan Pension
+DPR: Direct Personal Response
+DSP: Disability Support Pension
+DSS: Department of Social Services
+EAP: Employee Assistance Program
+ES: Energy Supplement for Commonwealth Seniors Health Card Holders
+EV: Electric vehicle
+FaC: Families and Children
+FCSI: Families and Communities Service Improvement
+FOLR: funder of last resort
+FTB: Family Tax Benefit
+FVOCI: Financial Assets at Fair Value Through Other Comprehensive Income
+FVTPL: Financial Assets at Fair Value Through Profit or Loss
+GST: Goods and Services Tax
+ICSS: Integrated Carer Support Service
+IMR: Improving Multidisciplinary Responses
+IPS: Information Publication Scheme
+ISO: International Standards Organisation
+IT: Information Technology
+JSP: JobSeeker Payment
+LGBTIQA+: Lesbian, gay, bisexual, transgender, intersex, queer or asexual
+MES: Monitoring and Evaluation Strategy
+MoU: Memorandum of Understanding
+MP: Member of Parliament
+NAIDOC: National Aboriginal and Islanders Day Observance Committee
+NCAR: National Community Awareness Raising
+NCAS: National Community Attitudes towards Violence against Women Survey
+NDDA: National Disability Data Asset
+NDIA: National Disability Insurance Agency
+NDIS: National Disability Insurance Scheme
+NDIS Commission: NDIS Quality and Safeguards Commission
+NDRP: National Disability Research Partnership
+NHHA: National Housing and Homelessness Agreement
+NOCS: National Office of Child Safety
+NRAS: National Rental Affordability Scheme
+OIAC: Office of the Australian Information Commissioner
+PAES: Portfolio Additional Estimates Statements
+PBS: Portfolio Budget Statements
+PGPA: Public Governance, Performance and Accountability Act 2013
+PP: Parenting Payment
+PPM: Post Placement Monitoring
+PUSC: Payments under Special Circumstances
+RA: Rent Assistance
+RAP: Reconciliation Action Plan
+RSS: Random Sample Survey
+RTO: Refundable Tax Offsets
+SB: Special Benefit
+SBP: Stillborn Baby Payment
+SCOREs: Standard Client/Community Outcomes Reporting
+SDF: Sector Development Fund
+SEPT: Supporting Expecting and Parenting Teens initiative
+SES: Senior Executive Service
+SIH: Survey of Income and Housing
+SMEs: Small and Medium Enterprises
+TIA: Towards independent Adulthood
+TILA: Transition to Independent Living Allowance
+TTY: Teletypewriter
+UA: Utilities Allowance
+XP: Cross Program
+XPRA: Cross Program Rent Assistance
+YA: Youth Allowance
+YAG: Youth Advisory Group
+
+Entity: Department of Veterans' Affairs | Number of Terms: 44
+Url: https://www.transparency.gov.au/publications/veterans-affairs/department-of-veterans-affairs/dva-annual-report-2023-24/08-aids-to-access/acronyms-and-abbreviations
+AAT: Administrative Appeals Tribunal
+ADF: Australian Defence Force
+APS: Australian Public Service
+APSC: Australian Public Service Commission
+ARC: Audit and Risk Committee
+ATO: Australian Taxation Office
+BEV: battery electric vehicle
+CDPP: Commonwealth Director of Public Prosecutions
+CP: corporate plan
+CWGC: Commonwealth War Graves Commission
+DRCA: Safety, Rehabilitation and Compensation (Defence-related Claims) Act 1988
+DSH Insurance: Defence Service Homes Insurance Scheme
+DVA: Department of Veterans’ Affairs
+EA: Enterprise Agreement 2024–2027
+EAP: Employee Assistance Program
+EB: Executive Board
+EPBC: Act Environment Protection and Biodiversity Conservation Act 1999
+FOI: Act Freedom of Information Act 1982
+ICT: information and communications technology
+IFA: individual flexibility arrangement
+Interim Report: Royal Commission into Defence and Veteran Suicide: Interim Report
+MRCA: Military Rehabilitation and Compensation Act 2004
+MRCC: Military Rehabilitation and Compensation Commission
+NACCF: National Aged and Community Care Forum
+OAIC: Office of Australian Information Commissioner
+OAWG: Office of Australian War Graves
+OLSC: Office of Legal Services Coordination
+Open Arms: Open Arms – Veterans & Families Counselling
+PBS: portfolio budget statements
+PGPA: Act Public Governance, Performance and Accountability Act 2013
+PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+POW: prisoner of war
+PTSD: posttraumatic stress disorder
+Royal Commission: Royal Commission into Defence and Veteran Suicide
+RMA: Repatriation Medical Authority
+Strategy: Australia’s Disability Strategy 2021–2031
+SES: Senior Executive Service
+SME: small and medium enterprise
+SMRC: Specialist Medical Review Council
+SOPs: statements of principles
+SRC Minister: Safety, Rehabilitation and Compensation Minister
+VEA: Veterans’ Entitlements Act 1986
+VRB: Veterans’ Review Board
+WPI-: Private Wage Price Index – Private Sector
+
+Entity: Department of Parliamentary Services | Number of Terms: 55
+Url: https://www.transparency.gov.au/publications/parliamentary-departments-not-a-portfolio/department-of-parliamentary-services/department-of-parliamentary-services-annual-report-2023-2024/part-9%3A-reference-material/acronyms-and-abbreviations
+AASB: Australian Accounting Standards Board
+ACT: Australian Capital Territory
+AIAP: Accessibility and Inclusion Action Plan 2024–27
+AIP: Accessibility and Inclusion Plan 2020–23
+ANAO: Australian National Audit Office
+APH: Australian Parliament House (Parliament House)
+APS: Australian Public Service
+APSC: Australian Public Service Commission
+ARC: Audit and Risk Committee
+Auspic: Australian Government Photographic Service
+CCSF: Commonwealth Child Safe Framework
+CAE: Chief Audit Executive
+CEO: Chief Executive Officer
+CFO: Chief Financial Officer
+CIO: Chief Information Officer
+COO: Chief Operating Officer
+CPA: Certified Practising Accountant
+CPRs: Commonwealth Procurement Rules
+CRM: Client Relationship Management
+CRO: Chief Risk Officer
+CSO: Chief Security Officer
+DPS: Department of Parliamentary Services
+EAP: Employee Assistance Program
+EMMS: Electronic Media Monitoring Services
+EA: enterprise agreement
+FTE: full-time equivalent
+GST: goods and services tax
+IAP: Indigenous Apprenticeship Program
+ICT: information and communication technology
+ISD: Information Services Division
+IT: information technology
+IWP: individual work plan
+JSCPL: Joint Standing Committee on the Parliamentary Library
+KPI: key performance indicators
+LGBTQIA+: Lesbian, Gay, Bi-sexual, Trans and gender diverse, Intersex, Queer, Asexual and questioning
+MP: Member of Parliament
+NITES: National Indigenous Training Employment Solutions
+NT: Northern Territory
+NSW: New South Wales
+OCR: optical character recognition
+PEL: Parliamentary Executive Level
+PGPA Act: Public Governance, Performance and Accountability Act 2013
+PGPA: Rule –Public Governance, Performance and Accountability Rule 2014
+PID Act: Public Interest Disclosure Act 2013
+PS Act: Parliamentary Services Act 1999
+PWSS: Parliamentary Workplace Support Service
+Qld: - Queensland
+RAP: Reconciliation Action Plan
+SA: South Australia
+SES: Senior Executive Service
+SME: small and medium enterprise
+The Library: The Parliamentary Library
+WA: Western Australia
+WHS: work health and safety
+WHS Act: Work Health and Safety Act 2011
+
+Entity: Future Fund Management Agency | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/finance/future-fund-management-agency/future-fund-management-agency-annual-report-2023-24/08-references-and-index/glossary-of-abbreviations-and-acronyms
+
+Entity: Independent Health and Aged Care Pricing Authority | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/health-and-aged-care/independent-health-and-aged-care-pricing-authority/independent-health-and-aged-care-pricing-authority-annual-report-2023-24/appendices/appendix-b-%E2%80%94-acronyms-and-abbreviations
+
+Entity: Great Barrier Reef Marine Park Authority | Number of Terms: 63
+Url: https://www.transparency.gov.au/publications/agriculture-water-and-the-environment/great-barrier-reef-marine-park-authority/great-barrier-reef-marine-park-authority-annual-report-2023-24/6.-appendices/acronyms-and-abbreviations
+ACCU: Australian Carbon Credit Units
+ACT: Australian Capital Territory
+AIMS: Australian Institute of Marine Science
+AM: Member of the Order of Australia
+AMSA: Australian Marine Sciences Association
+AO: Officer of the Order of Australia
+APS: Australian Public Service
+ARPANSA: The Australian Radiation Protection and Nuclear Safety Agency
+ATSIMS: Aboriginal and Torres Strait Islanders in Marine Science
+CCD: Commonwealth Climate Disclosure
+CEO: Chief Executive Officer
+CLASS criteria: Care – Learn – Act – Share – Steward
+CO2-e: Carbon dioxide equivalent
+CRO: Chief Risk Officer
+CROMP: Climate Risk and Opportunity Management Program
+CSIRO: Commonwealth Scientific and Industrial Research Organisation
+CSO: Chief Sustainability Officer
+Cth: Commonwealth
+DFAT: Department of Foreign Affairs and Trade
+EA: Enterprise Agreement
+EMC: Environmental management charge
+EMG: Executive Management Group
+EPBC: Act Environmental Protection and Biodiversity Conservation Act 1999
+ERP: Emissions Reduction Plan
+ERM: Enterprise Risk Management
+FAA: Fellow of the Australian Academy of Science
+FINFO: Further information
+FOI: Act Freedom of Information Act 1988
+FTSE: Fellow of the Australian Academy of Technology and Engineering
+GBRMP: Great Barrier Reef Marine Park
+GST: Goods and services tax
+GWP: Global Warming Potential
+ICT: Information and Communication Technology
+IMOS: Integrated Marine Observing System
+IRAC: Indigenous Reef Advisory Committee
+LMAC: Local Marine Advisory Committee
+LTMP: Long-Term Monitoring Program
+Marine: Park Act Great Barrier Reef Marine Park Act 1975
+MBA: Master of Business Administration
+MP: Member of Parliament
+MPA: Marine Park Authority
+NABERS: National Australia Built Environment Rating System
+NGA: National Greenhouse Accounts
+OHS: Occupational health and safety
+OHSE: Occupational Health Safety and Environment
+PBS: Portfolio Budget Statement
+PGPA: Act Public Governance, Performance and Accountability Act 2013
+PGPA Rule: Public Governance, Performance and Accountability Rule
+PhD: Doctor of Philosophy
+Public: Service Act Public Service Act 1999
+Qld: Queensland
+RACE framework: Reach, act, convert, engage
+RAP: Reconciliation Action Plan
+RAPID data collection: Rapid Assessment Procedures
+RJFMP: Reef Joint Field Management Program
+SES: Senior Executive Service
+STEM: Science, Technology, Engineering and Mathematics
+TM: Trademark
+TUMRA: Traditional Use of Marine Resources Agreements
+UNESCO: United Nations Educational, Scientific and Cultural Organization
+UNSW: University of New South Wales
+VIN: Vehicle Identification Number
+WHS: Workplace Health and Safety
+
+Entity: Independent Health and Aged Care Pricing Authority | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/health-and-aged-care/independent-health-and-aged-care-pricing-authority/independent-health-and-aged-care-pricing-authority-annual-report-2023-24/appendices/appendix-c-%E2%80%94-glossary
+
+Entity: Murray-Darling Basin Authority | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/agriculture/murray-darling-basin-authority/murray-darling-basin-authority-annual-report-2023-24/appendices/glossary
+
+Entity: National Anti-Corruption Commission | Number of Terms: 39
+Url: https://www.transparency.gov.au/publications/attorney-general-s/national-anti-corruption-commission/national-anti-corruption-commission-annual-report-2023-24/aides-to-access/acronyms-and-abbreviations
+ACLEI: Australian Commission for Law Enforcement Integrity
+AFP: Australian Federal Police
+AGD: Attorney-General’s Department
+APS: Australian Public Service
+APSC: Australian Public Service Commission
+ASL: Average Staffing Level
+ATO: Australian Taxation Office
+AUSTRAC: Australian Transaction Reports and Analysis Centre
+C&T Act: National Anti-Corruption Commission (Consequential and Transitional Provisions) Act 2022 (Cth)
+CDPP: Commonwealth Director of Public Prosecutions
+CIMF: Commonwealth Integrity Maturity Framework
+Commission, the: National Anti-Corruption Commission
+Commissioner, the: National Anti-Corruption Commissioner
+Commissioner’s annual report: Report required under s 271 of the NACC Act
+EA: National Anti-Corruption Commission Enterprise Agreement 2024–2027
+FOI Act: Freedom of Information Act 1982 (Cth)
+Home Affairs: Department of Home Affairs
+IPP: Indigenous Procurement Policy
+IPS: Information Publication Scheme
+KPI: Key performance indicator
+LEIC Act: Law Enforcement Integrity Commissioner Act 2006 (Cth)
+LMS: Learning management system
+NACC Act: National Anti-Corruption Commission Act 2022 (Cth)
+NACC Inspector: Inspector of the National Anti-Corruption Commission
+NACC Regulations: National Anti-Corruption Commission Regulations 2023
+PBS: Portfolio Budget Statements
+PGPA Act: Public Governance, Performance and Accountability Act 2013 (Cth)
+PGPA Rule: Public Governance, Performance and Accountability Rule 2014
+PJC-NACC: Parliamentary Joint Committee on the National Anti-Corruption Commission
+PS Act: Public Service Act 1999 (Cth)
+SCPs: strategic corruption priorities
+SD Act: Surveillance Devices Act 2004 (Cth)
+SEDNode: Secure Electronic Disclosures Node
+SES: Senior Executive Service
+SME: Small and medium enterprise
+t CO2-e: Carbon dioxide equivalent (tonnes)
+TIA Act: Telecommunications (Interception and Access) Act 1979 (Cth)
+WHS Act: Work Health and Safety Act 2011 (Cth)
+WHSC: Work Health and Safety Committee
+
+Entity: National Anti-Corruption Commission | Number of Terms: 25
+Url: https://www.transparency.gov.au/publications/attorney-general-s/national-anti-corruption-commission/national-anti-corruption-commission-annual-report-2023-24/aides-to-access/glossary-of-data-terms
+ACLEI inherited matter: A matter commenced by ACLEI that was ongoing at the commencement of the Commission on 1 July 2023.
+Agency consideration: Where the Commissioner refers a corruption issue to a jurisdictional agency or state or territory government entity for awareness. It does not require the agency or entity to investigate the corruption issue, although they may choose to do so.
+Agency investigation: Where the Commissioner refers a corruption issue to a jurisdictional agency for investigation.
+Corruption investigation: An investigation of one or more corruption issues. This includes investigations conducted independently by the Commission, or jointly with a partner agency.
+Corruption issue: An instance where a person is currently, previously or will potentially engage in corrupt conduct within the Commission’s jurisdiction.
+Give directions: The Commissioner can give a jurisdictional agency directions on the planning and conduct of the investigation as part of their functions in overseeing the investigation.
+Joint investigation: A corruption investigation conducted by the Commission in partnership with a Commonwealth agency or state or territory entity, also referred to as a partner agency.
+Jurisdictional agency: A commonwealth agency for the purposes of the NACC Act, set out at section 11(1).
+LEIC Act matter: An ACLEI inherited matter remaining under the LEIC Act that the Commission continues to conduct or manage but is not a transitioned matter.
+Mandatory completion report: The report a jurisdictional agency provides to the Commission following the completion of an agency investigation.
+Mandatory progress report: A report on the progress of the agency investigation that the jurisdictional agency conducting the investigation must provide to the Commission.
+Mandatory referral: A referral or report of information made to the Commission under the requirements of the NACC Act.
+Monitored agency investigation: ACLEI-inherited agency investigations that were subject to oversight or reporting requirements under the LEIC Act. To avoid confusion with new NACC Act overseen investigations, both LEIC Act agency investigations and transitioned agency investigations are referred to as monitored agency investigations.
+NACC investigation: A corruption investigation conducted independently by the Commission. Note: This is not to be confused with investigations conducted by the NACC Inspector.
+No further action: Where the Commissioner decides to take no action in relation to a corruption issue.
+Other – own initiative: A corruption issue raised by the Commission in the course of its own activities (i.e. Not referred by external parties).
+Other – relating to existing matter: Enquiries or information received by the Commission that relates to an existing matter.
+Overseeing an agency investigation: Where the Commissioner refers a corruption investigation to a jurisdictional agency for investigation, and as a result can give directions to the agency on the planning and conduct of the investigation or require mandatory progress reports and/or mandatory completion reports.
+Partner agency: A Commonwealth agency or a state or territory entity that the Commission is conducting a joint investigation with.
+Reconsider a corruption issue: At any time the Commissioner can reconsider how a corruption issue is dealt with.
+Referral underway: The status of a matter referred to an agency for investigation or consideration, where formal notification has not yet occurred.
+Referred to agency: The status of a matter referred to an agency for investigation or consideration, where formal notification has occurred.
+Transitioned matter: An ACLEI inherited matter originally commenced under the LEIC Act and transitioned to be conducted or managed by the Commission under the NACC Act.
+Voluntary referral: A referral or report of information regarding a corruption issue made by anyone.
+Weekly media alerts: The Commission’s weekly published data.
+
+Entity: National Gallery of Australia | Number of Terms: 59
+Url: https://www.transparency.gov.au/publications/communications-and-the-arts/national-gallery-of-australia/national-gallery-of-australia-annual-report-2023-24/part-6%3A-appendices/abbreviations-and-acronyms
+AAM: Australian Antarctic Medal
+AAP: Australian Associated Press
+AASB: Australian Accounting Standards Board
+ABC: Australian Broadcasting Corporation
+AC: Companion of the Order of Australia
+ACT: Australian Capital Territory
+AFNGA: American Friends of the National Gallery
+AM: Member of the Order of Australia
+AMaGA: Australian Museums and Galleries Association
+AMIP: Asset Management Improvement Plan
+ANU: Australian National University
+AO: Officer of the Order of Australia
+API: Application Programming Interface
+APS: Australian Public Service
+CDAB: Collection Development Acquisition Budget
+CMG: Companion of the Order of St Michael and St George
+COPE: Create-once-publish-everywhere
+CSS: Commonwealth Superannuation Scheme
+DART: Digital and Rural Technology
+DIAP: Disability Inclusion Action Plan
+EDM: Electronic Direct Mail
+edn: edition
+EL: 1, EL 2  Executive Level 1, Executive Level 2
+ESAP: Environmental Sustainability Action Plan
+FRAIA: Fellow of the Royal Australian Institute of Architects
+FRR: Public Governance, Performance and Accountability (Financial Reporting) Rule 2015
+FTE: Full Time Equivalent
+GEAP: Gender Equity Action Plan
+GST: Goods and Services Tax
+ICT: Information and Communications Technology
+IPS: Information Publication Scheme
+IRL: Interdisciplinary Research Leaders
+IT: Information Technology
+KMP: Key Management Personnel
+LED: Light Emitting Diode
+MP: Member of Parliament
+National: Gallery  National Gallery of Australia
+NSW: New South Wales
+NT: Northern Territory
+OAM: Medal of the Order of Australia
+OSCAR: Our Systems Consolidation and Rationalisation Project
+PBS: Portfolio Budget Statements
+PEO: Principal Executive Officers
+PGPA: Rule Public Governance, Performance and Accountability Rule 2014
+PSM: Public Service Medal
+PSS: Public Sector Superannuation Scheme
+PSSap: PSS accumulation plan
+Qld: Queensland
+RAP: Reconciliation Action Plan
+RDR: Reduced Disclosure Requirements
+RFD: Reserve Force Decoration
+SA: South Australia
+SAMP: Strategic Asset Management Plan
+SES: Senior Executive Service
+SMG: Senior Management Group
+UK: United Kingdom
+US: United States of America
+VR: Virtual Reality
+WA: Western Australia
+
+Entity: National Health Funding Body (NHFB) | Number of Terms: 14
+Url: https://www.transparency.gov.au/publications/health/national-health-funding-body-nhfb/national-health-funding-body-annual-report-2023-24/part-5%3A-reference-information/glossary
+Activity Based Funding: Refers to a method for funding public hospital services provided to individual patients using national classifications, cost weights and nationally efficient prices developed by the IHPA. Funding is based on the actual number of services provided to patients and the efficient cost of delivering those services.
+(the) Administrator: The Administrator of the National Health Funding Pool (the Administrator) is an independent statutory office holder, distinct from Commonwealth and State and Territory government departments, established under legislation of the Commonwealth and State and Territory governments.
+The: role of the Administrator, with support from the NHFB, is to oversee the responsible, efficient and effective administration of Commonwealth and State and Territory public hospital funding and payments under the National Health Reform Agreement (NHR Agreement).
+Block funding: A method of funding public hospital functions and services as a fixed amount based on population and previous funding. Under the NHR Agreement, Block funding will be provided to States and Territories to support teaching and research undertaken in public hospitals and for some public hospital services where it is more appropriate, particularly smaller rural and regional hospitals.
+Council of Australian Governments (COAG): The peak intergovernmental forum in Australia. The members of COAG are the Prime Minister, State and Territory Premiers and Chief Ministers and the President of the Australian Local Government Association.
+Local Hospital Networks (LHNs): Recipients of the payments from the National Health Funding Pool, Commonwealth Block funding and State (and Territory) Managed Funds.
+Medicare Benefits Schedule (MBS): A listing of the Medicare services subsidised by the Australian Government.
+National Funding Cap: The limit in growth in Commonwealth funding for Public Hospital Services for all States and Territories of 6.5% per annum and where the context so requires includes the operation of the Funding Cap as provided in the NHR Agreement.
+National Health Funding Body (NHFB): An independent statutory body established under Commonwealth legislation to assist the Administrator in carrying out his or her functions under Commonwealth, State and Territory legislation.
+National Health Funding Pool (the Pool): A collective name for the State Pool Accounts of all States and Territories, also known as the ‘the Pool’. The Pool was established under Commonwealth and State and Territory legislation for the purpose of receiving all Commonwealth and Activity Based State and Territory public hospital funding, and for making payments under the NHR Agreement.
+National Health Funding Pool Payments System (the Payments System): The Administrator’s National Health Funding Pool Payments System processes the NHR Commonwealth, State/Territory deposits and payments into and out of the Pool, as required under the NHR Act.
+PGPA Act: The Public Governance, Performance and Accountability Act 2013 establishes a coherent system of governance and accountability for public resources, with an emphasis on planning, performance and reporting.
+State Managed Fund (SMF): A separate bank account or fund established by a State or Territory for the purposes of health funding under the NHR Agreement which must be undertaken in the State or Territory through a State Managed Fund.
+State Pool Account (SPA): A Reserve Bank of Australia account established by a for the purpose of receiving all Commonwealth and Activity Based State and Territory public hospital funding, and for making payments under the Agreement. The State (and Territory) Pool Accounts of all States and Territories are collectively known as the National Health Funding Pool or the Pool.
+
+Entity: National Transport Commission | Number of Terms: 39
+Url: https://www.transparency.gov.au/publications/infrastructure-transport-cities-and-regional-development/national-transport-commission/national-transport-commission-annual-report-2023-24/appendices/appendix-e%3A-glossary-and-acronyms
+ADF: Australian Defence Force.
+ADRs: The Australian Design Rules (ADRs). These are the national standards for road vehicle safety, anti-theft and emissions.
+ADS: Automated driving system.
+AGM-kms: Average gross mass kilometres. A measure of the general impact of a load on the road.
+ALGA: Australian Local Government Association.
+ARR: Australian Road Rules. A national set of rules that apply to vehicle drivers, passengers, cyclists and pedestrians.
+Australian Defence Force Road Transport Exemption Framework: A framework that provides nationally uniform exemptions for the use of ADF vehicles and equipment on public roads.
+Australian Light Vehicle Standards Rules: A model law that sets standards that vehicles must comply with to be driven on roads and road-related areas.
+Austroads: The association of Australasian road transport and traffic agencies.
+AV: Automated vehicle. A road or rail vehicle that is partially or fully automated, meaning some or all of the driving task can be handled by the vehicle and not a human driver.
+Carbon emissions intensity: In respect of a motorised vehicle: grams of carbon dioxide (CO2) emitted per kilometre (g/km) travelled.
+C-ITS: Cooperative Intelligent Transport Systems. Emerging technologies that enable vehicles and surrounding infrastructure to exchange information about the location, speed and direction of other road users also using C-ITS.
+CO2 emissions: Carbon dioxide emissions. In respect of a motorised vehicle: the discharge of carbon dioxide, formed as part of the process of catalytic conversion within the engine.
+COVID-19: The coronavirus disease that started a global pandemic in early 2020.
+ESA-kms: Equivalent standard axle kilometres. A measure of pavement wear.
+Euro VI: European emission standards for commercial vehicles. These set the acceptable emission limits for new vehicles sold in Europe.
+FLCB: Forward-looking cost base. The Forward-looking cost base is a tool used to calculate heavy vehicle charges by spreading the cost of road building and maintenance over the lifetime of those roads.
+GVA: Gross Value Added.
+HVNL: Heavy Vehicle National Law. A law to underpin the NHVR and which consolidates existing legislation to achieve national consistency.
+IGA: Inter-Governmental Agreement. In respect of the NTC: an agreement between the Australian states, territories and the Commonwealth Government relating to the establishment and role of the NTC to progress regulation and operational reform for road, rail and intermodal transport.
+Intermodal transport: The use of more than one mode of transport for a journey. For the NTC it refers to transportation of freight in a container using multiple modes of transport, being rail, truck or ship without the freight being handled in the change of modes.
+ITMM: Infrastructure and Transport Ministers’ Meeting (previously the Transport and Infrastructure Council). Commonwealth, state, territory and New Zealand ministers with responsibility for transport and infrastructure issues, and the Australian Local Government Association.
+ITSOC: Infrastructure and Transport Senior Officials’ Committee. A committee that provides support and advice to the Infrastructure and Transport Ministers’ Meeting. Its membership comprises the chief executive officers of state and territory transport and/or infrastructure departments, the Australian Local Government Association and the NTC.
+LCV: Light commercial vehicle. A light vehicle which is also registered as a commercial vehicle.
+MAII: Motor accident injury insurance. MAII schemes promote compulsory personal injury insurance cover for motor vehicle crashes.
+National Reform Implementation Monitoring Report: A report prepared by the NTC annually to report on the progress of transport reforms agreed upon by Australia’s transport ministers.
+NHVR: National Heavy Vehicle Regulator. The NHVR administers one set of laws for heavy vehicles under the HVNL.
+NPV: Net Present Value.
+NRAP: National Rail Action Plan.
+ONRSR: Office of the National Rail Safety Regulator. Established in 2012 to encourage and enforce safe railway operations and to promote and improve national rail safety.
+PAYGO: Pay-as-you-go. In respect of heavy vehicle charging in Australia: the methodology used to calculate heavy vehicle registration and road user charges.
+PCU-kms: Passenger car equivalent kilometres. A measure of the relative space a vehicle type occupies on the road.
+RIM: Rail Infrastructure Manager.
+RIS: Regulation impact statement. A RIS is required for all regulatory proposals that are likely to have an impact on business or the not-for-profit sector.
+RSNL: Rail Safety National Law. A nationally consistent rail safety law, administered by the ONRSR.
+RSO: Rolling Stock Operator.
+RUC: Road User Charge. A charge by the federal government on diesel used by heavy vehicles on public roads. Also known as the fuel charge.
+VKT: Vehicle kilometres travelled.
+WHS: Work health and safety.
+
+Entity: Office of the Fair Work Ombudsman | Number of Terms: 37
+Url: https://www.transparency.gov.au/publications/attorney-general-s/office-of-the-fair-work-ombudsman/office-of-the-fair-work-ombudsman-2023-24-annual-report/part-5---reference-material/abbreviations-and-acronyms
+ACF: Agency Consultative Forum
+AHRC: Australian Human Rights Commission
+APS: Australian Public Services
+CALD: culturally and linguistically diverse
+CEG: Community Engagement Grant
+CEO: Chief Executive Officer
+CFO: Chief Financial Officer
+CN: Compliance notice
+DEWR: Department of Employment and Workplace Relations
+DFWO: Deputy Fair Work Ombudsman
+EAS: Employer Advisory Service
+EU: Enforceable undertaking
+FDV: Family and domestic violence
+FOI: Act Freedom of Information Act 1982
+FTCIS: Fixed Term Contract Information Statement
+FW Act: Fair Work Act 2009
+FWC: Fair Work Commission
+FWO: Fair Work Ombudsman
+GST: Goods and services tax
+IPS: Information Publication Scheme
+KMP: Key management personnel
+KPI: Key performance indicators
+MOU: Memorandum of understanding
+NES: National Employment Standards
+OAIC: Office of the Australia Information Commissioner
+OFWO: Office of the Fair Work Ombudsman
+PACT: Pay and Conditions Tool
+PALM: Pacific Australia Labour Mobility
+PBS: Portfolio Budget Statement
+PCBU: person conducting a business or undertaking
+PGPA Act: Public Governance, Performance and Accountability Act 2013
+PIA: Privacy Impact Assessment
+PSM: Public Service Medal
+RfA: Request for assistance
+SES: Senior Executive Staff
+SME: Small and medium enterprise
+WHS: work health and safety
+
+Entity: Office of the Fair Work Ombudsman | Number of Terms: 39
+Url: https://www.transparency.gov.au/publications/attorney-general-s/office-of-the-fair-work-ombudsman/office-of-the-fair-work-ombudsman-2023-24-annual-report/part-5---reference-material/glossary
+Accountable authority: The accountable authority, in the context of this Annual Report, is the person responsible for, and has control over, the OFWO’s operations.
+Agency: The Office of the Fair Work Ombudsman (OFWO).
+Annual performance statement: A requirement under the PGPA Act, the statement provides a line of sight between planned non-financial performance outlined in the corporate plan and actual performance over the reporting period.
+Appropriation: An amount of public money that parliament authorises for spending on a particular purpose.
+APS Employee Census: An online, confidential and voluntary survey that tracks the views of APS employees about leadership, their workplace and conditions of work. The results are a key source of information for the State of the Service report.
+AusTender: The Australian Government’s web-based procurement system, which provides centralised access to all publicly available approaches to market, multi-use lists, annual procurement plans and reported contracts.
+Australian Public Service (APS) Employee: A person engaged under section 22, or a person who is engaged as an APS employee under section 72, of the Public Service Act 1999 (Public Service Act).
+Closing Loopholes: The Closing Loopholes amendments refer to the Fair Work Legislation Amendment (Closing Loopholes) Act 2023 , and the Fair Work Legislation Amendment (Closing Loopholes No. 2) Act 2024 .
+Comcare: An insurer, regulator and scheme manager that supports healthy and safe workplaces, and reduces harm and injury.
+Common law contract: An individual contract of employment between an employer and an employee that is not lodged or certified under federal or state legislation but is subject to award requirements and provisions.
+Compliance notice (CN): A notification that legally requires a person to do certain things to fix alleged entitlement-based Fair Work Act 2009 (FW Act) breaches. Non-compliance with these notices is actionable in a court and can result in penalties.
+Corporate governance: The process by which agencies are directed and controlled. It is generally understood to encompass authority, accountability, stewardship, leadership, direction and control.
+Corporate Plan: A primary strategic planning document that sets out objectives, capabilities and intended results over a 4-year period in accordance with stated purposes.
+The: formal agreements are publicly available at www.fairwork.gov.au/about-us/our-policies .
+Digital display: Digital display is advertising on websites, apps or social media through banners or other advertising formats made of text, images, flash, video and audio.
+Employer Advisory Service (EAS): The Employer Advisory Service (EAS) is a free service to help small business employers understand and meet their workplace pay and entitlements obligations under the FW Act.
+Enforceable Undertakings (EUs): Enforceable undertakings (EUs) are legally binding documents that set out a company’s written commitment to address workplace contraventions and prevent future breaches.
+Enterprise agreement (EA): A legally enforceable agreement made under the FW Act (on or after 1 July 2009) between one or more employers and a group of employees in relation to terms and conditions of employment for those employees.
+Fair Work Act 2009: (FW Act)
+Freedom of Information of Act 1982: (FOI Act)
+This: legislation gives people the right to request access to Government-held information. This includes information about individuals and Government policies and decisions.
+Grant: Commonwealth financial assistance covered by the Commonwealth Grants Rules and Guidelines.
+Individual flexibility agreement: A written agreement used by an employer and employee to change the effect of certain clauses in their award or registered agreement – making alternative arrangements that better suit the needs of the employer and employee.
+Infringement notice (IN): Infringement notices (INs) are fines issued to employers for breaching record-keeping and pay slip requirements under the FW Act. INs may be issued on the spot.
+Key performance indicators (KPI): Financial and non-financial measures used to help define and evaluate an organisation’s success. An indicator is usually selected on the basis of relevance as a measure of some aspect of a specific project or operation.
+Large corporate: Large businesses, corporate groups or entities that are part of an economic group with combined turnover greater than $250 million.
+Memorandum of Understanding: A written agreement between the OFWO and another organisation outlining how the collaboration will create and maintain harmonious, productive and cooperative workplaces and promote a level playing field for businesses in specific industries.
+Outcomes: Desired results, impacts or consequences for the Australian public resulting from the Government’s actions.
+Pacific Australia Labour Mobility (PALM) Scheme: The PALM scheme supports eligible Australian businesses in hiring workers from Pacific Island countries and Timor-Leste when there are not enough local workers available. The PALM scheme is jointly administered by the Department of Employment and Workplace Relations (DEWR) and the Department of Foreign Affairs and Trade (DFAT).
+Pay and Conditions Tool (PACT): An online tool that combines a pay, shift, leave and notice and redundancy calculator. It can be accessed on mobile devices and enables calculations to be saved for later reference.
+Portfolio Budget Statements (PBS): A budget-related paper detailing initiatives and budget appropriations in terms of planned Government outcomes and programs.
+Protecting Vulnerable Workers: Fair Work Legislation Amendment (Protecting Worker Entitlements) Act 2023 introduced changes to the FW Act.
+Public Governance, Performance and Accountability (PGPA) Act 2013: The primary piece of Commonwealth resource management legislation.
+Public Service Act 1999: The principal Commonwealth law providing for the establishment and management of the APS.
+Purchaser-provider arrangements: Arrangements under which the outputs of an agency are purchased by another agency to contribute to outcomes. Purchaser–provider arrangements can occur between Commonwealth agencies or between Commonwealth agencies and state/territory government or private sector bodies.
+Purpose: The objectives, functions or role of the entity or company. In relation to performance management, purposes are the reasons or ideal state or outcomes, for which the entity or company undertakes its activities.
+Secure Jobs, Better Pay: Fair Work Legislation Amendment (Secure Jobs, Better Pay) Act 2022 made amendments to the FW Act.
+Tripartite Advisory Group: An Advisory Group made up of peak employer organisations and worker representatives, established to provide FWO with advice and information relevant to our work assisting the regulated community, with equal representation from worker and business organisations.
+Vulnerable workers: People who belong to a group which may have a greater risk of vulnerability in understanding and receiving their workplace rights and entitlements.
+
+Entity: National Mental Health Commission | Number of Terms: 47
+Url: https://www.transparency.gov.au/publications/health/national-mental-health-commission/national-mental-health-commission-annual-report-2023-24/navigation-aids/acronyms
+AASB: Australian Accounting Standards Board
+ABS: Australian Bureau of Statistics
+ACSQHC: Australian Commission on Safety and Quality in Health Care
+AIDA: Australian Indigenous Doctors’ Association
+AIME: Australian Indigenous Mentoring Experience
+AIHW: Australian Institute of Health and Welfare
+ARACY: Australian Research Alliance for Children and Youth
+ASL: Average Staffing Level
+CEO: Chief Executive Officer
+CFO: Chief Financial Officer
+COO: Chief Operating Officer
+CP: Corporate Plan
+CPR: Commonwealth Procurement Rules
+COAG: Council of Australian Governments
+DCB: Departmental Capital Budget
+EAP: Employee Assistance Program
+eMHIC: eMental Health International Collaborative
+ESD: ecologically sustainable development
+FASD: fetal alcohol spectrum disorders
+FOI: Freedom of Information
+FOI Act: Freedom of Information Act 1982
+FRR: Financial Reporting Rule
+GST: Goods and Services Tax
+IPS: Information Publication Scheme
+LEPG: Lived Experience Partnership Group
+MHSPSO: Mental Health and Suicide Prevention Senior Officials
+MHWA: Mentally Healthy Workplace Alliance (the Alliance)
+MHWC: Mentally Healthy Workplace Committee
+NACCHO: National Aboriginal Community Controlled Health Organisation
+NDIS: National Disability Insurance Scheme
+NDIA: National Disability Insurance Agency
+NFRC: National Federation Reform Council
+NMHC: National Mental Health Commission
+NMHCCF: National Mental Health Consumer & Carer Forum
+NSPO: National Suicide Prevention Office
+NSQHS: National Safety and Quality Health Service
+NWI: National Workplace Initiative
+OATSIH: Office of Aboriginal and Torres Strait Islander Health
+OPA: Official Public Account
+PBS: Portfolio Budget Statements
+PGPA Act: Public Governance, Performance and Accountability Act 2013 (Cth)
+PHN: Primary Health Network
+PREMISE: Prevention and Early Intervention in Mental Illness and Substance Use
+PRIDoC: Pacific Region Indigenous Doctors’ Congress
+SME: Small and Medium Enterprises
+WAAMH: Western Australian Association for Mental Health
+WHO: World Health Organisation
+
+Entity: National Mental Health Commission | Number of Terms: 22
+Url: https://www.transparency.gov.au/publications/health/national-mental-health-commission/national-mental-health-commission-annual-report-2023-24/navigation-aids/glossary
+Carer: In this document, the term carer refers to an individual who provides ongoing personal care, support, advocacy and/or assistance to a person with mental illness.
+Commission: The National Mental Health Commission.
+Consumers: People who identify as having a living or lived experience of mental illness or mental ill health, irrespective of whether they have a formal diagnosis, who have accessed mental health services and/ or received treatment. This includes people who describe themselves as a ‘peer’, ‘survivor’ or ‘expert by experience’.
+Co-design: An approach to design that includes all stakeholders (for example, consumers, carers, researchers, health workers, clinicians, funders, policy-makers).
+Discrimination: The unjust or prejudicial treatment of a person based on the group, class or category to which the person is perceived to belong.
+Early intervention: Identifying signs and risks of mental illness early, followed by appropriate, timely intervention and support that can reduce the severity, duration and recurrence of mental ill health and its associated social disadvantage.
+LGBTIQ+: The collective term for people who identify as lesbian, gay, bisexual, transgender, gender diverse, intersex, queer and questioning. Many subgroups form part of the broader LGBTIQ+ movement. (There are several variations of this term—for example, LGBTQIA.)
+Lived experience: In this report, refers to people who have either current or past experience of mental ill health, trauma or distress.
+Lived experience (peer) workforce: The supply of people who are employed, either parttime or full-time, on the basis of their lived experience, to provide support to people experiencing a similar situation. The people who make up the peer workforce may be called peer workers, consumer workers, carer workers or lived experience workers.
+Mental health: The World Health Organization defines mental health as a state of wellbeing in which every person realises their own potential, can cope with the normal stresses of life, can work productively and fruitfully, and is able to contribute to their community.
+Mental illness: A wide spectrum of diagnosable health conditions that significantly affect how a person feels, thinks, behaves, and interacts with other people. Mental illness can vary in both severity and duration. In this report, ‘mental illness’ is used in place of ‘mental health disorder’ and ‘mental health disease’.
+National Agreement: The National Mental Health and Suicide Prevention Agreement 2022-2025 sets out the shared intention of the Commonwealth, state and territory governments to work in partnership to improve the mental health of all Australians and ensure the sustainability and enhance the services of the Australian mental health and suicide prevention system
+National Suicide and Self-Harm Monitoring System: Established by the Australian Institute of Health and Welfare and the Commission, the National Suicide and Self-Harm Monitoring System brings together all existing and extensive new data from across states and territories on a website that is regularly updated and improved. It improves the coherence, accessibility, quality and timeliness of national data and information on suicide, suicide attempts and self-harm. The suicide monitoring system plays a key role in better informed public conversations about suicide prevention.
+Peer workforce: The supply of people who are employed, either part-time or fulltime, on the basis of their lived experience, to provide support to people experiencing a similar situation. The people who make up the peer workforce may be called peer workers, consumer workers, carer workers and/or lived experience workers.
+Prevention: In this report, refers to approaches that work to reduce incidence, prevalence and recurrence of mental ill health.
+rimary Health Network (PHN): P  : A PHN is an administrative health region established to deliver access to primary care services for patients, as well as co-ordinate with local hospitals to improve the operational efficiency of the network. The six key priorities for targeted work for PHNs are: mental health, Aboriginal and Torres Strait Islander health, population health, health workforce, eHealth and aged care.
+Psychosocial disability: A term used in the context of the NDIS to describe a disability arising from a mental illness, that is likely to make the person eligible for an individual support package under the scheme.
+Social and emotional wellbeing: A holistic concept that reflects the Aboriginal and Torres Strait Islander understanding of health and recognises the importance of connection to land, culture, spirituality, ancestry, family and community and how these affect the individual.
+Stigma: The disapproval of, or poor treatment of, an individual or group based on characteristics that serve to distinguish them from other members of a society. Stigma results from complex social, political and psychological processes. It can include negatively stereotyped characteristics, attitudes and responses that are personally internalised, community socialised and/or structural, which harm a person’s day-to-day health and wellbeing by excluding, devaluing or shaming them.
+Suicide: The act of ending one’s own life.
+Suicide attempt: The National Ambulance Surveillance System defines suicide attempt as ‘non-fatal intentional injury with suicidal intent, regardless of likelihood of lethality’.
+Support person: A person whose life is affected by virtue of a family or close relationship role with a person with mental illness.
+
+Entity: Rural Industries Research and Development Corporation | Number of Terms: 58
+Url: https://www.transparency.gov.au/publications/agriculture/rural-industries-research-and-development-corporation/agrifutures-australia-annual-report-2023-2024/appendices/appendix-4%3A-glossary
+ACIAR: Australian Centre for International Agricultural Research
+ACMF: Australian Chicken Meat Federation Inc.
+AECL: Australian Egg Corporation Limited
+AgVet: Agricultural and Veterinary
+AHBIC: Australian Honey Bee Industry Council
+AIA: Agricultural Innovation Australia
+AICD: Australian Institute of Company Directors
+AOP: Annual Operational Plan
+APL: Australian Pork Limited
+APVMA: Australian Pesticides and Veterinary Medicines Authority
+ASIDA: Australian Sesame Industry Development Association
+AWI: Australian Wool Innovation
+C2C: Country to Canberra
+CoP: Community of Practice
+CRC: Cooperative Research Centre
+CRCNA: Cooperative Research Centre for Developing Northern Australia
+CRDC: Cotton Research and Development Corporation
+CRRDC: Council of Rural Research and Development Corporations
+CSIRO: Commonwealth Scientific and Industrial Research Organisation
+DAFF: Department of Agriculture, Fisheries and Forestry
+DIAA: Deer Industry Association of Australia
+DPI: Department of Primary Industries
+EIT-HUB: Emerging Insect Technology Hub
+ENRI: Emerging National Rural Issues
+FOI Act: Freedom of Information Act 1982
+FRR: Public Governance, Performance and Accountability (Financial Reporting) Rule
+GRDC: Grains Research and Development Corporation
+GST: goods and services tax
+GVP: Gross value of production
+IHC: International Honey Commission
+icipe: International Centre of Insect Physiology and Ecology
+IHVT: Industrial Hemp Variety Trial
+IP: intellectual property
+IRR: internal rate of return
+KIAA: Kangaroo Industry Association of Australia
+LSW: lucerne seed wasp
+MIRR: modified internal rate of return
+MLA: Meat & Livestock Australia
+MRI: magnetic resonance imaging
+MOU: memorandum of understanding
+NFF: National Farmers’ Federation
+NPV: net present value
+NRM: natural resource management
+OAIC: Office of the Australian Information Commissioner
+OECD: Organisation for Economic Cooperation and Development
+PGPA: Public Governance, Performance and Accountability Act 2013
+PIRD: Primary Industries Research and Development Act 1989
+PSR: pythium soft rot
+PTUP: Producer Technology Uptake Program
+PVB: present value of benefits
+PVC: present value of costs
+R&D: research and development
+RD&E: research, development and extension
+RnD4P: R&D for Profit
+RDC: Research and development corporation
+RGA: Ricegrowers’ Association
+RIRDC: Rural Industries Research and Development Corporation
+RWA: Rural Women’s Award
+
+Entity: Parliamentary Workplace Support Service | Number of Terms: 0
+Url: https://www.transparency.gov.au/publications/finance/parliamentary-workplace-support-service/parliamentary-workplace-support-service-annual-report-2023-24/part-5.-appendices/appendix-g--abbreviations-and-acronyms
+
+Entity: Tourism Australia | Number of Terms: 29
+Url: https://www.transparency.gov.au/publications/foreign-affairs-and-trade/tourism-australia/tourism-australia-annual-report-2023-24/7.-appendix/7.5-abbreviations-and-acronyms
+AASB: Australian Accounting Standards Board
+AGEST: Australian Government Employee Superannuation Trust
+ASP: Aussie Specialist Program
+ATDW: Australian Tourism Data Warehouse
+ATE: Australian Tourism Exchange
+AWA: Australian Workplace Agreement
+BEA: Business Events Australia
+CSS: Commonwealth Superannuation Scheme
+EAV: Equivalent advertising value
+ERP: Enterprise resource planning
+HYT: High Yield Traveller
+IMHP: International Media Hosting Program
+IVS: International Visitor Survey
+KOL: Key Opinion Leader
+KPI: Key Performance Indicator
+MoU: Memorandum of Understanding
+NABERS: National Australian Built Environment Rating System
+OTT: ‘Over the top’ platforms that deliver streamed content via internet-connected devices
+PAES: Portfolio Additional Estimates Statements
+PBS: Portfolio Budget Statements
+PGPA: Act Public Governance, Performance and Accountability Act 2013
+PSS: Public Sector Superannuation Scheme
+PSSap: Public Sector Superannuation accumulation plan
+RTO: Regional Tourism Organisation
+STO: State and Territory Tourism Organisation
+TA: Act Tourism Australia Act 2004
+TRA: Tourism Research Australia
+UNWTO: United Nations World Tourism Organization
+USP: Unique selling proposition
+
+Entity: Royal Australian Mint | Number of Terms: 44
+Url: https://www.transparency.gov.au/publications/treasury/royal-australian-mint/annual-report-royal-australian-mint-2023-2024/09-indices/glossary
+Accountable Authority Instructions: Establish the Mint’s financial administrative framework as required under the PGPA Act.
+Circulating coins: Used as legal tender for the purpose of trade in Australia.
+Coinage: Collective term for coins.
+Coin blank: Piece of metal cut to the required shape but not yet struck into a coin.
+Collector coin: Non–circulating coins (also referred to as numismatic coins) intended for coin collectors and the souvenir and gift market rather than for payment of good and services.
+Decimal coin: Produced as part of the decimal currency system of dollars and cents. Introduced in Australia on 14 February 1966.
+Domed coin: Curved coin with a dome–like shape.
+Effigy: Portrait appearing on the obverse of a coin. In Australia, the effigy features the reigning monarch and when appearing with the word Australia, denotes the coin as legal tender in Australia.
+Enterprise agreement: Sets out terms and conditions of employment between an employee or group of employees and one or more employers.
+EPICOR: Enterprise resource planning (ERP) software system.
+eShop: The Mint’s online shop.
+High relief: Sculptural technique where the design of a coin is further raised out of the background field, increasing the definition of the design.
+Human Resource Management Information System: Computerised solution for managing human resources, payroll data and accounting functions within payroll. The Mint’s system is called CHRIS21.
+Individual work plan: Regular feedback between a team member and their supervisor to discuss workplace issues, help identify areas where development is needed and how to meet those needs.
+LEAN: Manufacturing principles to improve organisational efficiency.
+Legal tender: Currency that is payment for an amount equal to that denoted on the face of currency.
+Legends Program: Loyalty program that rewards Mint customers for their purchases.
+Limited mintage: Maximum number of coins being made.
+MDM: German–based global coin dealing company.
+Mintage: Number of coins made.
+Minting: Making of coins.
+Mint Issue: The Mint’s quarterly sales catalogue featuring new numismatic products.
+Mintmark: Letter or symbol indicating the Mint of origin.
+National Coin Collection: The Mint’s collection of coins and coin–related material significant to Australia’s numismatic history.
+Net promoter score: Index ranging from -100 to 100 measuring the willingness of customers to recommend a company’s products or services to others (% of people who would recommend your brand - the total % of those who wouldn’t).
+Numismatic: Science, study or collecting of coins, tokens, medals, paper money, orders, decorations or similar objects.
+Numismatic products: Collectible products including coins, medallions, tokens and jewellery.
+Obverse: Major side of a coin, usually carrying the portrait. Also known as the ‘heads’ side of the coin.
+Open tender: Procurement procedure in which a request for tender is published inviting all businesses that satisfy conditions for participation to submit tenders.
+Precious metals: Highly valuable metals, including gold, used to make the Mint’s premium products and investment coins.
+Press: Machine that performs the coin–striking process.
+Privy Mark: Special mark of differentiation on the design of a coin.
+Proof: Method of manufacture, not a condition or grade.
+Proof coin: Limited mintage coins made using valuable metals such as gold and silver.
+Public Governance, Performance and Accountability Act 2013: Sets out the main principles and requirements of the Commonwealth Resource Management Framework.
+Quality management system: System to manage the processes of continual improvement and performance.
+Reverse: Opposite side of a coin to the obverse. Also known as the ‘tails’ side of the coin.
+Seigniorage: Difference between the face value of a coin and the cost of producing, distributing and retiring it from circulation.
+Select tender: Procurement procedure in which the procuring agency selects which potential suppliers are invited to submit tenders.
+Strike a coin: Process to press a coin.
+Supply chain: Represents the movement of materials as they flow from their source to the end customer.
+Token: Numismatic collectible product and coin–like object.
+Unlimited mintage: No limit on the number of coins being made.
+WellMint: The Mint’s health and wellness program, incorporating health assessment, activities and health information for Mint employees.
+
+Entity: Royal Australian Mint | Number of Terms: 4
+Url: https://www.transparency.gov.au/publications/treasury/royal-australian-mint/annual-report-royal-australian-mint-2023-2024/05-annual-performance-statements/key-definitions
+Seigniorage: Seigniorage is the difference between the sale value of circulating coin and the costs of production and other administration related to circulating coin. Seigniorage is remitted to Treasury.
+Return on Net Assets (RONA): The return on net assets is calculated as the net surplus after tax plus seigniorage divided by the average net assets (excluding Heritage and Cultural Assets).
+Delivered in Full and On Time (DIFOT): The Royal Australian Mint has a current expectation that commercial sales orders will be shipped within 10 working days.
+Net Promoter Score (NPS): The net promoter score is determined using surveys provided to customers to gauge their willingness to recommend the Mint to their friends or colleagues. An acceptable score is considered anything greater than 50 being that greater than half the survey recipients would positively promote the organisation to others.
+

@@ -34,19 +34,19 @@ DEFAULT_HEADER_PATTERNS = [
     re.compile(r"^description / definition$", re.I),
 ]
 
-# --- Start of redirection ---
-# Save the original stdout and stderr
-original_stdout = sys.stdout
-original_stderr = sys.stderr
+# # --- Start of redirection ---
+# # Save the original stdout and stderr
+# original_stdout = sys.stdout
+# original_stderr = sys.stderr
 
-# Open /dev/null (or equivalent on Windows) for writing
-# 'w' mode is important for creating the file if it doesn't exist (though /dev/null always exists)
-devnull = open(os.devnull, 'w')
+# # Open /dev/null (or equivalent on Windows) for writing
+# # 'w' mode is important for creating the file if it doesn't exist (though /dev/null always exists)
+# devnull = open(os.devnull, 'w')
 
-# Redirect stdout and stderr
-sys.stdout = devnull
-sys.stderr = devnull
-# --- End of redirection ---
+# # Redirect stdout and stderr
+# sys.stdout = devnull
+# sys.stderr = devnull
+# # --- End of redirection ---
 
 def get_silent_chrome_driver():
     # 1. Suppress Selenium Python Client Logs
@@ -123,16 +123,29 @@ def glossary_in_list(list_tag: Tag, SKIP_WORDS: Set[str], HEADER_PATTERNS: List[
 
 def glossary_in_table(table: Tag, SKIP_WORDS: Set[str], HEADER_PATTERNS: List[Pattern]) -> Dict[str, str]:
     glossary_dict = {}
+
     for row in table.find_all("tr"):
         cells = row.find_all(["td", "th"])
-        cell_texts = [cell.get_text(" ", strip=True).replace('\xa0', ' ') for cell in cells]
-        # Handle rows with even number of cells (e.g., 4, 6, ...)
+
+        # Use smarter nested tag parsing per cell
+        cell_texts = []
+        for cell in cells:
+            parts = cell.find_all(["p", "span"])
+            if parts:
+                combined = " ".join(part.get_text(" ", strip=True) for part in parts if part.get_text(strip=True))
+            else:
+                combined = cell.get_text(" ", strip=True)
+            cell_texts.append(combined.replace('\xa0', ' ').strip())
+
+        # Handle rows with even number of cells (e.g., 2, 4, 6...)
         if len(cell_texts) >= 2 and len(cell_texts) % 2 == 0:
             for i in range(0, len(cell_texts), 2):
-                term, definition = cell_texts[i], cell_texts[i+1]
+                term, definition = cell_texts[i], cell_texts[i + 1]
                 if len(term) == 1 or is_header_row(term, definition, SKIP_WORDS, HEADER_PATTERNS):
                     continue
                 glossary_dict[term] = definition
+
+        # Fallback: 1-cell rows like 'Term: Definition'
         elif len(cell_texts) == 1:
             line = format_glossary_line(cell_texts[0])
             parts = line.split(':', 1)
@@ -141,7 +154,9 @@ def glossary_in_table(table: Tag, SKIP_WORDS: Set[str], HEADER_PATTERNS: List[Pa
                 if len(term) == 1 or is_header_row(term, definition, SKIP_WORDS, HEADER_PATTERNS):
                     continue
                 glossary_dict[term] = definition
+
     return glossary_dict
+
 
 def extract_term_definition_from_strong_paragraph(paragraphs, i, SKIP_WORDS):
     """

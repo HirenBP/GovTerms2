@@ -1,0 +1,181 @@
+Total URLs processed: 178
+Total extraction time: 293.83 seconds
+
+Entity: Australian Hearing Services (Hearing Australia) | Number of terms: 21 
+Entity: Australian Law Reform Commission | Number of terms: 25 
+Entity: Australian Broadcasting Corporation | Number of terms: 0 
+Entity: Australian Pesticides and Veterinary Medicines Authority (APVMA) | Number of terms: 56 
+Entity: Australian Pesticides and Veterinary Medicines Authority (APVMA) | Number of terms: 15 
+Entity: Australian Institute of Health and Welfare | Number of terms: 54 
+Entity: Australian National Audit Office | Number of terms: 0 
+Entity: Australian Communications and Media Authority (ACMA) | Number of terms: 43 
+Entity: Administrative Appeals Tribunal | Number of terms: 60 
+Entity: Australian Renewable Energy Agency | Number of terms: 55 
+Entity: Attorney-General's Department | Number of terms: 0 
+Entity: Australian Signals Directorate | Number of terms: 81 
+Entity: Central Land Council | Number of terms: 77 
+Entity: Australian Transaction Reports and Analysis Centre (AUSTRAC) | Number of terms: 34 
+Entity: Cancer Australia | Number of terms: 36 
+Entity: Australian Securities and Investments Commission (ASIC) | Number of terms: 22 
+Entity: Australian Trade and Investment Commission (Austrade) | Number of terms: 51 
+Entity: Cancer Australia | Number of terms: 32 
+Entity: Australian Prudential Regulation Authority (APRA) | Number of terms: 15 
+Entity: Climate Change Authority | Number of terms: 17 
+Entity: Climate Change Authority | Number of terms: 30 
+Entity: Civil Aviation Safety Authority | Number of terms: 39 
+Entity: Commonwealth Superannuation Corporation (CSC) | Number of terms: 0 
+Entity: Housing Australia | Number of terms: 75 
+Entity: Department of the House of Representatives | Number of terms: 50 
+Entity: Department of Foreign Affairs and Trade | Number of terms: 0 
+Entity: Department of Finance | Number of terms: 73 
+Entity: Australian Financial Security Authority | Number of terms: 55 
+Entity: Aged Care Quality and Safety Commission | Number of terms: 0 
+Entity: Department of Defence | Number of terms: 44 
+Entity: Fair Work Commission | Number of terms: 40 
+Entity: National Archives of Australia | Number of terms: 53 
+Entity: Fair Work Commission | Number of terms: 32 
+Entity: National Archives of Australia | Number of terms: 13 
+Entity: National Capital Authority | Number of terms: 48 
+Entity: National Competition Council | Number of terms: 29 
+Entity: National Library of Australia | Number of terms: 7 
+Entity: National Library of Australia | Number of terms: 14 
+Entity: National Emergency Management Agency | Number of terms: 0 
+Entity: Northern Australia Infrastructure Facility | Number of terms: 42 
+Entity: Office of Parliamentary Counsel | Number of terms: 44 
+Entity: Office of the Inspector-General of Aged Care | Number of terms: 30 
+Entity: Office of the Official Secretary to the Governor-General | Number of terms: 60 
+Entity: Airservices Australia | Number of terms: 102 
+Entity: WSA Co Ltd | Number of terms: 47 
+Entity: WSA Co Ltd | Number of terms: 4 
+Entity: Sydney Harbour Federation Trust | Number of terms: 53 
+Entity: Office of the Auditing and Assurance Standards Board (AUASB) | Number of terms: 34 
+Entity: Productivity Commission | Number of terms: 27 
+Entity: Anindilyakwa Land Council | Number of terms: 18 
+Entity: Asbestos and Silica Safety and Eradication Agency | Number of terms: 40 
+Entity: Office of the Australian Accounting Standards Board (AASB) | Number of terms: 34 
+Entity: Australian Bureau of Statistics | Number of terms: 27 
+Entity: National Indigenous Australians Agency | Number of terms: 70 
+Entity: National Indigenous Australians Agency | Number of terms: 0 
+Entity: Australian Bureau of Statistics | Number of terms: 70 
+Entity: Australian Criminal Intelligence Commission | Number of terms: 0 
+Entity: Australian Centre for International Agricultural Research (ACIAR) | Number of terms: 0 
+Entity: Australian Criminal Intelligence Commission | Number of terms: 31 
+Entity: Australian Competition and Consumer Commission (ACCC) | Number of terms: 0 
+Entity: Australian Fisheries Management Authority | Number of terms: 94 
+Entity: Australian Federal Police | Number of terms: 67 
+Entity: Australian Institute of Aboriginal and Torres Strait Islander Studies | Number of terms: 64 
+Entity: Australian Institute of Criminology | Number of terms: 11 
+Entity: Australian Institute of Family Studies (AIFS) | Number of terms: 54 
+Entity: Australian Fisheries Management Authority | Number of terms: 0 
+Entity: Australian Institute of Marine Science | Number of terms: 55 
+Entity: Australian Electoral Commission | Number of terms: 69 
+Entity: Australian Nuclear Science and Technology Organisation | Number of terms: 50 
+Entity: Australian Electoral Commission | Number of terms: 59 
+Entity: Australian Office of Financial Management (AOFM) | Number of terms: 64 
+Entity: Australian Reinsurance Pool Corporation | Number of terms: 32 
+Entity: Australian Public Service Commission | Number of terms: 37 
+Entity: Australian Security Intelligence Organisation | Number of terms: 0 
+Entity: Australian Reinsurance Pool Corporation | Number of terms: 15 
+Entity: Australian Security Intelligence Organisation | Number of terms: 0 
+Entity: Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) | Number of terms: 22 
+Entity: Australian Sports Commission (Australian Institute of Sport) | Number of terms: 21 
+Entity: Australian Radiation Protection and Nuclear Safety Agency (ARPANSA) | Number of terms: 76 
+Entity: Australian Strategic Policy Institute Ltd | Number of terms: 28 
+Entity: Australian Research Council | Number of terms: 0 
+Entity: Australian Research Council | Number of terms: 101 
+Entity: Australian Submarine Agency | Number of terms: 0 
+Entity: Clean Energy Finance Corporation | Number of terms: 58 
+Entity: Clean Energy Finance Corporation | Number of terms: 49 
+Entity: Australian Taxation Office | Number of terms: 44 
+Entity: Australian Transport Safety Bureau (ATSB) | Number of terms: 120 
+Entity: Australian Taxation Office | Number of terms: 76 
+Entity: Commonwealth Scientific and Industrial Research Organisation | Number of terms: 117 
+Entity: Commonwealth Scientific and Industrial Research Organisation | Number of terms: 0 
+Entity: Coal Mining Industry (Long Service Leave Funding) Corporation | Number of terms: 0 
+Entity: Cotton Research and Development Corporation | Number of terms: 68 
+Entity: Commonwealth Grants Commission | Number of terms: 24 
+Entity: Defence Housing Australia | Number of terms: 85 
+Entity: Australian Skills Quality Authority (National Vocational Education and Training Regulator) | Number of terms: 33 
+Entity: Australian Skills Quality Authority (National Vocational Education and Training Regulator) | Number of terms: 44 
+Entity: Department of Education [i] | Number of terms: 86 
+Entity: Bureau of Meteorology | Number of terms: 153 
+Entity: Department of Agriculture, Fisheries and Forestry | Number of terms: 122 
+Entity: Department of Employment and Workplace Relations | Number of terms: 82 
+Entity: Department of Climate Change, Energy, the Environment and Water | Number of terms: 190 
+Entity: Department of Health and Aged Care | Number of terms: 55 
+Entity: Department of Health and Aged Care | Number of terms: 84 
+Entity: Department of the Senate | Number of terms: 23 
+Entity: Department of Industry, Science and Resources | Number of terms: 87 
+Entity: Department of Infrastructure, Transport, Regional Development, Communications and the Arts | Number of terms: 67 
+Entity: Department of Infrastructure, Transport, Regional Development, Communications and the Arts | Number of terms: 38 
+Entity: Department of Social Services | Number of terms: 0 
+Entity: Department of Home Affairs | Number of terms: 36 
+Entity: Department of Home Affairs | Number of terms: 143 
+Entity: Department of Veterans' Affairs | Number of terms: 0 
+Entity: Department of Parliamentary Services | Number of terms: 0 
+Entity: Digital Transformation Agency | Number of terms: 34 
+Entity: Department of the Treasury | Number of terms: 35 
+Entity: Department of the Treasury | Number of terms: 34 
+Entity: Department of Parliamentary Services | Number of terms: 37 
+Entity: Export Finance and Insurance Corporation (EFIC, Export Finance Australia) | Number of terms: 79 
+Entity: Future Fund Management Agency | Number of terms: 0 
+Entity: Grains Research and Development Corporation | Number of terms: 92 
+Entity: Geoscience Australia | Number of terms: 20 
+Entity: Great Barrier Reef Marine Park Authority | Number of terms: 0 
+Entity: Independent Health and Aged Care Pricing Authority | Number of terms: 0 
+Entity: Domestic, Family and Sexual Violence Commission | Number of terms: 18 
+Entity: Independent Health and Aged Care Pricing Authority | Number of terms: 0 
+Entity: Indigenous Land and Sea Corporation | Number of terms: 21 
+Entity: Inspector-General of Taxation | Number of terms: 20 
+Entity: IP Australia | Number of terms: 33 
+Entity: Murray-Darling Basin Authority | Number of terms: 0 
+Entity: Inspector-General of Taxation | Number of terms: 45 
+Entity: Murray-Darling Basin Authority | Number of terms: 35 
+Entity: National Disability Insurance Agency | Number of terms: 37 
+Entity: Independent Parliamentary Expenses Authority | Number of terms: 44 
+Entity: National Anti-Corruption Commission | Number of terms: 0 
+Entity: NDIS Quality and Safeguards Commission | Number of terms: 43 
+Entity: National Blood Authority | Number of terms: 55 
+Entity: National Disability Insurance Agency | Number of terms: 7 
+Entity: National Anti-Corruption Commission | Number of terms: 0 
+Entity: National Film and Sound Archive of Australia | Number of terms: 1 
+Entity: National Gallery of Australia | Number of terms: 0 
+Entity: National Health Funding Body (NHFB) | Number of terms: 24 
+Entity: NDIS Quality and Safeguards Commission | Number of terms: 21 
+Entity: National Health Funding Body (NHFB) | Number of terms: 0 
+Entity: National Health and Medical Research Council (NHMRC) | Number of terms: 117 
+Entity: National Transport Commission | Number of terms: 0 
+Entity: Northern Land Council | Number of terms: 28 
+Entity: Office of the Australian Information Commissioner | Number of terms: 110 
+Entity: Office of the Fair Work Ombudsman | Number of terms: 0 
+Entity: Office of the Fair Work Ombudsman | Number of terms: 0 
+Entity: Office of the Inspector-General of Intelligence and Security | Number of terms: 50 
+Entity: Office of the Commonwealth Ombudsman | Number of terms: 59 
+Entity: Office of the Commonwealth Ombudsman | Number of terms: 23 
+Entity: Office of the Special Investigator | Number of terms: 32 
+Entity: Organ and Tissue Authority (Australian Organ and Tissue Donation and Transplantation Authority) | Number of terms: 28 
+Entity: Organ and Tissue Authority (Australian Organ and Tissue Donation and Transplantation Authority) | Number of terms: 11 
+Entity: Parliamentary Workplace Support Service | Number of terms: 0 
+Entity: Parliamentary Budget Office | Number of terms: 4 
+Entity: Parliamentary Budget Office | Number of terms: 22 
+Entity: National Mental Health Commission | Number of terms: 0 
+Entity: National Mental Health Commission | Number of terms: 0 
+Entity: Reserve Bank of Australia | Number of terms: 159 
+Entity: Rural Industries Research and Development Corporation | Number of terms: 0 
+Entity: Safe Work Australia | Number of terms: 66 
+Entity: National Offshore Petroleum Safety and Environmental Management Authority (NOPSEMA) | Number of terms: 93 
+Entity: Safe Work Australia | Number of terms: 27 
+Entity: Tertiary Education Quality and Standards Agency | Number of terms: 35 
+Entity: Seafarers Safety, Rehabilitation and Compensation Authority (Seacare Authority) | Number of terms: 23 
+Entity: Torres Strait Regional Authority | Number of terms: 39 
+Entity: Tourism Australia | Number of terms: 26 
+Entity: Tiwi Land Council | Number of terms: 16 
+Entity: Tourism Australia | Number of terms: 0 
+Entity: Wine Australia | Number of terms: 46 
+Entity: Sport Integrity Australia | Number of terms: 34 
+Entity: Sport Integrity Australia | Number of terms: 18 
+Entity: Workplace Gender Equality Agency | Number of terms: 38 
+Entity: Services Australia | Number of terms: 102 
+Entity: Royal Australian Mint | Number of terms: 42 
+Entity: Royal Australian Mint | Number of terms: 0 
+Entity: Royal Australian Mint | Number of terms: 0 
